@@ -1,5 +1,5 @@
 import numpy as np
-from scipy.optimize import minimize
+import random
 
 # Define the Rosenbrock function
 def rosenbrock(x):
@@ -14,8 +14,8 @@ def ackley(x):
     cos_term = -np.exp(sum(np.cos(c * x) / len(x)))
     return sum_sq_term + cos_term + a + np.exp(1)
 
-# Set the initial guess for both functions
-initial_guess = np.zeros(10)
+
+poblacion = [a for a in range(1, 11)]
 
 # Bounds for Rosenbrock function, as given in the problem statement
 rosenbrock_bounds = [(-2.048, 2.048)] * 10
