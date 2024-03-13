@@ -30,10 +30,3 @@ rosen_result = minimize(rosenbrock, initial_guess, bounds=rosenbrock_bounds, met
 ackley_result = minimize(ackley, initial_guess, bounds=ackley_bounds, method='L-BFGS-B')
 
 rosen_result.x, ackley_result.x
-
-print("Rosenbrock function minimum:", rosen_result.x)
-print("Rosenbrock function value at minimum:", rosen_result.fun)
-
-# Print the results for Ackley function
-print("Ackley function minimum:", ackley_result.x)
-print("Ackley function value at minimum:", ackley_result.fun)
