@@ -3,7 +3,13 @@ import random
 
 # Define the Rosenbrock function
 def rosenbrock(x):
-    return sum(100 * (x- x**2.0)**2.0 + (1 - x)**2.0)
+    resultado = 0
+    for i, punto in enumerate(x):
+        resultado  += 100 * ((punto**2) - x[i + 1])**2 + (1 - punto)**2
+        if i < len(x):
+            break
+
+    return resultado
 
 # Define the Ackley function
 def ackley(x):
@@ -16,24 +22,8 @@ def ackley(x):
 
 
 poblacion = [a for a in range(1, 11)]
+puntos_rosenbrock = [round(random.uniform(-2.048, 2.048), 2) for _ in range(1, 11)]
+puntos_evaluados = round(rosenbrock(puntos_rosenbrock), 4)
 
-# Bounds for Rosenbrock function, as given in the problem statement
-rosenbrock_bounds = [(-2.048, 2.048)] * 10
-
-# Bounds for Ackley function, as given in the problem statement
-ackley_bounds = [(-32.768, 32.768)] * 10
-
-# Optimize Rosenbrock function
-rosen_result = minimize(rosenbrock, initial_guess, bounds=rosenbrock_bounds, method='L-BFGS-B')
-
-# Optimize Ackley function
-ackley_result = minimize(ackley, initial_guess, bounds=ackley_bounds, method='L-BFGS-B')
-
-rosen_result.x, ackley_result.x
-
-print("Rosenbrock function minimum:", rosen_result.x)
-print("Rosenbrock function value at minimum:", rosen_result.fun)
-
-# Print the results for Ackley function
-print("Ackley function minimum:", ackley_result.x)
-print("Ackley function value at minimum:", ackley_result.fun)
+print(f"Puntos seleccionados: {puntos_rosenbrock}")
+print(f"Resultado: {puntos_evaluados}")
