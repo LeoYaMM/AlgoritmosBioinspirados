@@ -3,7 +3,7 @@ from scipy.optimize import minimize
 
 # Define the Rosenbrock function
 def rosenbrock(x):
-    return sum(100 * (x[1:] - x[:-1]**2.0)**2.0 + (1 - x[:-1])**2.0)
+    return sum(100 * (x- x**2.0)**2.0 + (1 - x)**2.0)
 
 # Define the Ackley function
 def ackley(x):
