@@ -1,6 +1,14 @@
 import numpy as np
 import random
 
+def summation(x):
+    sum = 0
+    for xi in x:
+        sum += xi
+
+    return sum
+
+
 # Define the Rosenbrock function
 def rosenbrock(x):
     resultado = 0
