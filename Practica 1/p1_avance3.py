@@ -29,6 +29,8 @@ def seleccionDeSobrevivientes():
     #funcion
     return
 
+
+poblacion = [x for x in range(1, 11)]
 poblacion_inicial_rosenbrock = [round(random.uniform(-2.048, 2.048), 2) for _ in range(1, 11)]
 #puntos_evaluados_rosenbrock = round(rosenbrock(puntos_rosenbrock), 4)
 poblacion_inicial_ackley = [round(random.uniform(-32.768, 32.768), 2) for _ in range(1, 11)]
