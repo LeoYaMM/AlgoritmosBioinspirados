@@ -26,7 +26,6 @@ def mutacion():
     return
 
 def seleccionDeSobrevivientes(individuos, competencias):
-    valores_objetivo = {ind: funcion_objetivo(x[0], x[1]) for ind, x in individuos.items()}
     sobrevivientes = []
     for comp in competencias:
         ganador = comp[0] if valores_objetivo[comp[0]] > valores_objetivo[comp[1]] else comp[1]
