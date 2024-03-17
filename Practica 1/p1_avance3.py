@@ -32,18 +32,18 @@ def rosenbrock(x):
     return resultado
 
 def seleccionDeSobrevivientes(individuos, competencias):
-    valores_objetivo = {ind: rosenbrock for ind, x in individuos.items()}
+    valores_objetivo = {ind: rosenbrock(x) for ind, x in individuos.items()}
     sobrevivientes = []
     for comp in competencias:
-        ganador = comp[0] if valores_objetivo[comp[0]] > valores_objetivo[comp[1]] else comp[1]
+        ganador = comp[0] if valores_objetivo[comp[0]] < valores_objetivo[comp[1]] else comp[1]  
         sobrevivientes.append(ganador)
     return sobrevivientes
     
 def generar_individuos():
     individuos = {}
     for i in range(1, 11):
-        x = (random.uniform(-40, 40),2)
-        y = (random.uniform(-40, 40),2)
+        x = round(random.uniform(-40, 40), 2)
+        y = round(random.uniform(-40, 40), 2)
         individuos[i] = (x, y)       
     return individuos
 
