@@ -86,7 +86,7 @@ def mutation(child, delta, mutation_percentage):
 
     return mutated_child
 
-def create_children(poblation_size, couples, poblation, crossover_percentage):
+def create_children(couples, poblation, crossover_percentage):
     children = []
     i = 0
     
@@ -116,7 +116,7 @@ def genetic(f, dimension, lower_limit, upper_limit, poblation_size, crossover_pe
         print(f"Parejas seleccionadas: {couples}")
 
         # Generar hijos
-        children = create_children(poblation_size, couples, poblation, crossover_percentage)
+        children = create_children(couples, poblation, crossover_percentage)
         print(f"Hijos generados: {children}")
 
         # Generar mutaciones
@@ -196,7 +196,7 @@ crossover_percentage = float(input("Porcentaje de cruza: "))
 mutation_percentage = float(input("Porcentaje de mutacion: "))
 
 # Semilla para obtener los mismos resultados
-random.seed(123)
+random.seed(12)
 
 best, worse, average = genetic(f, dimension, lower_limit, upper_limit, poblation_size, crossover_percentage, mutation_percentage, generations)
 plot_convergence(best, worse, average, generations)
