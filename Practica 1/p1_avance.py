@@ -157,7 +157,7 @@ def plot_convergence(best, worse, average, generations):
     X = list(range(1, generations + 1))
     plt.scatter(X, best, color="green", label="Mejor")
     plt.scatter(X, worse, color="red", label="Peor")
-    plt.scatter(X, average, color="blue", label="Promedio")
+    plt.scatter(X, average, color="blue", label="Mediana")
     plt.plot(X, best, color="green")
     plt.plot(X, worse, color="red")
     plt.plot(X, average, color="blue")
@@ -196,7 +196,7 @@ crossover_percentage = float(input("Porcentaje de cruza: "))
 mutation_percentage = float(input("Porcentaje de mutacion: "))
 
 # Semilla para obtener los mismos resultados
-random.seed(12)
+random.seed(1)
 
 best, worse, average = genetic(f, dimension, lower_limit, upper_limit, poblation_size, crossover_percentage, mutation_percentage, generations)
 plot_convergence(best, worse, average, generations)
