@@ -8,7 +8,7 @@ def float_to_binary(value, precision=10):
     # Convertir a entero aproximado para preservar la precisión
     int_value = int(value * (10 ** precision))
     # Convertir a binario y retornar
-    return bin(int_value)[2:]
+    return bin(int_value) [2:] if int_value >= 0  else bin(int_value) [3:]
 
 # Función auxiliar para convertir listas de flotantes a binario
 def list_to_binary(list, precision=10):
@@ -72,7 +72,7 @@ def define_couples(poblacion, poblacion_size):
     if len(selected) % 2 != 0:
         selected.pop()
         
-    print(f"Parejas seleccionadas: {[bin(sel) for sel in selected]}")
+    print(f"Parejas seleccionadas: {[bin(sel)[2:] for sel in selected]}")
 
     return selected
 
@@ -162,7 +162,7 @@ def genetic(f, dimension, lower_limit, upper_limit, poblation_size, crossover_pe
 
     # Convertir la información del mejor individuo de la última generación a binario para la impresión
     print(f"Mejor individuo final: {{'individuo': {list_to_binary(poblation[0][0])}, 'evaluacion': {float_to_binary(poblation[0][1])}}}")
-    
+
     return best, worse, average
 
 
