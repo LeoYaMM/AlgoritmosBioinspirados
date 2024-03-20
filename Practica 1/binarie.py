@@ -168,14 +168,13 @@ def genetic(f, dimension, lower_limit, upper_limit, poblation_size, crossover_pe
 
 random.seed(12)
 
-f = "rosenbrock"  # Opción 1 seleccionada
+f = "rosenbrock"
 poblation_size = 3
 dimension = 2
 generations = 3
 crossover_percentage = 0.9
 mutation_percentage = 0.7
 
-# Límites específicos para la función Rosenbrock
 lower_limit = -2.048
 upper_limit = 2.048
 
