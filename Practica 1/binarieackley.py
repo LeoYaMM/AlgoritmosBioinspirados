@@ -8,7 +8,6 @@ worse_example = [10, 8, 6]
 average_example = [7, 6, 4.5]  
 generations_example = 3  
 
-
 def float_to_binary(value, precision=10):
     # Convertir a entero aproximado para preservar la precisión
     int_value = int(value * (10 ** precision))
