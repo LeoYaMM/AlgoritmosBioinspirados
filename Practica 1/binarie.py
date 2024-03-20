@@ -3,10 +3,10 @@ import random
 from operator import itemgetter
 import matplotlib.pyplot as plt
 
-best_example = [5, 4, 3]  
-worse_example = [10, 8, 6]  
-average_example = [7, 6, 4.5]  
-generations_example = 3  
+# best_example = [5, 4, 3]  
+# worse_example = [10, 8, 6]  
+# average_example = [7, 6, 4.5]  
+# generations_example = 3  
 
 def float_to_binary(value, precision=10):
     # Convertir a entero aproximado para preservar la precisión
@@ -169,22 +169,22 @@ def genetic(f, dimension, lower_limit, upper_limit, poblation_size, crossover_pe
     
     return best, worse, average
 
-def plot_convergence(best, worse, average, generations):
+# def plot_convergence(best, worse, average, generations):
 
-    X = list(range(1, generations + 1))
-    plt.scatter(X, best, color="green", label="Mejor")
-    plt.scatter(X, worse, color="red", label="Peor")
-    plt.scatter(X, average, color="blue", label="Promedio")
-    plt.plot(X, best, color="green")
-    plt.plot(X, worse, color="red")
-    plt.plot(X, average, color="blue")
-    plt.xlabel("Generaciones")
-    plt.ylabel("Aptitud")
-    plt.title("Grafica de convergencia")
-    plt.legend()
-    plt.show()
+#     X = list(range(1, generations + 1))
+#     plt.scatter(X, best, color="green", label="Mejor")
+#     plt.scatter(X, worse, color="red", label="Peor")
+#     plt.scatter(X, average, color="blue", label="Promedio")
+#     plt.plot(X, best, color="green")
+#     plt.plot(X, worse, color="red")
+#     plt.plot(X, average, color="blue")
+#     plt.xlabel("Generaciones")
+#     plt.ylabel("Aptitud")
+#     plt.title("Grafica de convergencia")
+#     plt.legend()
+#     plt.show()
 
-plot_convergence(best_example, worse_example, average_example, generations_example)
+# plot_convergence(best_example, worse_example, average_example, generations_example)
 
 
 random.seed(12)
