@@ -1,5 +1,5 @@
-#Minimizar las funciones
-
+# Minimizar las funciones
+# Codificacion real
 import numpy as np
 import random
 from operator import itemgetter
