@@ -6,9 +6,9 @@
 \usepackage{caption}
 
 \titleformat{\section}
-{\centering\huge\bfseries}{\thesection.}{1em}{}
+{\huge\bfseries}{\thesection.}{1em}{}
 \titleformat{\subsection}
-{\centering\large\bfseries}{\thesubsection}{1em}{}
+{\large\bfseries}{\thesubsection}{1em}{}
 
 
 \title{\Huge{\textbf{Practica 1. Algoritmo genético para espacios continuos}}\\
@@ -18,9 +18,111 @@
 \graphicspath{{Imagenes/}}
 
 \begin{document}
+    \maketitle
+    \newpage
+    \section*{Introducción}
+    En esta practica hemos implementado un algoritmo genético para resolver un problema de optimización en un espacio continuo. 
+    El problema consiste en encontrar el mínimo de las funciones de Rosenbrock y Ackley, representadas por las siguientes ecuaciones respectivamente:
+    \begin{equation}
+        f(x)_{Rosenbrock} = \sum_{i=1}^{n-1} [100(x_{i+1} - x_{i}^2)^2 + (1 - x_{i})^2]
+    \end{equation}
+    \begin{equation}
+        f(x)_{Ackley} = -20exp(-0.2\sqrt{\frac{1}{n}\sum_{i=1}^{n}x_{i}^2}) - exp(\frac{1}{n}\sum_{i=1}^{n}cos(2\pi x_{i})) + 20 + e
+    \end{equation}
 
-\maketitle
+    Para llevar a cabo esta tarea, se optó por el lenguaje de programación Python debido a su versatilidad, facilidad de uso y a la gran cantidad de librerías que ofrece 
+    para el manejo de arreglos y operaciones matemáticas. Además, se utilizó la librería \textit{matplotlib} para graficar las funciones y el comportamiento 
+    del algoritmo genético.
 
+    \section*{Desarrollo}
+    El algoritmo se dividió en 6 funciones principales:
+    \subsection*{Función de inicialización de población}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{funcionPoblacion.png}
+        \caption{Función población}
+    \end{figure}
+    Esta función se utiliza para inicializar una población de individuos 
+    con valores aleatorios en un rango específico dado por la función. La función toma cinco parámetros: el número de individuos, el número de variables,
+    f, tamaño de la población, dimensión, limite inferior y limite superior.
+    
+    \begin{itemize}
+        \item f: Es una cadena que especifica la función de aptitud que se utilizará, ya sea Rosenbrock o Ackley.
+        \item tamaño de la población: Es el número de individuos que se generarán.
+        \item dimensión: Es el número de variables que tendrá cada individuo.
+        \item limite inferior: Es el valor mínimo que pueden tomar las variables de cada individuo.
+        \item limite superior: Es el valor máximo que pueden tomar las variables de cada individuo.
+    \end{itemize}
+    
+    La función comienza inicializando una población de lista vacía para contener la población de individuos. Luego ingresa a un bucle que ejecuta las veces de individuos seleccionados. En cada iteración de este ciclo, se crea un nuevo individuo.
 
+    Un individuo se representa como una lista de números de dimensión. Cada número es un flotante aleatorio generado por la función random.uniform, que devuelve un flotante aleatorio dentro del rango especificado por el límite inferior y límite superior.
+    Una vez que se crea un individuo, su aptitud se evalúa utilizando la función de aptitud especificada. Si f es Rosenbrock, la función Rosenbrock se llama con el individuo como argumento. Si f es Ackley, en su lugar se llama a la función Ackley. La evaluación de aptitud se almacena en la evaluación de variables.
 
+    Finalmente, el individuo y su evaluación de aptitud se agregan como un par a la lista de población. Este proceso se repite hasta que se hayan creado y evaluado los individuos del tamaño de la población.
+    La función devuelve la lista de población, que ahora contiene pares del tamaño de la población, cada uno de los cuales consta de un individuo y su evaluación de aptitud.
+
+    \subsection*{Función que define las parejas}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{funcionParejas.png}
+        \caption{Función parejas}
+    \end{figure}
+    La función recibe como parámetros la población y el número de parejas que se seleccionarán. 
+    %crea una lista no ordenada detallando los parámetros
+
+    \begin{itemize}
+        \item población: Es la lista de individuos que se cruzarán.
+        \item número de parejas: Es el número de parejas que se seleccionarán.
+    \end{itemize}
+    
+    Esta función se utiliza para seleccionar las parejas de individuos que se cruzarán para generar una nueva población. La función toma dos parámetros: la población y el número de parejas que se seleccionarán.
+    La función empieza creando la lista fitness, que contiene los valores de ajuste de la población. Posteriormente crea la lista de seleccionados donde se almacenarán los indices de los individuos seleccionados.
+    Luego, se ingresa a un bucle que se ejecuta el número de veces que se seleccionarán parejas. En cada iteración de este ciclo, se selecciona una pareja de individuos y se agrega a la lista de acumulados.
+    Después de seleccionar una pareja, comprueba que la lista de las parejas que se cruzarán sea un número par y si no lo es, se elimina al ultimo individuo de la lista de seleccionados.
+    Finalmente, la función devuelve la lista de seleccionados, que contiene los índices de los individuos seleccionados para cruzarse.
+    
+    \newpage
+    \subsection*{Función de cruza}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{funcionCruza.png}
+        \caption{Función cruza}
+    \end{figure}
+
+    %Breve descripción del funcionamiento de la función
+    La función cruza los individuos seleccionados para formar una nueva población.
+
+    %Lista de parámetros
+    \begin{itemize}
+        \item padre 1: Es el primer individuo seleccionado para cruzarse.
+        \item padre 2: Es el segundo individuo seleccionado para cruzarse.
+    \end{itemize}
+
+    %Descripción detallada del funcionamiento de la función
+    La función esta diseñada para realizar una cruza entre dos individuos y generar dos hijos. 
+    Esta empieza seleccionando un punto de cruza aleatorio, excluyendo el primero y el último índice de los individuos.
+    Luego, crea dos hijos, el hijo 1 se crea utilizando la primera parte del padre 1 y la segunda parte del padre 2, 
+    mientras que el hijo 2 se crea utilizando la primera parte del padre 2 y la segunda parte del padre 1.
+    Finalmente, la función devuelve una lista con los dos hijos generados.
+
+    \subsection*{Función de mutación}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{funcionMutacion.png}
+        \caption{Función mutación}
+    \end{figure}
+
+    %Breve descripción del funcionamiento de la función
+    La función muta a los individuos de la población para mantener la diversidad en la población.
+
+    %Lista de parámetros
+    \begin{itemize}
+        \item hijo: Es el individuo que se mutará.
+        \item delta: Es el valor que se sumará o restará a cada variable del individuo.
+        \item porcentaje de mutación: Es el porcentaje de individuos que se mutarán.
+    \end{itemize}
+
+    %Descripción detallada del funcionamiento de la función
+    
 \end{document}
