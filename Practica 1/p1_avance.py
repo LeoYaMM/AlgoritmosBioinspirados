@@ -196,7 +196,7 @@ crossover_percentage = float(input("Porcentaje de cruza: "))
 mutation_percentage = float(input("Porcentaje de mutacion: "))
 
 # Semilla para obtener los mismos resultados
-random.seed(1)
+random.seed(7)
 
 best, worse, average = genetic(f, dimension, lower_limit, upper_limit, poblation_size, crossover_percentage, mutation_percentage, generations)
 plot_convergence(best, worse, average, generations)
