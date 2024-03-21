@@ -4,6 +4,31 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{titlesec}
 \usepackage{caption}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolor}{rgb}{0.95,0.95,0.95}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolor},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{red},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2  
+}
 
 \titleformat{\section}
 {\huge\bfseries}{\thesection.}{1em}{}
@@ -37,11 +62,25 @@
     \section*{Desarrollo}
     El algoritmo se dividió en 6 funciones principales:
     \subsection*{Función de inicialización de población}
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.5\textwidth]{funcionPoblacion.png}
-        \caption{Función población}
-    \end{figure}
+    \begin{lstlisting}[language=Python, style=mystyle,caption={Funcion poblacion}]
+    def start_poblation(f, poblation_size, dimension, lower_limit, upper_limit):
+        poblation = []
+
+        for _ in range(poblation_size):
+            individual = []
+            for _ in range(dimension):
+                individual.append(random.uniform(lower_limit, upper_limit))
+            
+            if f == "rosenbrock":
+                evaluation = rosenbrock(individual)
+            elif f == "ackley":
+                evaluation = ackley(individual)
+            
+            poblation.append([individual, evaluation])
+        
+        return poblation
+    \end{lstlisting}
+
     Esta función se utiliza para inicializar una población de individuos 
     con valores aleatorios en un rango específico dado por la función. La función toma cinco parámetros: el número de individuos, el número de variables,
     f, tamaño de la población, dimensión, limite inferior y limite superior.
@@ -63,11 +102,42 @@
     La función devuelve la lista de población, que ahora contiene pares del tamaño de la población, cada uno de los cuales consta de un individuo y su evaluación de aptitud.
 
     \subsection*{Función que define las parejas}
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.5\textwidth]{funcionParejas.png}
-        \caption{Función parejas}
-    \end{figure}
+    \begin{lstlisting}[language=Python, style=mystyle,caption={Funcion parejas}]
+    def define_couples(poblacion, poblacion_size):
+        fitness = [poblacion[i][1] for i in range(poblacion_size)]
+        selected = []
+    
+        # Calcular la suma total de fitness
+        total_fitness = sum(fitness)
+    
+        while len(selected) < poblacion_size:
+            # Generar un numero aleatorio entre 0 y la suma total de fitness
+            selection = random.uniform(0, total_fitness)
+            
+            acumulated = 0
+            for i, fit in enumerate(fitness):
+                acumulated += fit
+                % Verificar si el acumulado supera el numero aleatorio y si el indice no ha sido seleccionado previamente
+                if acumulated >= selection:
+                    if i not in selected:
+                        selected.append(i)
+                        break
+                    else:
+                        # Si el indice ya fue seleccionado, generar un nuevo numero aleatorio y reiniciar el proceso
+                        selection = random.uniform(0, total_fitness)
+                        acumulated = 0
+    
+        # Asegurar que la cantidad de indices seleccionados sea par para formar parejas
+        if len(selected) % 2 != 0:
+            selected.pop()
+    
+        return selected
+    \end{lstlisting}
+    % \begin{figure}[h]
+    %     \centering
+    %     \includegraphics[width=0.5\textwidth]{funcionParejas.png}
+    %     \caption{Función parejas}
+    % \end{figure}
     La función recibe como parámetros la población y el número de parejas que se seleccionarán. 
     %crea una lista no ordenada detallando los parámetros
 
