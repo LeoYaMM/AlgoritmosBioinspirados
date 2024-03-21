@@ -1,0 +1,16 @@
+{
+    "cSpell.language": "en,es",
+    "cSpell.enableFiletypes": [
+        "!asciidoc",
+        "!c",
+        "!cpp",
+        "!csharp",
+        "!php",
+        "!python"
+    ],
+    "cSpell.words": [
+        "Ackley",
+        "inicialización",
+        "Rosenbrock"
+    ]
+}
