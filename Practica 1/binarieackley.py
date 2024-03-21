@@ -3,10 +3,10 @@ import numpy as np
 import random
 from operator import itemgetter
 
-# best_example = [6, 4, 3]  
-# worse_example = [10, 8, 6]  
-# average_example = [7, 6, 4.5]  
-# generations_example = 3  
+best_example = []  
+worse_example = []  
+average_example = []  
+generations_example = 0  
 
 def float_to_binary(value, precision=10):
     # Convertir a entero aproximado para preservar la precisión
@@ -122,6 +122,7 @@ def create_children(couples, poblation, crossover_percentage):
     return children
 
 def genetic(f, dimension, lower_limit, upper_limit, poblation_size, crossover_percentage, mutation_percentage, generations):
+    global best_example, worse_example, average_example, generations_example 
     # Inicializar la población
     poblation = start_poblation(f, poblation_size, dimension, lower_limit, upper_limit)
     # No es necesario imprimir de nuevo la población inicial aquí ya que se imprime dentro de start_poblation
@@ -164,27 +165,29 @@ def genetic(f, dimension, lower_limit, upper_limit, poblation_size, crossover_pe
         worse.append(poblation[-1][1])
         average.append(sum([ind[1] for ind in poblation]) / poblation_size)
 
+    best_example = best
+    worse_example = worse
+    average_example = average
+    generations_example = generations
     # Convertir la información del mejor individuo de la última generación a binario para la impresión
     print(f"Mejor individuo final: {{'individuo': {list_to_binary(poblation[0][0])}, 'evaluacion': {float_to_binary(poblation[0][1])}}}")
 
     return best, worse, average
 
-# def plot_convergence(best, worse, average, generations):
+def plot_convergence(best, worse, average, generations):
 
-#     X = list(range(1, generations + 1))
-#     plt.scatter(X, best, color="green", label="Mejor")
-#     plt.scatter(X, worse, color="red", label="Peor")
-#     plt.scatter(X, average, color="blue", label="Promedio")
-#     plt.plot(X, best, color="green")
-#     plt.plot(X, worse, color="red")
-#     plt.plot(X, average, color="blue")
-#     plt.xlabel("Generaciones")
-#     plt.ylabel("Aptitud")
-#     plt.title("Grafica de convergencia")
-#     plt.legend()
-#     plt.show()
-
-# plot_convergence(best_example, worse_example, average_example, generations_example)
+    X = list(range(1, generations + 1))
+    plt.scatter(X, best, color="green", label="Mejor")
+    plt.scatter(X, worse, color="red", label="Peor")
+    plt.scatter(X, average, color="blue", label="Mediana")
+    plt.plot(X, best, color="green")
+    plt.plot(X, worse, color="red")
+    plt.plot(X, average, color="blue")
+    plt.xlabel("Generaciones")
+    plt.ylabel("Aptitud")
+    plt.title("Grafica de convergencia")
+    plt.legend()
+    plt.show()
 
 random.seed(12)
 
@@ -198,4 +201,5 @@ mutation_percentage = 0.7
 lower_limit = -32.768
 upper_limit = 32.768
 
-best, worse, average = genetic(f, dimension, lower_limit, upper_limit, poblation_size, crossover_percentage, mutation_percentage, generations)
+genetic(f, dimension, lower_limit, upper_limit, poblation_size, crossover_percentage, mutation_percentage, generations)
+plot_convergence(best_example, worse_example, average_example, generations_example)
