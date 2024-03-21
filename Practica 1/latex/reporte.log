@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.5)  20 MAR 2024 22:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.5)  20 MAR 2024 22:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -86,14 +86,21 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen150
 \Gin@req@width=\dimen151
+) (C:\Users\diego\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count269
+\float@exts=\toks20
+\float@box=\box51
+\@float@everytoks=\toks21
+\@floatcapt=\box52
 ) (C:\Users\diego\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box51
+\ttl@box=\box53
 \beforetitleunit=\skip50
 \aftertitleunit=\skip51
 \ttl@plus=\dimen152
 \ttl@minus=\dimen153
-\ttl@toksa=\toks20
+\ttl@toksa=\toks22
 \titlewidth=\dimen154
 \titlewidthlast=\dimen155
 \titlewidthfirst=\dimen156
@@ -111,28 +118,29 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen164
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count269
-\c@continuedfloat=\count270
+\c@caption@flags=\count270
+\c@continuedfloat=\count271
+Package caption Info: float package is loaded.
 ) (C:\Users\diego\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count271
-\lst@gtempboxa=\box52
-\lst@token=\toks21
-\lst@length=\count272
+\lst@mode=\count272
+\lst@gtempboxa=\box54
+\lst@token=\toks23
+\lst@length=\count273
 \lst@currlwidth=\dimen165
-\lst@column=\count273
-\lst@pos=\count274
+\lst@column=\count274
+\lst@pos=\count275
 \lst@lostspace=\dimen166
 \lst@width=\dimen167
-\lst@newlines=\count275
-\lst@lineno=\count276
+\lst@newlines=\count276
+\lst@lineno=\count277
 \lst@maxwidth=\dimen168
  (C:\Users\diego\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
 ) (C:\Users\diego\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
-\c@lstnumber=\count277
-\lst@skipnumbers=\count278
-\lst@framebox=\box53
+\c@lstnumber=\count278
+\lst@skipnumbers=\count279
+\lst@framebox=\box55
 ) (C:\Users\diego\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2024/02/21 1.10 listings configuration
 ))
@@ -155,30 +163,30 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 ) (C:\Users\diego\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count279
-\l__pdf_internal_box=\box54
+\l__color_backend_stack_int=\count280
+\l__pdf_internal_box=\box56
 ) (c:\Users\diego\Documentos\ESCOM\Programas\Quinto semestre\Algoritmos Bioinspirados\Practica 1\latex\reporte.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `reporte.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Info: Redefining \. on input line 45.
-LaTeX Info: Redefining \% on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -216,17 +224,17 @@ LaTeX Info: Redefining \% on input line 45.
 
 (C:\Users\diego\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count280
+\scratchcounter=\count281
 \scratchdimen=\dimen169
-\scratchbox=\box55
-\nofMPsegments=\count281
-\nofMParguments=\count282
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count283
+\scratchbox=\box57
+\nofMPsegments=\count282
+\nofMParguments=\count283
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count284
 \MPscratchDim=\dimen170
-\MPnumerator=\count284
-\makeMPintoPDFobject=\count285
-\everyMPtoPDFconversion=\toks23
+\MPnumerator=\count285
+\makeMPintoPDFobject=\count286
+\everyMPtoPDFconversion=\toks25
 ) (C:\Users\diego\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -236,37 +244,37 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count286
+\c@lstlisting=\count287
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 46.
+(Font)              <12> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 46.
+(Font)              <8> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 46.
+(Font)              <6> on input line 47.
  [1
 
 {C:/Users/diego/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 51.
+(Font)              <7> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 51.
+(Font)              <5> on input line 52.
  (C:\Users\diego\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 ) [1] [2] [3] [4] [5]
 <rosenbrock_7_re.jpeg, id=32, 1278.7775pt x 1092.08pt>
 File: rosenbrock_7_re.jpeg Graphic file (type jpg)
 <use rosenbrock_7_re.jpeg>
-Package pdftex.def Info: rosenbrock_7_re.jpeg  used on input line 354.
+Package pdftex.def Info: rosenbrock_7_re.jpeg  used on input line 355.
 (pdftex.def)             Requested size: 250.24199pt x 213.69627pt.
 <rosenbrock_11_re.jpeg, id=33, 1276.77pt x 1096.095pt>
 File: rosenbrock_11_re.jpeg Graphic file (type jpg)
 <use rosenbrock_11_re.jpeg>
-Package pdftex.def Info: rosenbrock_11_re.jpeg  used on input line 360.
+Package pdftex.def Info: rosenbrock_11_re.jpeg  used on input line 361.
 (pdftex.def)             Requested size: 250.24199pt x 214.81642pt.
 <rosenbrock_61_re.jpeg, id=34, 1272.755pt x 1082.0425pt>
 File: rosenbrock_61_re.jpeg Graphic file (type jpg)
 <use rosenbrock_61_re.jpeg>
-Package pdftex.def Info: rosenbrock_61_re.jpeg  used on input line 366.
+Package pdftex.def Info: rosenbrock_61_re.jpeg  used on input line 367.
 (pdftex.def)             Requested size: 250.24199pt x 212.7393pt.
  [6 <./rosenbrock_7_re.jpeg> <./rosenbrock_11_re.jpeg>]
 <rosenbrock_59_bin.jpeg, id=39, 1284.8pt x 1094.0875pt>
@@ -279,42 +287,43 @@ File: rosenbrock_79_bin.jpeg Graphic file (type jpg)
 <use rosenbrock_79_bin.jpeg>
 Package pdftex.def Info: rosenbrock_79_bin.jpeg  used on input line 381.
 (pdftex.def)             Requested size: 250.24199pt x 212.91063pt.
-<rosenbrock_97_bin.jpeg, id=41, 1280.785pt x 1082.0425pt>
+ [7 <./rosenbrock_61_re.jpeg> <./rosenbrock_59_bin.jpeg>]
+<rosenbrock_97_bin.jpeg, id=44, 1280.785pt x 1082.0425pt>
 File: rosenbrock_97_bin.jpeg Graphic file (type jpg)
 <use rosenbrock_97_bin.jpeg>
 Package pdftex.def Info: rosenbrock_97_bin.jpeg  used on input line 387.
 (pdftex.def)             Requested size: 250.24199pt x 211.40195pt.
- [7 <./rosenbrock_61_re.jpeg> <./rosenbrock_59_bin.jpeg>] [8 <./rosenbrock_79_bin.jpeg> <./rosenbrock_97_bin.jpeg>]
-<ackley_7_re.jpeg, id=48, 1262.7175pt x 1096.095pt>
+<ackley_7_re.jpeg, id=45, 1262.7175pt x 1096.095pt>
 File: ackley_7_re.jpeg Graphic file (type jpg)
 <use ackley_7_re.jpeg>
-Package pdftex.def Info: ackley_7_re.jpeg  used on input line 396.
+Package pdftex.def Info: ackley_7_re.jpeg  used on input line 395.
 (pdftex.def)             Requested size: 250.24199pt x 217.20811pt.
-<ackley_97_re.jpeg, id=49, 1274.7625pt x 1088.065pt>
+<ackley_97_re.jpeg, id=46, 1274.7625pt x 1088.065pt>
 File: ackley_97_re.jpeg Graphic file (type jpg)
 <use ackley_97_re.jpeg>
-Package pdftex.def Info: ackley_97_re.jpeg  used on input line 401.
+Package pdftex.def Info: ackley_97_re.jpeg  used on input line 400.
 (pdftex.def)             Requested size: 250.24199pt x 213.59134pt.
+ [8 <./rosenbrock_79_bin.jpeg> <./rosenbrock_97_bin.jpeg>]
 <ackley_113_re.jpeg, id=50, 1280.785pt x 1092.08pt>
 File: ackley_113_re.jpeg Graphic file (type jpg)
 <use ackley_113_re.jpeg>
-Package pdftex.def Info: ackley_113_re.jpeg  used on input line 407.
+Package pdftex.def Info: ackley_113_re.jpeg  used on input line 406.
 (pdftex.def)             Requested size: 250.24199pt x 213.363pt.
  [9 <./ackley_7_re.jpeg> <./ackley_97_re.jpeg>]
 <ackley_13_bin.jpeg, id=54, 1276.77pt x 1086.0575pt>
 File: ackley_13_bin.jpeg Graphic file (type jpg)
 <use ackley_13_bin.jpeg>
-Package pdftex.def Info: ackley_13_bin.jpeg  used on input line 416.
+Package pdftex.def Info: ackley_13_bin.jpeg  used on input line 414.
 (pdftex.def)             Requested size: 250.24199pt x 212.84924pt.
 <ackley_83_bin.jpeg, id=55, 1274.7625pt x 1084.05pt>
 File: ackley_83_bin.jpeg Graphic file (type jpg)
 <use ackley_83_bin.jpeg>
-Package pdftex.def Info: ackley_83_bin.jpeg  used on input line 421.
+Package pdftex.def Info: ackley_83_bin.jpeg  used on input line 419.
 (pdftex.def)             Requested size: 250.24199pt x 212.80318pt.
 <ackley_101_bin.jpeg, id=56, 1274.7625pt x 1092.08pt>
 File: ackley_101_bin.jpeg Graphic file (type jpg)
 <use ackley_101_bin.jpeg>
-Package pdftex.def Info: ackley_101_bin.jpeg  used on input line 426.
+Package pdftex.def Info: ackley_101_bin.jpeg  used on input line 424.
 (pdftex.def)             Requested size: 250.24199pt x 214.3795pt.
  [10 <./ackley_113_re.jpeg> <./ackley_13_bin.jpeg>] [11 <./ackley_83_bin.jpeg> <./ackley_101_bin.jpeg>] [12] (c:\Users\diego\Documentos\ESCOM\Programas\Quinto semestre\Algoritmos Bioinspirados\Practica 1\latex\reporte.aux
 LaTeX Info: Redefining \. on input line 8.
@@ -326,15 +335,15 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7408 strings out of 474457
- 120483 string characters out of 5742755
+ 7464 strings out of 474457
+ 121422 string characters out of 5742755
  2286190 words of memory out of 5000000
- 29689 multiletter control sequences out of 15000+600000
+ 29741 multiletter control sequences out of 15000+600000
  563910 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,440b,1719s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "c:\Users\diego\Documentos\ESCOM\Programas\Quinto semestre\Algoritmos Bioinspirados\Practica 1\latex\reporte.pdf" (13 pages, 1274679 bytes).
+Output written on "c:\Users\diego\Documentos\ESCOM\Programas\Quinto semestre\Algoritmos Bioinspirados\Practica 1\latex\reporte.pdf" (13 pages, 1274683 bytes).
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

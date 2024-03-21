@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1710994192.65106 "c:/Users/diego/Documentos/ESCOM/Programas/Quinto semestre/Algoritmos Bioinspirados/Practica 1/reporte.tex" "latex/reporte.pdf" "reporte" 1710994193.55666 0
+["pdflatex"] 1710996028.74909 "c:/Users/diego/Documentos/ESCOM/Programas/Quinto semestre/Algoritmos Bioinspirados/Practica 1/reporte.tex" "latex/reporte.pdf" "reporte" 1710996029.61894 0
   "C:/Users/diego/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1710985011 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/diego/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1709697827 24231886 e666689aeb58addb870b6c28e0585ea0 ""
   "C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -43,6 +43,7 @@
   "C:/Users/diego/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty" 1696169587 56128 c2ccf1a29d78c33bc553880402e4fb9a ""
   "C:/Users/diego/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty" 1696169587 72619 ee90b6612147680fd73c3b1406a74245 ""
   "C:/Users/diego/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
+  "C:/Users/diego/AppData/Local/Programs/MiKTeX/tex/latex/float/float.sty" 1469023953 6916 16d2656a1984957e674b149555f1ea1d ""
   "C:/Users/diego/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg" 1578053545 1104 7ac475a4e3466b0b43e138e9356bda83 ""
   "C:/Users/diego/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty" 1578053545 42759 9cf6c5257b1bc7af01a58859749dd37a ""
   "C:/Users/diego/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg" 1465894292 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
@@ -67,9 +68,9 @@
   "ackley_7_re.jpeg" 1710991962 98034 869172168503b512427ce2a5a9294e64 ""
   "ackley_83_bin.jpeg" 1710991962 96532 0740b103dbf4f6d71350993a931afb8b ""
   "ackley_97_re.jpeg" 1710991962 87908 7eda9f238d19a7571b08f9acfaac5bf0 ""
-  "c:/Users/diego/Documentos/ESCOM/Programas/Quinto semestre/Algoritmos Bioinspirados/Practica 1/reporte.tex" 1710994192 21519 97aeff01fe9bf8560270f522fb50128a ""
-  "latex/reporte.aux" 1710994193 2512 67eef07dcdc0c1eee76aa4cfd916c26e "pdflatex"
-  "reporte.tex" 1710994192 21519 97aeff01fe9bf8560270f522fb50128a ""
+  "c:/Users/diego/Documentos/ESCOM/Programas/Quinto semestre/Algoritmos Bioinspirados/Practica 1/reporte.tex" 1710996028 21461 34021cb6da186ecf14d78f19e883dc18 ""
+  "latex/reporte.aux" 1710996029 2512 67eef07dcdc0c1eee76aa4cfd916c26e "pdflatex"
+  "reporte.tex" 1710996028 21461 34021cb6da186ecf14d78f19e883dc18 ""
   "rosenbrock_11_re.jpeg" 1710991962 91428 4588fdb944fd6f96f72240cbb6fe9ccf ""
   "rosenbrock_59_bin.jpeg" 1710991962 91682 812de88856c6c1091fd5c6c7cba79f34 ""
   "rosenbrock_61_re.jpeg" 1710991962 86940 201350b50d676b98a41a17b79a79241f ""
