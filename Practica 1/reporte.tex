@@ -168,5 +168,58 @@
     Finalmente, después de que se hayan procesado toda la lista de parejas, la función devuelve la lista de hijos generados.
 
     \subsection*{Función del algoritmo genético}
+
+    %Agrega la imagen de la función
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{funcionGenetico.png}
+        \caption{Función algoritmo genético}
+    \end{figure}
+
+    %Breve descripción del funcionamiento de la función
+    La función principal del algoritmo genético, esta función se encarga de ejecutar el algoritmo genético.
+
+    %Descripción de los parámetros de la función
+    \begin{itemize}
+        \item f: Es una cadena que especifica la función de aptitud que se utilizará, ya sea Rosenbrock o Ackley.
+        \item tamaño de la población: Es el número de individuos que se generarán.
+        \item dimensión: Es el número de variables que tendrá cada individuo.
+        \item limite inferior: Es el valor mínimo que pueden tomar las variables de cada individuo.
+        \item limite superior: Es el valor máximo que pueden tomar las variables de cada individuo.
+        \item porcentaje de cruza: Es el porcentaje de individuos que se cruzarán.
+        \item porcentaje de mutación: Es el porcentaje de individuos que se mutarán.
+        \item generaciones: Es el número de generaciones que se ejecutarán.
+    \end{itemize}
+
+    %Descripción detallada del funcionamiento de la función
+    La función comienza inicializando una población de individuos utilizando la función de inicialización de población. Cada individuo de la
+    población se evalúa utilizando la función de aptitud especificada. La función de aptitud devuelve un valor que representa la aptitud del individuo.
+
+    Posteriormente, para cada generación, evalúa cada generación con los siguientes pasos:
+    %crea una lista ordenada
+    \begin{itemize}
+        \item Selecciona las parejas de individuos que se cruzarán utilizando la función de selección de acuerdo a su fitness, mediante el algoritmo de la ruleta.
+        \item Crea una nueva generación de individuos a partir de la población actual utilizando la función de creación de hijos.
+        \item Muta a los individuos de la nueva generación utilizando la función de mutación.
+        \item Evalúa la nueva generación de individuos utilizando la función de aptitud.
+        \item Ordena los individuos según su aptitud.
+        \item Selecciona los mejores individuos para la siguiente generación.
+        \item Guarda el mejor, el peor y la aptitud media de la generación para su graficación posterior.
+    \end{itemize}
+
+    Finalmente, terminando todas las generaciones, la función muestra los resultados del mejor individuo, el peor individuo y la aptitud media de cada generación.
+
+    \newpage
+
+    \section*{Resultados}
+    \subsection*{Función de Rosenbrock Real}
+
+    \subsection*{Función de Rosenbrock Binaria} 
+    \subsection*{Función de Ackley Real}
+
+    \subsection*{Función de Ackley Binaria}
+    \newpage
+
+    \section*{Conclusiones}
     
 \end{document}
