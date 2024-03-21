@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1710984204.57429 "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex" "latex/reporte.pdf" "reporte" 1710984206.68199 0
+["pdflatex"] 1710985078.26239 "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex" "latex/reporte.pdf" "reporte" 1710985079.95039 0
   "C:/Users/yleob/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1710532007 81107 70b8516c68c2e617189c5e44bfd16b96 ""
   "C:/Users/yleob/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1709093337 24225046 66cabb890c07ebfb1d69ddcec99ba23c ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -49,13 +49,14 @@
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty" 1665067579 4023 293ea1c16429fc0c4cf605f4da1791a9 ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1704400941 30006 57b07afb710ee2f649c65cfbafda39c1 ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1699094857 48766 0b93839be28e9744a24c45075c75b2e2 ""
-  "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex" 1710984202 8260 07e1c4fdece7ab3462fc6a64638295b1 ""
+  "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex" 1710985077 10275 1328723ad007cff0137cbb2d131fa86c ""
   "funcionCruza.png" 1710979051 82306 75512f7c3aa22a30bcea6555f64934d8 ""
   "funcionMutacion.png" 1710979713 97500 a7e34bf5d607485fedd1c2c7be19bb98 ""
   "funcionParejas.png" 1710977411 240674 05b4734c1310b697a116baf569840c7f ""
   "funcionPoblacion.png" 1710975915 122120 3bd3201bb56604d34b945c8d3a126f21 ""
-  "latex/reporte.aux" 1710984206 673 bd3fd4c774511b5e6a0142dd7129be58 "pdflatex"
-  "reporte.tex" 1710984202 8260 07e1c4fdece7ab3462fc6a64638295b1 ""
+  "funcionSeleccion.png" 1710984330 119774 9f26996ebec2f3cd230a64b7eb8437bf ""
+  "latex/reporte.aux" 1710985079 790 0433a39c2bd0a05c0a04ebb92983cebc "pdflatex"
+  "reporte.tex" 1710985077 10275 1328723ad007cff0137cbb2d131fa86c ""
   (generated)
   "latex/reporte.aux"
   "latex/reporte.log"

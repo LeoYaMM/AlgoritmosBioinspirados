@@ -132,5 +132,41 @@
     Luego, se itera sobre cada gen del hijo y se decide si se muta o no.
     La mutación en si misma esta definida aleatoriamente por un valor entre 0 y 1, si este valor es menor al porcentaje de mutación.
     Aunque el gen este mutado o no este se guardara en la lista de hijos mutados.
-    Finalmente, la función devuelve la lista de hijos mutados.
+    Finalmente, la función devuelve la lista de hijos mutados. 
+    \newpage
+
+    \subsection*{Función de creación de hijos}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{funcionSeleccion.png}
+        \caption{Función hijos}
+    \end{figure}
+
+    %Breve descripción del funcionamiento de la función
+    La función crea hijos a partir de los individuos seleccionados la población y el porcentaje de cruza.
+
+    %Lista de parámetros
+    \begin{itemize}
+        \item población: Es la lista de individuos que se cruzarán.
+        \item parejas: Es la lista de índices de los individuos seleccionados.
+        \item porcentaje de cruza: Es el porcentaje de individuos que se cruzarán.
+    \end{itemize}
+
+    %Descripción detallada del funcionamiento de la función
+    La función esta diseñada de tal forma que crea una nueva generación de individuos 
+    a partir de la población actual.
+    Esta toma tres argumentos como entrada: la población, las parejas y el porcentaje de cruza.
+
+    La función inicia creando una lista de hijos vacía, donde se almacenarán los hijos generados.
+    Después, la función entra en un ciclo while que se ejecuta hasta que el iterador sea menor que el número de parejas.
+    Dentro del ciclo genera números aleatorios entre 0 y 1, si el número es menor al porcentaje de cruza, si el numero es menor o igual
+    al porcentaje de cruza, se selecciona a los individuos de la población que se cruzarán y se cruzan.
+
+    Los padres seleccionados desde la población usando los indices proporcionados por la función de selección de parejas se cruzarán y se generaran dos hijos.
+    Los nuevos individuos serás indexados a la lista de hijos, se incrementará el iterador por dos y se repetirá el proceso hasta que se hayan terminado los indices de selección.
+
+    Finalmente, después de que se hayan procesado toda la lista de parejas, la función devuelve la lista de hijos generados.
+
+    \subsection*{Función del algoritmo genético}
+    
 \end{document}
