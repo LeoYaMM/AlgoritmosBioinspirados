@@ -128,5 +128,169 @@
     El hijo es un individuo que se mutará, el delta es el valor que se sumará o restará a cada variable del individuo 
     y el porcentaje de mutación es el porcentaje de individuos que se mutarán.
 
-    La función comienza creando una lista donde se guardarán los hijos mutados 
+    La función comienza creando una lista donde se guardarán los hijos mutados.
+    Luego, se itera sobre cada gen del hijo y se decide si se muta o no.
+    La mutación en si misma esta definida aleatoriamente por un valor entre 0 y 1, si este valor es menor al porcentaje de mutación.
+    Aunque el gen este mutado o no este se guardara en la lista de hijos mutados.
+    Finalmente, la función devuelve la lista de hijos mutados. 
+    \newpage
+
+    \subsection*{Función de creación de hijos}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{funcionSeleccion.png}
+        \caption{Función hijos}
+    \end{figure}
+
+    %Breve descripción del funcionamiento de la función
+    La función crea hijos a partir de los individuos seleccionados la población y el porcentaje de cruza.
+
+    %Lista de parámetros
+    \begin{itemize}
+        \item población: Es la lista de individuos que se cruzarán.
+        \item parejas: Es la lista de índices de los individuos seleccionados.
+        \item porcentaje de cruza: Es el porcentaje de individuos que se cruzarán.
+    \end{itemize}
+
+    %Descripción detallada del funcionamiento de la función
+    La función esta diseñada de tal forma que crea una nueva generación de individuos 
+    a partir de la población actual.
+    Esta toma tres argumentos como entrada: la población, las parejas y el porcentaje de cruza.
+
+    La función inicia creando una lista de hijos vacía, donde se almacenarán los hijos generados.
+    Después, la función entra en un ciclo while que se ejecuta hasta que el iterador sea menor que el número de parejas.
+    Dentro del ciclo genera números aleatorios entre 0 y 1, si el número es menor al porcentaje de cruza, si el numero es menor o igual
+    al porcentaje de cruza, se selecciona a los individuos de la población que se cruzarán y se cruzan.
+
+    Los padres seleccionados desde la población usando los indices proporcionados por la función de selección de parejas se cruzarán y se generaran dos hijos.
+    Los nuevos individuos serás indexados a la lista de hijos, se incrementará el iterador por dos y se repetirá el proceso hasta que se hayan terminado los indices de selección.
+
+    Finalmente, después de que se hayan procesado toda la lista de parejas, la función devuelve la lista de hijos generados.
+
+    \subsection*{Función del algoritmo genético}
+
+    %Agrega la imagen de la función
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{funcionGenetico.png}
+        \caption{Función algoritmo genético}
+    \end{figure}
+
+    %Breve descripción del funcionamiento de la función
+    La función principal del algoritmo genético, esta función se encarga de ejecutar el algoritmo genético.
+
+    %Descripción de los parámetros de la función
+    \begin{itemize}
+        \item f: Es una cadena que especifica la función de aptitud que se utilizará, ya sea Rosenbrock o Ackley.
+        \item tamaño de la población: Es el número de individuos que se generarán.
+        \item dimensión: Es el número de variables que tendrá cada individuo.
+        \item limite inferior: Es el valor mínimo que pueden tomar las variables de cada individuo.
+        \item limite superior: Es el valor máximo que pueden tomar las variables de cada individuo.
+        \item porcentaje de cruza: Es el porcentaje de individuos que se cruzarán.
+        \item porcentaje de mutación: Es el porcentaje de individuos que se mutarán.
+        \item generaciones: Es el número de generaciones que se ejecutarán.
+    \end{itemize}
+
+    %Descripción detallada del funcionamiento de la función
+    La función comienza inicializando una población de individuos utilizando la función de inicialización de población. Cada individuo de la
+    población se evalúa utilizando la función de aptitud especificada. La función de aptitud devuelve un valor que representa la aptitud del individuo.
+
+    Posteriormente, para cada generación, evalúa cada generación con los siguientes pasos:
+    %crea una lista ordenada
+    \begin{itemize}
+        \item Selecciona las parejas de individuos que se cruzarán utilizando la función de selección de acuerdo a su fitness, mediante el algoritmo de la ruleta.
+        \item Crea una nueva generación de individuos a partir de la población actual utilizando la función de creación de hijos.
+        \item Muta a los individuos de la nueva generación utilizando la función de mutación.
+        \item Evalúa la nueva generación de individuos utilizando la función de aptitud.
+        \item Ordena los individuos según su aptitud.
+        \item Selecciona los mejores individuos para la siguiente generación.
+        \item Guarda el mejor, el peor y la aptitud media de la generación para su graficación posterior.
+    \end{itemize}
+
+    Finalmente, terminando todas las generaciones, la función muestra los resultados del mejor individuo, el peor individuo y la aptitud media de cada generación.
+
+    \newpage
+
+    \section*{Resultados}
+    \subsection*{Función de Rosenbrock Real}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{rosenbrock_7_re.jpeg}
+        \caption{Rosenbrock, semilla= 7, Real}
+    \end{figure}
+
+    \begin{figure}[p]
+        \centering
+        \includegraphics[width=0.5\textwidth]{rosenbrock_11_re.jpeg}
+        \caption{Rosenbrock, semilla= 11, Real}
+    \end{figure}
+
+    \begin{figure}[p]
+        \centering
+        \includegraphics[width=0.5\textwidth]{rosenbrock_61_re.jpeg}
+        \caption{Rosenbrock, semilla= 61, Real}
+    \end{figure}
+
+    \subsection*{Función de Rosenbrock Binaria} 
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{rosenbrock_59_bin.jpeg}
+        \caption{Rosenbrock, semilla= 59, Binaria}
+    \end{figure}
+
+    \begin{figure}[p]
+        \centering
+        \includegraphics[width=0.5\textwidth]{rosenbrock_79_bin.jpeg}
+        \caption{Rosenbrock, semilla= 79, Binaria}
+    \end{figure}
+
+    \begin{figure}[p]
+        \centering
+        \includegraphics[width=0.5\textwidth]{rosenbrock_97_bin.jpeg}
+        \caption{Rosenbrock, semilla= 97, Binaria}
+    \end{figure}
+
+    \subsection*{Función de Ackley Real}
+    
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{ackley_7_re.jpeg}
+        \caption{Ackley, semilla= 7, Real}
+    \end{figure}
+    \begin{figure}[p]
+        \centering
+        \includegraphics[width=0.5\textwidth]{ackley_97_re.jpeg}
+        \caption{Ackley, semilla= 97, Real}
+    \end{figure}
+
+    \begin{figure}[p]
+        \centering
+        \includegraphics[width=0.5\textwidth]{ackley_113_re.jpeg}
+        \caption{Ackley, semilla= 113, Real}
+    \end{figure}
+    
+    \subsection*{Función de Ackley Binaria}
+    
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{ackley_13_bin.jpeg}
+        \caption{Ackley, semilla= 13, Binaria}
+    \end{figure}
+    \begin{figure}[p]
+        \centering
+        \includegraphics[width=0.5\textwidth]{ackley_83_bin.jpeg}
+        \caption{Ackley, semilla= 83, Binaria}
+    \end{figure}
+    \begin{figure}[p]
+        \centering
+        \includegraphics[width=0.5\textwidth]{ackley_101_bin.jpeg}
+        \caption{Ackley, semilla= 101, Binaria}
+    \end{figure}
+
+    \newpage
+    \section*{Conclusiones}
+    Esta practica nos permitió implementar un algoritmo genético para resolver problemas de optimización en espacios continuos, es muy
+    interesante ver como el algoritmo genético es capaz de encontrar el mínimo de las funciones además de que
+    podemos destacar el proceso de creación del código que nos ha sido muy educativo y nos ha permitido entender mejor el funcionamiento de estos algoritmos.
 \end{document}
