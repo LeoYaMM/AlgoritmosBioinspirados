@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1710990786.94955 "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex" "latex/reporte.pdf" "reporte" 1710990789.19932 0
+["pdflatex"] 1710991143.43839 "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex" "latex/reporte.pdf" "reporte" 1710991145.88021 0
   "C:/Users/yleob/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1710532007 81107 70b8516c68c2e617189c5e44bfd16b96 ""
   "C:/Users/yleob/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1709093337 24225046 66cabb890c07ebfb1d69ddcec99ba23c ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -55,15 +55,15 @@
   "ackley_7_re.jpeg" 1710989824 98034 869172168503b512427ce2a5a9294e64 ""
   "ackley_83_bin.jpeg" 1710989661 96532 0740b103dbf4f6d71350993a931afb8b ""
   "ackley_97_re.jpeg" 1710989805 87908 7eda9f238d19a7571b08f9acfaac5bf0 ""
-  "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex" 1710990786 15344 8d4165165fc71291b5f78916eaa4b8ba ""
+  "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex" 1710991143 15801 e6355b21189bc115d5104f2cebcf2d6a ""
   "funcionCruza.png" 1710979051 82306 75512f7c3aa22a30bcea6555f64934d8 ""
   "funcionGenetico.png" 1710985368 460092 b3e0afc8e568f9a4962fe03a6aec8304 ""
   "funcionMutacion.png" 1710979713 97500 a7e34bf5d607485fedd1c2c7be19bb98 ""
   "funcionParejas.png" 1710977411 240674 05b4734c1310b697a116baf569840c7f ""
   "funcionPoblacion.png" 1710975915 122120 3bd3201bb56604d34b945c8d3a126f21 ""
   "funcionSeleccion.png" 1710984330 119774 9f26996ebec2f3cd230a64b7eb8437bf ""
-  "latex/reporte.aux" 1710990788 2514 558d9913b8307c68df98e53b95fc95a9 "pdflatex"
-  "reporte.tex" 1710990786 15344 8d4165165fc71291b5f78916eaa4b8ba ""
+  "latex/reporte.aux" 1710991145 2515 135392b11df9d41fc6633ba1024452d1 "pdflatex"
+  "reporte.tex" 1710991143 15801 e6355b21189bc115d5104f2cebcf2d6a ""
   "rosenbrock_11_re.jpeg" 1710989765 91428 4588fdb944fd6f96f72240cbb6fe9ccf ""
   "rosenbrock_59_bin.jpeg" 1710989519 91682 812de88856c6c1091fd5c6c7cba79f34 ""
   "rosenbrock_61_re.jpeg" 1710989745 86940 201350b50d676b98a41a17b79a79241f ""

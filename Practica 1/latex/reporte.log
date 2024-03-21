@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  20 MAR 2024 21:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  20 MAR 2024 21:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -316,7 +316,7 @@ File: ackley_101_bin.jpeg Graphic file (type jpg)
 <use ackley_101_bin.jpeg>
 Package pdftex.def Info: ackley_101_bin.jpeg  used on input line 287.
 (pdftex.def)             Requested size: 250.24199pt x 214.3795pt.
-[6 <./rosenbrock_7_re.jpeg>] [7 <./rosenbrock_11_re.jpeg> <./rosenbrock_61_re.jpeg>] [8 <./rosenbrock_59_bin.jpeg> <./rosenbrock_79_bin.jpeg>] [9 <./rosenbrock_97_bin.jpeg> <./ackley_7_re.jpeg>] [10 <./ackley_97_re.jpeg> <./ackley_113_re.jpeg>] [11 <./ackley_13_bin.jpeg> <./ackley_83_bin.jpeg>] [12 <./ackley_101_bin.jpeg>] (c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-1\Practica 1\latex\reporte.aux
+[6 <./rosenbrock_7_re.jpeg>] [7 <./rosenbrock_11_re.jpeg> <./rosenbrock_61_re.jpeg>] [8 <./rosenbrock_59_bin.jpeg>] [9 <./rosenbrock_79_bin.jpeg> <./rosenbrock_97_bin.jpeg>] [10 <./ackley_7_re.jpeg> <./ackley_97_re.jpeg>] [11 <./ackley_113_re.jpeg> <./ackley_13_bin.jpeg>] [12 <./ackley_83_bin.jpeg> <./ackley_101_bin.jpeg>] (c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-1\Practica 1\latex\reporte.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -334,7 +334,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,499b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-1\Practica 1\latex\reporte.pdf" (13 pages, 1903042 bytes).
+Output written on "c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-1\Practica 1\latex\reporte.pdf" (13 pages, 1903649 bytes).
 PDF statistics:
  120 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
