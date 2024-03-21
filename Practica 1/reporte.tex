@@ -128,5 +128,9 @@
     El hijo es un individuo que se mutará, el delta es el valor que se sumará o restará a cada variable del individuo 
     y el porcentaje de mutación es el porcentaje de individuos que se mutarán.
 
-    La función comienza creando una lista donde se guardarán los hijos mutados 
+    La función comienza creando una lista donde se guardarán los hijos mutados.
+    Luego, se itera sobre cada gen del hijo y se decide si se muta o no.
+    La mutación en si misma esta definida aleatoriamente por un valor entre 0 y 1, si este valor es menor al porcentaje de mutación.
+    Aunque el gen este mutado o no este se guardara en la lista de hijos mutados.
+    Finalmente, la función devuelve la lista de hijos mutados.
 \end{document}
