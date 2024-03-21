@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  20 MAR 2024 23:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  20 MAR 2024 23:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -323,35 +323,27 @@ File: ackley_101_bin.jpeg Graphic file (type jpg)
 <use ackley_101_bin.jpeg>
 Package pdftex.def Info: ackley_101_bin.jpeg  used on input line 424.
 (pdftex.def)             Requested size: 250.24199pt x 214.3795pt.
- [10 <./ackley_113_re.jpeg> <./ackley_13_bin.jpeg>]
-c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex:428: Missing # inserted in alignment preamble.
-<to be read again> 
-                   \cr 
-l.428     \begin{tabular}{}
-                           
-There should be exactly one # between &'s, when an
-\halign or \valign is being set up. In this case you had
-none, so I've put one in; maybe that will work.
+ [10 <./ackley_113_re.jpeg> <./ackley_13_bin.jpeg>] [11 <./ackley_83_bin.jpeg> <./ackley_101_bin.jpeg>] [12] (c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-1\Practica 1\latex\reporte.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 7462 strings out of 474486
+ 121979 string characters out of 5743755
+ 2285542 words of memory out of 5000000
+ 29713 multiletter control sequences out of 15000+600000
+ 563910 words of font info for 56 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,9n,65p,620b,1719s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on "c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-1\Practica 1\latex\reporte.pdf" (13 pages, 1275277 bytes).
+PDF statistics:
+ 117 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex:430: Missing } inserted.
-<inserted text> 
-                }
-l.430     \newpage
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex:430: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.430     \newpage
-                  
-I'm guessing that you meant to end an alignment here.
-
-
-c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex:435: LaTeX Error: \begin{tabular} on input line 428 ended by \end{document}.
-
-See the LaTeX 

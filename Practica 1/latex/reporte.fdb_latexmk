@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1710998305.90131 "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex" "latex/reporte.pdf" "reporte" 1710998307.63835 2
+["pdflatex"] 1711000744.98216 "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex" "latex/reporte.pdf" "reporte" 1711000747.0473 0
   "C:/Users/yleob/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1710532007 81107 70b8516c68c2e617189c5e44bfd16b96 ""
   "C:/Users/yleob/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1709093337 24225046 66cabb890c07ebfb1d69ddcec99ba23c ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -67,9 +67,9 @@
   "ackley_7_re.jpeg" 1710989824 98034 869172168503b512427ce2a5a9294e64 ""
   "ackley_83_bin.jpeg" 1710989661 96532 0740b103dbf4f6d71350993a931afb8b ""
   "ackley_97_re.jpeg" 1710989805 87908 7eda9f238d19a7571b08f9acfaac5bf0 ""
-  "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex" 1710998298 21484 939f4c7a8b4ef452204eb1351c29c61f ""
-  "latex/reporte.aux" 1710998307 2512 67eef07dcdc0c1eee76aa4cfd916c26e "pdflatex"
-  "reporte.tex" 1710998298 21484 939f4c7a8b4ef452204eb1351c29c61f ""
+  "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 1/reporte.tex" 1711000743 22072 eb17ddf2e7a9a5686f5cbe544f15ab5e ""
+  "latex/reporte.aux" 1711000746 2512 67eef07dcdc0c1eee76aa4cfd916c26e "pdflatex"
+  "reporte.tex" 1711000743 22072 eb17ddf2e7a9a5686f5cbe544f15ab5e ""
   "rosenbrock_11_re.jpeg" 1710989765 91428 4588fdb944fd6f96f72240cbb6fe9ccf ""
   "rosenbrock_59_bin.jpeg" 1710989519 91682 812de88856c6c1091fd5c6c7cba79f34 ""
   "rosenbrock_61_re.jpeg" 1710989745 86940 201350b50d676b98a41a17b79a79241f ""
