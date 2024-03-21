@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  20 MAR 2024 20:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  21 MAR 2024 08:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -79,14 +79,21 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen150
 \Gin@req@width=\dimen151
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count266
+\float@exts=\toks19
+\float@box=\box51
+\@float@everytoks=\toks20
+\@floatcapt=\box52
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box51
+\ttl@box=\box53
 \beforetitleunit=\skip50
 \aftertitleunit=\skip51
 \ttl@plus=\dimen152
 \ttl@minus=\dimen153
-\ttl@toksa=\toks19
+\ttl@toksa=\toks21
 \titlewidth=\dimen154
 \titlewidthlast=\dimen155
 \titlewidthfirst=\dimen156
@@ -104,34 +111,73 @@ Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
 \caption@hangindent=\dimen164
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count266
-\c@continuedfloat=\count267
+\c@caption@flags=\count267
+\c@continuedfloat=\count268
+Package caption Info: float package is loaded.
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count269
+\lst@gtempboxa=\box54
+\lst@token=\toks22
+\lst@length=\count270
+\lst@currlwidth=\dimen165
+\lst@column=\count271
+\lst@pos=\count272
+\lst@lostspace=\dimen166
+\lst@width=\dimen167
+\lst@newlines=\count273
+\lst@lineno=\count274
+\lst@maxwidth=\dimen168
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count275
+\lst@skipnumbers=\count276
+\lst@framebox=\box55
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count268
-\l__pdf_internal_box=\box52
+\l__color_backend_stack_int=\count277
+\l__pdf_internal_box=\box56
 ) (latex/reporte.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `reporte.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Info: Redefining \. on input line 20.
-LaTeX Info: Redefining \% on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -169,17 +215,17 @@ LaTeX Info: Redefining \% on input line 20.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count269
-\scratchdimen=\dimen165
-\scratchbox=\box53
-\nofMPsegments=\count270
-\nofMParguments=\count271
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count272
-\MPscratchDim=\dimen166
-\MPnumerator=\count273
-\makeMPintoPDFobject=\count274
-\everyMPtoPDFconversion=\toks21
+\scratchcounter=\count278
+\scratchdimen=\dimen169
+\scratchbox=\box57
+\nofMPsegments=\count279
+\nofMParguments=\count280
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count281
+\MPscratchDim=\dimen170
+\MPnumerator=\count282
+\makeMPintoPDFobject=\count283
+\everyMPtoPDFconversion=\toks24
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -187,74 +233,106 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count284
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 21.
+(Font)              <12> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 21.
+(Font)              <8> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 21.
+(Font)              <6> on input line 47.
  [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 26.
+(Font)              <7> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 26.
-<funcionPoblacion.png, id=8, 1168.365pt x 855.195pt>
-File: funcionPoblacion.png Graphic file (type png)
-<use funcionPoblacion.png>
-Package pdftex.def Info: funcionPoblacion.png  used on input line 42.
-(pdftex.def)             Requested size: 250.24199pt x 183.15868pt.
- [1 <./funcionPoblacion.png>]
-<funcionParejas.png, id=22, 1953.2975pt x 1312.905pt>
-File: funcionParejas.png Graphic file (type png)
-<use funcionParejas.png>
-Package pdftex.def Info: funcionParejas.png  used on input line 68.
-(pdftex.def)             Requested size: 250.24199pt x 168.19951pt.
- [2 <./funcionParejas.png>]
-<funcionCruza.png, id=27, 1312.905pt x 511.9125pt>
-File: funcionCruza.png Graphic file (type png)
-<use funcionCruza.png>
-Package pdftex.def Info: funcionCruza.png  used on input line 89.
-(pdftex.def)             Requested size: 250.24199pt x 97.56902pt.
-<funcionMutacion.png, id=28, 1104.125pt x 664.4825pt>
-File: funcionMutacion.png Graphic file (type png)
-<use funcionMutacion.png>
-Package pdftex.def Info: funcionMutacion.png  used on input line 112.
-(pdftex.def)             Requested size: 250.24199pt x 150.59714pt.
- [3 <./funcionCruza.png> <./funcionMutacion.png>]
-<funcionSeleccion.png, id=34, 1202.4925pt x 740.7675pt>
-File: funcionSeleccion.png Graphic file (type png)
-<use funcionSeleccion.png>
-Package pdftex.def Info: funcionSeleccion.png  used on input line 141.
-(pdftex.def)             Requested size: 250.24199pt x 154.15286pt.
-<funcionGenetico.png, id=35, 1622.06pt x 2037.6125pt>
-File: funcionGenetico.png Graphic file (type png)
-<use funcionGenetico.png>
-Package pdftex.def Info: funcionGenetico.png  used on input line 175.
-(pdftex.def)             Requested size: 250.24199pt x 314.33429pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4 <./funcionSeleccion.png>] [5 <./funcionGenetico.png>] [6] [7] (latex/reporte.aux
+(Font)              <5> on input line 52.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) [1] [2] [3] [4] [5]
+<rosenbrock_7_re.jpeg, id=33, 1278.7775pt x 1092.08pt>
+File: rosenbrock_7_re.jpeg Graphic file (type jpg)
+<use rosenbrock_7_re.jpeg>
+Package pdftex.def Info: rosenbrock_7_re.jpeg  used on input line 355.
+(pdftex.def)             Requested size: 250.24199pt x 213.69627pt.
+<rosenbrock_11_re.jpeg, id=34, 1276.77pt x 1096.095pt>
+File: rosenbrock_11_re.jpeg Graphic file (type jpg)
+<use rosenbrock_11_re.jpeg>
+Package pdftex.def Info: rosenbrock_11_re.jpeg  used on input line 361.
+(pdftex.def)             Requested size: 250.24199pt x 214.81642pt.
+<rosenbrock_61_re.jpeg, id=35, 1272.755pt x 1082.0425pt>
+File: rosenbrock_61_re.jpeg Graphic file (type jpg)
+<use rosenbrock_61_re.jpeg>
+Package pdftex.def Info: rosenbrock_61_re.jpeg  used on input line 367.
+(pdftex.def)             Requested size: 250.24199pt x 212.7393pt.
+ [6 <./rosenbrock_7_re.jpeg> <./rosenbrock_11_re.jpeg>]
+<rosenbrock_59_bin.jpeg, id=40, 1284.8pt x 1094.0875pt>
+File: rosenbrock_59_bin.jpeg Graphic file (type jpg)
+<use rosenbrock_59_bin.jpeg>
+Package pdftex.def Info: rosenbrock_59_bin.jpeg  used on input line 375.
+(pdftex.def)             Requested size: 250.24199pt x 213.08743pt.
+<rosenbrock_79_bin.jpeg, id=41, 1278.7775pt x 1088.065pt>
+File: rosenbrock_79_bin.jpeg Graphic file (type jpg)
+<use rosenbrock_79_bin.jpeg>
+Package pdftex.def Info: rosenbrock_79_bin.jpeg  used on input line 381.
+(pdftex.def)             Requested size: 250.24199pt x 212.91063pt.
+ [7 <./rosenbrock_61_re.jpeg> <./rosenbrock_59_bin.jpeg>]
+<rosenbrock_97_bin.jpeg, id=45, 1280.785pt x 1082.0425pt>
+File: rosenbrock_97_bin.jpeg Graphic file (type jpg)
+<use rosenbrock_97_bin.jpeg>
+Package pdftex.def Info: rosenbrock_97_bin.jpeg  used on input line 387.
+(pdftex.def)             Requested size: 250.24199pt x 211.40195pt.
+<ackley_7_re.jpeg, id=46, 1262.7175pt x 1096.095pt>
+File: ackley_7_re.jpeg Graphic file (type jpg)
+<use ackley_7_re.jpeg>
+Package pdftex.def Info: ackley_7_re.jpeg  used on input line 395.
+(pdftex.def)             Requested size: 250.24199pt x 217.20811pt.
+<ackley_97_re.jpeg, id=47, 1274.7625pt x 1088.065pt>
+File: ackley_97_re.jpeg Graphic file (type jpg)
+<use ackley_97_re.jpeg>
+Package pdftex.def Info: ackley_97_re.jpeg  used on input line 400.
+(pdftex.def)             Requested size: 250.24199pt x 213.59134pt.
+ [8 <./rosenbrock_79_bin.jpeg> <./rosenbrock_97_bin.jpeg>]
+<ackley_113_re.jpeg, id=51, 1280.785pt x 1092.08pt>
+File: ackley_113_re.jpeg Graphic file (type jpg)
+<use ackley_113_re.jpeg>
+Package pdftex.def Info: ackley_113_re.jpeg  used on input line 406.
+(pdftex.def)             Requested size: 250.24199pt x 213.363pt.
+ [9 <./ackley_7_re.jpeg> <./ackley_97_re.jpeg>]
+<ackley_13_bin.jpeg, id=55, 1276.77pt x 1086.0575pt>
+File: ackley_13_bin.jpeg Graphic file (type jpg)
+<use ackley_13_bin.jpeg>
+Package pdftex.def Info: ackley_13_bin.jpeg  used on input line 414.
+(pdftex.def)             Requested size: 250.24199pt x 212.84924pt.
+<ackley_83_bin.jpeg, id=56, 1274.7625pt x 1084.05pt>
+File: ackley_83_bin.jpeg Graphic file (type jpg)
+<use ackley_83_bin.jpeg>
+Package pdftex.def Info: ackley_83_bin.jpeg  used on input line 419.
+(pdftex.def)             Requested size: 250.24199pt x 212.80318pt.
+<ackley_101_bin.jpeg, id=57, 1274.7625pt x 1092.08pt>
+File: ackley_101_bin.jpeg Graphic file (type jpg)
+<use ackley_101_bin.jpeg>
+Package pdftex.def Info: ackley_101_bin.jpeg  used on input line 424.
+(pdftex.def)             Requested size: 250.24199pt x 214.3795pt.
+ [10 <./ackley_113_re.jpeg> <./ackley_13_bin.jpeg>] [11 <./ackley_83_bin.jpeg> <./ackley_101_bin.jpeg>] [12] (latex/reporte.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 4962 strings out of 476025
- 84896 string characters out of 5790018
- 1862388 words of memory out of 5000000
- 25405 multiletter control sequences out of 15000+600000
- 517792 words of font info for 50 fonts, out of 8000000 for 9000
+ 7403 strings out of 476025
+ 117476 string characters out of 5790018
+ 2210388 words of memory out of 5000000
+ 27809 multiletter control sequences out of 15000+600000
+ 518128 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,63p,420b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on latex/reporte.pdf (8 pages, 785208 bytes).
+ 57i,9n,63p,541b,1728s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on latex/reporte.pdf (13 pages, 1264218 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
