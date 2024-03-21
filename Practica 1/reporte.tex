@@ -62,7 +62,7 @@
     \section*{Desarrollo}
     El algoritmo se dividió en 6 funciones principales:
     \subsection*{Función de inicialización de población}
-    \begin{lstlisting}[language=Python, style=mystyle,caption={Funcion poblacion}]
+    \begin{lstlisting}[language=Python, style=mystyle, caption={Funcion poblacion}]
     def start_poblation(f, poblation_size, dimension, lower_limit, upper_limit):
         poblation = []
 
@@ -102,7 +102,7 @@
     La función devuelve la lista de población, que ahora contiene pares del tamaño de la población, cada uno de los cuales consta de un individuo y su evaluación de aptitud.
 
     \subsection*{Función que define las parejas}
-    \begin{lstlisting}[language=Python, style=mystyle,caption={Funcion parejas}]
+    \begin{lstlisting}[language=Python, style=mystyle, caption={Funcion parejas}]
     def define_couples(poblacion, poblacion_size):
         fitness = [poblacion[i][1] for i in range(poblacion_size)]
         selected = []
@@ -117,7 +117,7 @@
             acumulated = 0
             for i, fit in enumerate(fitness):
                 acumulated += fit
-                % Verificar si el acumulado supera el numero aleatorio y si el indice no ha sido seleccionado previamente
+                # Verificar si el acumulado supera el numero aleatorio y si el indice no ha sido seleccionado previamente
                 if acumulated >= selection:
                     if i not in selected:
                         selected.append(i)
@@ -133,11 +133,6 @@
     
         return selected
     \end{lstlisting}
-    % \begin{figure}[h]
-    %     \centering
-    %     \includegraphics[width=0.5\textwidth]{funcionParejas.png}
-    %     \caption{Función parejas}
-    % \end{figure}
     La función recibe como parámetros la población y el número de parejas que se seleccionarán. 
     %crea una lista no ordenada detallando los parámetros
 
@@ -154,11 +149,17 @@
     
     \newpage
     \subsection*{Función de cruza}
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.5\textwidth]{funcionCruza.png}
-        \caption{Función cruza}
-    \end{figure}
+    \begin{lstlisting}[language=Python, style=mystyle, caption={Funcion cruza}]
+    def crossover(parent1, parent2):
+        # Seleccionar un punto de cruce aleatorio evitando extremos
+        crossover_point = random.randint(1, len(parent1) - 1)
+    
+        # Sumamos las listas padre para obtener las listas hijas
+        child1 = parent1[:crossover_point] + parent2[crossover_point:]
+        child2 = parent2[:crossover_point] + parent1[crossover_point:]
+    
+        return child1, child2
+    \end{lstlisting}
 
     %Breve descripción del funcionamiento de la función
     La función cruza los individuos seleccionados para formar una nueva población.
@@ -177,11 +178,21 @@
     Finalmente, la función devuelve una lista con los dos hijos generados.
 
     \subsection*{Función de mutación}
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.5\textwidth]{funcionMutacion.png}
-        \caption{Función mutación}
-    \end{figure}
+    \begin{lstlisting}[language=Python, style=mystyle, caption={Funcion mutacion}]
+    def mutation(child, delta, mutation_percentage):
+        mutated_child = []
+    
+        for gen in child:
+            if random.uniform(0, 1) <= mutation_percentage:
+                if random.uniform(0, 1) <= 0.5:
+                    gen += delta
+                else:
+                    gen -= delta
+            
+            mutated_child.append(gen)
+    
+        return mutated_child
+    \end{lstlisting}
 
     %Breve descripción del funcionamiento de la función
     La función muta a los individuos de la población para mantener la diversidad en la población.
@@ -206,11 +217,23 @@
     \newpage
 
     \subsection*{Función de creación de hijos}
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.5\textwidth]{funcionSeleccion.png}
-        \caption{Función hijos}
-    \end{figure}
+    \begin{lstlisting}[language=Python, style=mystyle, caption={Funcion hijos}]
+    def create_children(couples, poblation, crossover_percentage):
+        children = []
+        i = 0
+        
+        while i < len(couples):
+            if random.uniform(0, 1) <= crossover_percentage:
+                parent1 = poblation[couples[i]][0]
+                parent2 = poblation[couples[i + 1]][0]
+                child1, child2 = crossover(parent1, parent2)
+                children.append(child1)
+                children.append(child2)
+            
+            i += 2
+    
+        return children
+    \end{lstlisting}
 
     %Breve descripción del funcionamiento de la función
     La función crea hijos a partir de los individuos seleccionados la población y el porcentaje de cruza.
@@ -238,13 +261,56 @@
     Finalmente, después de que se hayan procesado toda la lista de parejas, la función devuelve la lista de hijos generados.
 
     \subsection*{Función del algoritmo genético}
-
-    %Agrega la imagen de la función
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.5\textwidth]{funcionGenetico.png}
-        \caption{Función algoritmo genético}
-    \end{figure}
+    \begin{lstlisting}[language=Python, style=mystyle, caption={Funcion genetico}]
+    def genetic(f, dimension, lower_limit, upper_limit, poblation_size, crossover_percentage, mutation_percentage, generations):
+        # Inicializar la poblacion
+        poblation = start_poblation(f, poblation_size, dimension, lower_limit, upper_limit)
+        print(f"Poblacion inicial: {poblation}")
+        # Listas para la grafica de convergencia
+        best, worse, average = [], [], []
+    
+        for generation in range(generations):
+            print(f"Generacion {generation + 1}")
+            # Seleccionar parejas
+            couples = define_couples(poblation, poblation_size)
+            print(f"Parejas seleccionadas: {couples}")
+    
+            # Generar hijos
+            children = create_children(couples, poblation, crossover_percentage)
+            print(f"Hijos generados: {children}")
+    
+            # Generar mutaciones
+            mutated_children = []
+            for child in children:
+                mutated = mutation(child, 0.1, mutation_percentage)
+                if f == "rosenbrock":
+                    mutated_children.append([mutated, rosenbrock(mutated)])
+                elif f == "ackley":
+                    mutated_children.append([mutated, ackley(mutated)])
+    
+            print(f"Hijos mutados: {mutated_children}")
+    
+            # Unir la poblacion con los hijos
+            new_poblation = poblation + mutated_children
+            print(f"Nueva poblacion: {new_poblation}")
+    
+            # Ordenar la poblacion
+            sorted_poblation = sorted(new_poblation, key=itemgetter(1))
+            print(f"Poblacion ordenada: {sorted_poblation}")
+    
+            # Seleccionar los mejores individuos
+            poblation = sorted_poblation[:poblation_size]
+            print(f"Mejores individuos: {poblation}")
+    
+            # Calcular el mejor, peor y promedio de la poblacion
+            best.append(poblation[0][1])
+            worse.append(poblation[-1][1])
+            average.append(sum([ind[1] for ind in poblation]) / poblation_size)
+    
+        print(f"Mejor individuo: {poblation[0]}")
+        
+        return best, worse, average
+    \end{lstlisting}
 
     %Breve descripción del funcionamiento de la función
     La función principal del algoritmo genético, esta función se encarga de ejecutar el algoritmo genético.
@@ -283,76 +349,79 @@
 
     \section*{Resultados}
     \subsection*{Función de Rosenbrock Real}
-    \begin{figure}[h]
+    \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.5\textwidth]{rosenbrock_7_re.jpeg}
         \caption{Rosenbrock, semilla= 7, Real}
     \end{figure}
 
-    \begin{figure}[p]
+    \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.5\textwidth]{rosenbrock_11_re.jpeg}
         \caption{Rosenbrock, semilla= 11, Real}
     \end{figure}
 
-    \begin{figure}[p]
+    \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.5\textwidth]{rosenbrock_61_re.jpeg}
         \caption{Rosenbrock, semilla= 61, Real}
     \end{figure}
 
+    \newpage
     \subsection*{Función de Rosenbrock Binaria} 
 
-    \begin{figure}[h]
+    \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.5\textwidth]{rosenbrock_59_bin.jpeg}
         \caption{Rosenbrock, semilla= 59, Binaria}
     \end{figure}
 
-    \begin{figure}[p]
+    \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.5\textwidth]{rosenbrock_79_bin.jpeg}
         \caption{Rosenbrock, semilla= 79, Binaria}
     \end{figure}
 
-    \begin{figure}[p]
+    \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.5\textwidth]{rosenbrock_97_bin.jpeg}
         \caption{Rosenbrock, semilla= 97, Binaria}
     \end{figure}
 
+    \newpage
     \subsection*{Función de Ackley Real}
     
-    \begin{figure}[h]
+    \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.5\textwidth]{ackley_7_re.jpeg}
         \caption{Ackley, semilla= 7, Real}
     \end{figure}
-    \begin{figure}[p]
+    \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.5\textwidth]{ackley_97_re.jpeg}
         \caption{Ackley, semilla= 97, Real}
     \end{figure}
 
-    \begin{figure}[p]
+    \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.5\textwidth]{ackley_113_re.jpeg}
         \caption{Ackley, semilla= 113, Real}
     \end{figure}
     
+    \newpage
     \subsection*{Función de Ackley Binaria}
     
-    \begin{figure}[h]
+    \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.5\textwidth]{ackley_13_bin.jpeg}
         \caption{Ackley, semilla= 13, Binaria}
     \end{figure}
-    \begin{figure}[p]
+    \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.5\textwidth]{ackley_83_bin.jpeg}
         \caption{Ackley, semilla= 83, Binaria}
     \end{figure}
-    \begin{figure}[p]
+    \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.5\textwidth]{ackley_101_bin.jpeg}
         \caption{Ackley, semilla= 101, Binaria}
