@@ -479,3 +479,7 @@ plt.xlabel('Generaciones')
 plt.ylabel('Aptitud')
 plt.title("Gráfica de convergencia")
 plt.show()
+
+def prueba:
+    print(kakaka)
+    
