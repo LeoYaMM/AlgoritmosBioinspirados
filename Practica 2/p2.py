@@ -479,3 +479,5 @@ plt.xlabel('Generaciones')
 plt.ylabel('Aptitud')
 plt.title("Gráfica de convergencia")
 plt.show()
+
+plt.show("prueba")
