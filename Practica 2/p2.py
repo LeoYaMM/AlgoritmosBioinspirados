@@ -480,4 +480,6 @@ plt.ylabel('Aptitud')
 plt.title("Gráfica de convergencia")
 plt.show()
 
-plt.show("prueba")
+
+def prueba:
+    print(kakaka)
