@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  12 APR 2024 10:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  12 APR 2024 11:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -169,22 +169,22 @@ LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `practica2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Info: Redefining \. on input line 46.
-LaTeX Info: Redefining \% on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -244,11 +244,11 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count286
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 47.
+(Font)              <12> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 47.
+(Font)              <8> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 47.
+(Font)              <6> on input line 68.
  [1
 
 {C:/Users/yleob/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-1\Practica 2\latex\practica2.toc
@@ -265,16 +265,18 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 52--56
+Underfull \hbox (badness 10000) in paragraph at lines 73--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--75
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
-[2] (c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-1\Practica 2\latex\practica2.aux
+(C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (p2.py [2] [3] [4] [5] [6] [7] [8]) [9] (c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-1\Practica 2\latex\practica2.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -284,17 +286,17 @@ L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 6892 strings out of 474486
- 115315 string characters out of 5743755
- 1929542 words of memory out of 5000000
- 29146 multiletter control sequences out of 15000+600000
- 562921 words of font info for 52 fonts, out of 8000000 for 9000
+ 7487 strings out of 474486
+ 121671 string characters out of 5743755
+ 2421542 words of memory out of 5000000
+ 29730 multiletter control sequences out of 15000+600000
+ 563592 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,9n,65p,399b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on "c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-1\Practica 2\latex\practica2.pdf" (3 pages, 49178 bytes).
+ 57i,9n,65p,598b,1936s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\yleob\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on "c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-1\Practica 2\latex\practica2.pdf" (10 pages, 103675 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
+ 65 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
