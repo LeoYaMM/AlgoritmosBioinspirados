@@ -13,6 +13,27 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolor}{rgb}{0.95,0.95,0.95}
 
+
+\lstset{
+    basicstyle=\ttfamily,
+    inputencoding=utf8,
+    extendedchars=true,
+    literate=%
+    {á}{{\'a}}1
+    {é}{{\'e}}1
+    {í}{{\'i}}1
+    {ó}{{\'o}}1
+    {ú}{{\'u}}1
+    {ñ}{{\~n}}1
+    {Á}{{\'A}}1
+    {É}{{\'E}}1
+    {Í}{{\'I}}1
+    {Ó}{{\'O}}1
+    {Ú}{{\'U}}1
+    {Ñ}{{\~N}}1
+}
+
+
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolor},
     commentstyle=\color{codegreen},
@@ -72,4 +93,16 @@
     En este ejemplo la suma de los números en cada fila, columna y diagonal es 15.\\
     La idea del algoritmo genético es encontrar la permutación de los números del 
     1 al 9 que formen un cuadrado mágico de tamaño nxn.\\
+
+    \section{Desarrollo}
+    Para la implementación del algoritmo genético se utilizó el lenguaje de programación Python.
+    %Añade codigo p2.py
+    \lstinputlisting[language=Python, style=mystyle]{p2.py}
+    \section{Conclusión}
+    •  ¿Cuál fue la función objetivo que encontró más rápido el cuadrado mágico?
+
+
+    •  ¿Cómo modificaría el algoritmo para encontrar todos los posibles cuadrados mágicos? (recuerde que existe más de una solución)
+
+
 \end{document}
