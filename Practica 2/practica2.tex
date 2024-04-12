@@ -36,9 +36,40 @@
 \titleformat{\subsection}
 {\large\bfseries}{\thesubsection}{1em}{}
 
+\renewcommand\thesection{\arabic{section}}
 
 \title{\Huge{\textbf{Practica 2. Algoritmo genético para codificación de permutaciones.}}\\
 \Large{\textbf{Algoritmos Bioinspirados}}}
 \author{Diego Castillo Reyes\\Marthon Leobardo Yañez Martinez\\Aldo Escamilla Resendiz}
 
 \graphicspath{{Imagenes/}}
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Introducción}
+    En esta práctica se implementó un algoritmo genético para resolver el problema de codificación de 
+    permutaciones. En especifico encontrar las combinaciones para las soluciones de un cuadrado mágico.
+    El cuadrado mágico se refiere a una matriz cuadrada de números enteros en la que la suma de los números 
+    en cada fila, columna y diagonal es la misma.\\
+
+    Por ejemplo: 
+    %Ejemplo de un cuadrado mágico
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|}
+            \hline
+            8 & 1 & 6\\
+            \hline
+            3 & 5 & 7\\
+            \hline
+            4 & 9 & 2\\
+            \hline
+        \end{tabular}
+        \caption{Ejemplo de un cuadrado mágico}
+    \end{table}
+    En este ejemplo la suma de los números en cada fila, columna y diagonal es 15.\\
+    La idea del algoritmo genético es encontrar la permutación de los números del 
+    1 al 9 que formen un cuadrado mágico de tamaño nxn.\\
+\end{document}
