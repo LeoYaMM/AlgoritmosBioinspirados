@@ -6,7 +6,7 @@ import time
 import matplotlib.pyplot as plt
 import statistics
 
-random.seed(2)
+random.seed(23)
 
 n = 3
 nn = n * n
@@ -211,7 +211,7 @@ for i in range(epocas):
     if i % 500 == 0 and i != 0:
         for j in range(len(poblacion)):
             print(f'Cuadrado: {poblacion[j]}  Aptitud: {aptitud[j]}')
-        time.sleep(5)
+        time.sleep(3)
 
     indice, estado = verificar_exito(aptitud)
     if estado == 'exito':
@@ -242,7 +242,7 @@ plt.show()
 
 
 
-random.seed(29)
+random.seed(23)
 n = 4
 nn = n * n
 n2 = nn // 2
@@ -451,7 +451,7 @@ for i in range(epoch):
     if i % 500 == 0 and i != 0:
         for i in range(len(poblacion)):
             print(f'Cuadrado: {poblacion[i]}  Aptitud: {aptitud[i]}')
-        time.sleep(5)
+        time.sleep(3)
 
     indice, estado = ganamos(aptitud)
     if estado == 'exito':
