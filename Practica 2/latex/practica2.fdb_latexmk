@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1712979952.46139 "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-2/AlgoritmosBioinspirados/Practica 2/practica2.tex" "latex/practica2.pdf" "practica2" 1712979955.66009 0
+["pdflatex"] 1712980077.30292 "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-2/AlgoritmosBioinspirados/Practica 2/practica2.tex" "latex/practica2.pdf" "practica2" 1712980079.90238 0
   "C:/Users/yleob/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1712546860 81107 70b8516c68c2e617189c5e44bfd16b96 ""
   "C:/Users/yleob/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1711557172 11548 3d9640d528fabfacf9c764acc45932d9 ""
   "C:/Users/yleob/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1709093337 24225046 66cabb890c07ebfb1d69ddcec99ba23c ""
@@ -73,11 +73,11 @@
   "Grafica7_2.png" 1712977998 36627 f8b1f395cdead2a62abccb658cf71928 ""
   "Grafica8.png" 1712977998 32329 01cfcbbb5df61617db9c5f9e67b88e94 ""
   "Grafica8_2.png" 1712977998 37495 4aabf1697ce59ed896068d6c95d785c6 ""
-  "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-2/AlgoritmosBioinspirados/Practica 2/practica2.tex" 1712979952 17537 594e47b69c17cc9ddd464a6af810a0cb ""
-  "latex/practica2.aux" 1712979955 5868 15596a73f444da604be85ee57dd9cbb1 "pdflatex"
-  "latex/practica2.toc" 1712979955 431 344906efce1874bed652cee77523324c "pdflatex"
+  "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-2/AlgoritmosBioinspirados/Practica 2/practica2.tex" 1712980076 17545 83c197d621375e0404cf429d3d59e12e ""
+  "latex/practica2.aux" 1712980079 5868 15596a73f444da604be85ee57dd9cbb1 "pdflatex"
+  "latex/practica2.toc" 1712980079 431 344906efce1874bed652cee77523324c "pdflatex"
   "p2.py" 1712977998 14228 c7579f451bde2bc2932f274bc37001f5 ""
-  "practica2.tex" 1712979952 17537 594e47b69c17cc9ddd464a6af810a0cb ""
+  "practica2.tex" 1712980076 17545 83c197d621375e0404cf429d3d59e12e ""
   (generated)
   "latex/practica2.aux"
   "latex/practica2.log"
