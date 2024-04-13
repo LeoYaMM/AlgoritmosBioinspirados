@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1712975536.74203 "/Users/aldoescamillaresendiz/Documents/Python/AlgoritmosBioinspirados/Practica 2/practica2.tex" "latex/practica2.pdf" "practica2" 1712975537.41338 0
-  "/Users/aldoescamillaresendiz/Documents/Python/AlgoritmosBioinspirados/Practica 2/practica2.tex" 1712975536.54269 4753 795bb99f14e7051040c1e5f02a029a42 ""
+["pdflatex"] 1712975683.07928 "/Users/aldoescamillaresendiz/Documents/Python/AlgoritmosBioinspirados/Practica 2/practica2.tex" "latex/practica2.pdf" "practica2" 1712975683.67979 0
+  "/Users/aldoescamillaresendiz/Documents/Python/AlgoritmosBioinspirados/Practica 2/practica2.tex" 1712975682.28505 4762 687a6dbf8a7179e23ed90b7b3b146cee ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -59,10 +59,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1712769880.7575 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1712769853 8221419 e9707183ec6435af0f1bb4b83cdf10ff ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "latex/practica2.aux" 1712975537.3734 706 05ec32d20e416d333efac4cd62b32de5 "pdflatex"
-  "latex/practica2.toc" 1712975537.37441 205 d93bd32bac4b9038a47898c06895808c "pdflatex"
+  "latex/practica2.aux" 1712975683.64189 719 8c858627c389cdc4572b4789fa86a00e "pdflatex"
+  "latex/practica2.toc" 1712975683.64291 218 d85310765b1a58bccd16f3c56232928c "pdflatex"
   "p2.py" 1712975326.01988 13747 c7579f451bde2bc2932f274bc37001f5 ""
-  "practica2.tex" 1712975536.54269 4753 795bb99f14e7051040c1e5f02a029a42 ""
+  "practica2.tex" 1712975682.28505 4762 687a6dbf8a7179e23ed90b7b3b146cee ""
   (generated)
   "latex/practica2.aux"
   "latex/practica2.log"
