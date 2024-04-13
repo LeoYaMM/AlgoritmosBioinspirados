@@ -99,7 +99,14 @@
     \lstinputlisting[language=Python, style=mystyle]{p2.py}
     \section{Conclusión}
     •  ¿Cuál fue la función objetivo que encontró más rápido el cuadrado mágico?
+    La función que efectivamente puede encontrar más rápido un cuadrado mágico es la parte 
+    de la función verificarexito que busca una aptitud de 0.0
+    Esto se debe a que esta condición identifica directamente un cuadrado mágico perfecto sin errores, y la detección es inmediata 
+    tan pronto como se encuentre un individuo con esta aptitud en la población. La evaluación se realiza en cada generación, 
+    y tan pronto como se encuentra una aptitud de 0.0, el algoritmo puede terminar, lo que es la manera más rápida de concluir 
+    la búsqueda bajo las condiciones ideales.
 
+    La búsqueda de un error mínimo no garantiza un cuadrado perfecto y, además, puede continuar evaluando más individuos incluso después de encontrar cuadrados casi perfectos, lo cual es menos eficiente si el objetivo es encontrar cuadrados mágicos absolutamente precisos.
 
     •  ¿Cómo modificaría el algoritmo para encontrar todos los posibles cuadrados mágicos? (recuerde que existe más de una solución)
 

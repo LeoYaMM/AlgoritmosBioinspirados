@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1712974740.2231 "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 2/practica2.tex" "latex/practica2.pdf" "practica2" 1712974741.4887 0
+["pdflatex"] 1712974925.42207 "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 2/practica2.tex" "latex/practica2.pdf" "practica2" 1712974926.77633 0
   "C:/Users/yleob/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1712546860 81107 70b8516c68c2e617189c5e44bfd16b96 ""
   "C:/Users/yleob/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1711557172 11548 3d9640d528fabfacf9c764acc45932d9 ""
   "C:/Users/yleob/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1709093337 24225046 66cabb890c07ebfb1d69ddcec99ba23c ""
@@ -55,11 +55,11 @@
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/listings/lstmisc.sty" 1679057124 77021 d05e9115c67855816136d82929db8892 ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1699094857 48766 0b93839be28e9744a24c45075c75b2e2 ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 2/practica2.tex" 1712971541 3189 880fbee81bea486835a5190a5bb1d84e ""
-  "latex/practica2.aux" 1712974741 706 05ec32d20e416d333efac4cd62b32de5 "pdflatex"
-  "latex/practica2.toc" 1712974741 205 d93bd32bac4b9038a47898c06895808c "pdflatex"
+  "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-1/Practica 2/practica2.tex" 1712974924 4075 8194e074d90a4a7bcd426b03c6704d30 ""
+  "latex/practica2.aux" 1712974926 706 05ec32d20e416d333efac4cd62b32de5 "pdflatex"
+  "latex/practica2.toc" 1712974926 205 d93bd32bac4b9038a47898c06895808c "pdflatex"
   "p2.py" 1712974739 14228 c7579f451bde2bc2932f274bc37001f5 ""
-  "practica2.tex" 1712971541 3189 880fbee81bea486835a5190a5bb1d84e ""
+  "practica2.tex" 1712974924 4075 8194e074d90a4a7bcd426b03c6704d30 ""
   (generated)
   "latex/practica2.aux"
   "latex/practica2.log"
