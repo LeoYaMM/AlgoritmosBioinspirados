@@ -96,6 +96,7 @@
 
     \section{Desarrollo}
     Para la implementación del algoritmo genético se utilizó el lenguaje de programación Python.
+    %Añade codigo p2.py
     \lstinputlisting[language=Python, style=mystyle]{p2.py}
     \section{Conclusión}
     •  ¿Cuál fue la función objetivo que encontró más rápido el cuadrado mágico?
@@ -109,6 +110,11 @@
     La búsqueda de un error mínimo no garantiza un cuadrado perfecto y, además, puede continuar evaluando más individuos incluso después de encontrar cuadrados casi perfectos, lo cual es menos eficiente si el objetivo es encontrar cuadrados mágicos absolutamente precisos.
 
     •  ¿Cómo modificaría el algoritmo para encontrar todos los posibles cuadrados mágicos? (recuerde que existe más de una solución)
+    Diseñar operaciones de cruce que preserven características clave de los cuadrados mágicos, como las sumas de filas, columnas y diagonales. Esto puede ayudar a mantener la viabilidad de las soluciones a través de generaciones.
+    Ademar de conservar siempre una copia de los mejores individuos encontrados hasta ahora para asegurarte de que las buenas soluciones no se pierdan a lo largo de las generaciones.
 
+    •  ¿Modificó  los  parámetros  de  su  algoritmo  para  los  diferentes  tamaños  del  cuadrado  mágico(n= 4yn= 5)? Si su respuesta es afirmativa ¿cuáles fueron los parámetros?
+    Si, se utilizó parametros para n = 3 y 4, ya que el tiempo de ejecucion con otros parametros era bastante e incluso llegaba a romperse el programa.
+    
 
 \end{document}
