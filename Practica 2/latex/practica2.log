@@ -1,61 +1,67 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.10)  12 APR 2024 20:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  12 APR 2024 21:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/aldoescamillaresendiz/Documents/Python/AlgoritmosBioinspirados/Practica 2/practica2.tex"
-(/Users/aldoescamillaresendiz/Documents/Python/AlgoritmosBioinspirados/Practica 2/practica2.tex
+**"c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-2/AlgoritmosBioinspirados/Practica 2/practica2.tex"
+(c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-2/AlgoritmosBioinspirados/Practica 2/practica2.tex
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
-(/usr/local/texlive/2024/texmf-dist/tex/latex/base/report.cls
+L3 programming layer <2024-01-04>
+(C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size10.clo
+(C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count188
-\c@chapter=\count189
-\c@section=\count190
-\c@subsection=\count191
-\c@subsubsection=\count192
-\c@paragraph=\count193
-\c@subparagraph=\count194
-\c@figure=\count195
-\c@table=\count196
+\c@part=\count187
+\c@chapter=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2024/02/07 v24.2 The Babel package
-\babel@savecnt=\count197
+) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2024/01/07 v24.1 The Babel package
+\babel@savecnt=\count196
 \U@D=\dimen141
-\l@unhyphenated=\language89
- (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/txtbabel.def)
+\l@unhyphenated=\language79
+ (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count198
- (/usr/local/texlive/2024/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+\bbl@dirlevel=\count197
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks17
-\es@quotdepth=\count199
+\es@quotdepth=\count198
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
-)) (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+)) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+ (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+ (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count266
-\Gm@cntv=\count267
-\c@Gm@tempcnt=\count268
+\Gm@cnth=\count199
+\Gm@cntv=\count266
+\c@Gm@tempcnt=\count267
 \Gm@bindingoffset=\dimen142
 \Gm@wd@mp=\dimen143
 \Gm@odd@mp=\dimen144
@@ -65,29 +71,29 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen148
 \Gm@layoutvoffset=\dimen149
 \Gm@dimlist=\toks19
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+ (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+ (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+ (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen150
 \Gin@req@width=\dimen151
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
+) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count269
+\c@float@type=\count268
 \float@exts=\toks20
 \float@box=\box51
 \@float@everytoks=\toks21
 \@floatcapt=\box52
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
+) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \ttl@box=\box53
 \beforetitleunit=\skip50
@@ -98,9 +104,9 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen154
 \titlewidthlast=\dimen155
 \titlewidthfirst=\dimen156
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+ (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen157
 \captionmargin=\dimen158
@@ -112,40 +118,38 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen164
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count270
-\c@continuedfloat=\count271
+\c@caption@flags=\count269
+\c@continuedfloat=\count270
 Package caption Info: float package is loaded.
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count272
+) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count271
 \lst@gtempboxa=\box54
 \lst@token=\toks23
-\lst@length=\count273
+\lst@length=\count272
 \lst@currlwidth=\dimen165
-\lst@column=\count274
-\lst@pos=\count275
+\lst@column=\count273
+\lst@pos=\count274
 \lst@lostspace=\dimen166
 \lst@width=\dimen167
-\lst@newlines=\count276
-\lst@lineno=\count277
+\lst@newlines=\count275
+\lst@lineno=\count276
 \lst@maxwidth=\dimen168
- (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
-\c@lstnumber=\count278
-\lst@skipnumbers=\count279
+ (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count277
+\lst@skipnumbers=\count278
 \lst@framebox=\box55
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2024/02/21 1.10 listings configuration
+) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
-Package: listings 2024/02/21 1.10 (Carsten Heinz)
- (/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
- (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+ (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
 Package xcolor Info: Model `RGB' extended on input line 1366.
@@ -155,32 +159,32 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count280
+) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count279
 \l__pdf_internal_box=\box56
-) (latex/practica2.aux
+) (c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Practica 2\latex\practica2.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `practica2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -216,38 +220,38 @@ LaTeX Info: Redefining \% on input line 67.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count281
+\scratchcounter=\count280
 \scratchdimen=\dimen169
 \scratchbox=\box57
-\nofMPsegments=\count282
-\nofMParguments=\count283
+\nofMPsegments=\count281
+\nofMParguments=\count282
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count284
+\MPscratchCnt=\count283
 \MPscratchDim=\dimen170
-\MPnumerator=\count285
-\makeMPintoPDFobject=\count286
+\MPnumerator=\count284
+\makeMPintoPDFobject=\count285
 \everyMPtoPDFconversion=\toks25
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+ (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count287
+\c@lstlisting=\count286
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 68.
+(Font)              <12> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 68.
+(Font)              <8> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 68.
+(Font)              <6> on input line 69.
  [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (latex/practica2.toc
+{C:/Users/yleob/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Practica 2\latex\practica2.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -261,39 +265,141 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 73--77
+Underfull \hbox (badness 10000) in paragraph at lines 74--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
 
  []
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/02/21 1.10 listings language file
-) (./p2.py [2] [3] [4] [5] [6] [7] [8]) [9{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (latex/practica2.aux
+(C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (p2.py [2] [3] [4] [5] [6] [7] [8])
+<Grafica1.png, id=35, 462.528pt x 346.896pt>
+File: Grafica1.png Graphic file (type png)
+<use Grafica1.png>
+Package pdftex.def Info: Grafica1.png  used on input line 109.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<Grafica2.png, id=37, 462.528pt x 346.896pt>
+File: Grafica2.png Graphic file (type png)
+<use Grafica2.png>
+Package pdftex.def Info: Grafica2.png  used on input line 129.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+ [9 <./Grafica1.png>]
+<Grafica3.png, id=42, 462.528pt x 346.896pt>
+File: Grafica3.png Graphic file (type png)
+<use Grafica3.png>
+Package pdftex.def Info: Grafica3.png  used on input line 149.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<Grafica4.png, id=43, 462.528pt x 346.896pt>
+File: Grafica4.png Graphic file (type png)
+<use Grafica4.png>
+Package pdftex.def Info: Grafica4.png  used on input line 169.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+ [10 <./Grafica2.png> <./Grafica3.png>]
+<Grafica5.png, id=49, 462.528pt x 346.896pt>
+File: Grafica5.png Graphic file (type png)
+<use Grafica5.png>
+Package pdftex.def Info: Grafica5.png  used on input line 189.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<Grafica6.png, id=50, 462.528pt x 346.896pt>
+File: Grafica6.png Graphic file (type png)
+<use Grafica6.png>
+Package pdftex.def Info: Grafica6.png  used on input line 209.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+ [11 <./Grafica4.png> <./Grafica5.png>]
+<Grafica7.png, id=56, 462.528pt x 346.896pt>
+File: Grafica7.png Graphic file (type png)
+<use Grafica7.png>
+Package pdftex.def Info: Grafica7.png  used on input line 229.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<Grafica8.png, id=57, 462.528pt x 346.896pt>
+File: Grafica8.png Graphic file (type png)
+<use Grafica8.png>
+Package pdftex.def Info: Grafica8.png  used on input line 249.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+ [12 <./Grafica6.png> <./Grafica7.png>]
+<Grafica1_2.png, id=64, 462.528pt x 346.896pt>
+File: Grafica1_2.png Graphic file (type png)
+<use Grafica1_2.png>
+Package pdftex.def Info: Grafica1_2.png  used on input line 271.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<Grafica2_2.png, id=65, 462.528pt x 346.896pt>
+File: Grafica2_2.png Graphic file (type png)
+<use Grafica2_2.png>
+Package pdftex.def Info: Grafica2_2.png  used on input line 293.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+ [13 <./Grafica8.png> <./Grafica1_2.png>]
+<Grafica3_2.png, id=71, 462.528pt x 346.896pt>
+File: Grafica3_2.png Graphic file (type png)
+<use Grafica3_2.png>
+Package pdftex.def Info: Grafica3_2.png  used on input line 315.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<Grafica4_2.png, id=72, 462.528pt x 346.896pt>
+File: Grafica4_2.png Graphic file (type png)
+<use Grafica4_2.png>
+Package pdftex.def Info: Grafica4_2.png  used on input line 337.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+ [14 <./Grafica2_2.png> <./Grafica3_2.png>]
+<Grafica5_2.png, id=78, 462.528pt x 346.896pt>
+File: Grafica5_2.png Graphic file (type png)
+<use Grafica5_2.png>
+Package pdftex.def Info: Grafica5_2.png  used on input line 359.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<Grafica6_2.png, id=79, 462.528pt x 346.896pt>
+File: Grafica6_2.png Graphic file (type png)
+<use Grafica6_2.png>
+Package pdftex.def Info: Grafica6_2.png  used on input line 381.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+ [15 <./Grafica4_2.png> <./Grafica5_2.png>]
+<Grafica7_2.png, id=85, 462.528pt x 346.896pt>
+File: Grafica7_2.png Graphic file (type png)
+<use Grafica7_2.png>
+Package pdftex.def Info: Grafica7_2.png  used on input line 403.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<Grafica8_2.png, id=86, 462.528pt x 346.896pt>
+File: Grafica8_2.png Graphic file (type png)
+<use Grafica8_2.png>
+Package pdftex.def Info: Grafica8_2.png  used on input line 425.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+ [16 <./Grafica6_2.png> <./Grafica7_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 459--461
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
+
+ []
+
+[17 <./Grafica8_2.png>] [18] (c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Practica 2\latex\practica2.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
  ***********
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
+L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7468 strings out of 474116
- 118337 string characters out of 5743682
- 2422187 words of memory out of 5000000
- 29788 multiletter control sequences out of 15000+600000
- 563592 words of font info for 55 fonts, out of 8000000 for 9000
+ 7608 strings out of 474486
+ 124425 string characters out of 5743755
+ 2421542 words of memory out of 5000000
+ 29850 multiletter control sequences out of 15000+600000
+ 564245 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,9n,65p,396b,1936s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on latex/practica2.pdf (10 pages, 105528 bytes).
+ 57i,9n,65p,1052b,1936s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\yleob\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on "c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Practica 2\latex\practica2.pdf" (19 pages, 524681 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 132 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
