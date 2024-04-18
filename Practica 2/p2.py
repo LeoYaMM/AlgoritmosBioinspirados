@@ -11,58 +11,58 @@ random.seed(23)
 n = 3
 nn = n * n
 n2 = nn // 2
-magic_number = n * (n ** 2 + 1) / 2
-tamano_poblacion = 200
-num_elites = 150
-num_mutaciones = 0.9
-probabilidad_mutacion = 1
+magicNumber = n * (n ** 2 + 1) / 2
+poblationSize = 200
+elites = 150
+alfaMutaciones = 0.9
+probMutacion = 1
 epocas = 1000000
 intentos_cruce = 20
 tenencia_tabu = 10
 
 poblacion = []
 aptitud = []
-lista_tabu = []
+tabu = []
 
-def generar_individuos():
-    poblacion_generada = []
-    for _ in range(tamano_poblacion):
+def generarIndividuos():
+    populationGen = []
+    for _ in range(poblationSize):
         cuadrado = list(range(1, nn + 1))
         random.shuffle(cuadrado)
-        poblacion_generada.append(cuadrado)
-    return poblacion_generada
+        populationGen.append(cuadrado)
+    return populationGen
 
-def calcular_aptitud_poblacional(poblacion_actual):
+def aptitudPoblacional(poblacionActual):
     aptitudes = []
-    for individuo in poblacion_actual:
-        aptitudes.append(calcular_aptitud_cuadrado(individuo))
+    for individuo in poblacionActual:
+        aptitudes.append(calcularAptitudCuadrado(individuo))
     return aptitudes
 
-def calcular_aptitud_cuadrado(cuadrado):
+def calcularAptitudCuadrado(cuadrado):
     aptitud = 0
     suma = 0
     for i in range(nn):
         if (i % n == 0 and i != 0):
-            aptitud += abs(magic_number - suma)
+            aptitud += abs(magicNumber - suma)
             suma = 0
         suma += cuadrado[i]
-    aptitud += abs(magic_number - suma)
+    aptitud += abs(magicNumber - suma)
 
     for j in range(n):
         suma = 0
         for i in range(j, nn, n):
             suma += cuadrado[i]
-        aptitud += abs(magic_number - suma)
+        aptitud += abs(magicNumber - suma)
 
     suma = 0
     for i in range(0, nn, n + 1):
         suma += cuadrado[i]
-    aptitud += abs(magic_number - suma)
+    aptitud += abs(magicNumber - suma)
 
     suma = 0
     for i in range(n - 1, nn - 1, n - 1):
         suma += cuadrado[i]
-    aptitud += abs(magic_number - suma)
+    aptitud += abs(magicNumber - suma)
 
     return aptitud
 
@@ -70,110 +70,110 @@ def verificar_exito(aptitudes):
     if 0.0 in aptitudes:
         return aptitudes.index(0.0), 'exito'
 
-    umbral_error_minimo = 5
-    for indice, valor_aptitud in enumerate(aptitudes):
-        if valor_aptitud <= umbral_error_minimo:
+    error = 5
+    for indice, aptitud in enumerate(aptitudes):
+        if aptitud <= error:
             return indice, 'error_minimo'
 
     return -1, 'no_encontrado'
 
 def es_cuadrado_valido(cuadrado):
     numeros = set(range(1, nn + 1))
-    cuadrado_posible = set(cuadrado)
+    cuadradoPosible = set(cuadrado)
 
-    if numeros == cuadrado_posible:
+    if numeros == cuadradoPosible:
         return True
     return False
 
-def obtener_elites(poblacion_actual, aptitudes):
-    combinados = list(zip(poblacion_actual, aptitudes))
+def fronteras(poblacionActual, aptitudes):
+    combinados = list(zip(poblacionActual, aptitudes))
     combinados = sorted(combinados, key=lambda x: x[1])
     elites, _ = zip(*combinados)
-    mejor_aptitud = aptitudes[0]
-    peor_aptitud = aptitudes[-1]
-    favorito = sum(aptitudes) / len(aptitudes)
-    desviacion_estandar = statistics.stdev(aptitudes)
-    print(f"Mejor Aptitud: {mejor_aptitud}")
-    print(f'Peor Aptitud: {peor_aptitud}')
-    print(f'Aptitud Promedio: {favorito}')
-    print(f'Desviacion Estandar: {desviacion_estandar}')
+    mejorAptitud = aptitudes[0]
+    peorAptitud = aptitudes[-1]
+    mejor = sum(aptitudes) / len(aptitudes)
+    dessviacionSTD = statistics.stdev(aptitudes)
+    print(f"Mejor Aptitud: {mejorAptitud}")
+    print(f'Peor Aptitud: {peorAptitud}')
+    print(f'Aptitud Promedio: {mejor}')
+    print(f'Desviacion Estandar: {dessviacionSTD}')
     print(f'Élite Top: {elites[0]}')
     return list(elites)
 
 def mutar(cuadrado):
-    numero_genes = len(cuadrado)
-    numero_mutaciones = random.randint(1, numero_genes)
+    numGenes = len(cuadrado)
+    numMutaciones = random.randint(1, numGenes)
 
-    for _ in range(numero_mutaciones):
-        i = random.randint(0, numero_genes - 1)
-        j = random.randint(0, numero_genes - 1)
+    for _ in range(numMutaciones):
+        i = random.randint(0, numGenes - 1)
+        j = random.randint(0, numGenes - 1)
         cuadrado[i], cuadrado[j] = cuadrado[j], cuadrado[i]
 
     return cuadrado
 
-def reproducir(poblacion_actual, aptitudes):
-    poblacion_copia = copy.deepcopy(poblacion_actual)
-    pool_apareamiento = []
-    siguiente_generacion = []
+def reproducir(poblacionActual, aptitudes):
+    poblacion2 = copy.deepcopy(poblacionActual)
+    apareamiento = []
+    generacion2 = []
 
-    individuos_restantes = tamano_poblacion - num_elites
-    elites = obtener_elites(poblacion_actual, aptitudes)
+    individuosRestantes = poblationSize - elites
+    elites = fronteras(poblacionActual, aptitudes)
     unicos_elites = []
     for elite in elites:
         if elite not in unicos_elites:
             unicos_elites.append(elite)
 
-    siguiente_generacion = unicos_elites[0:num_elites]
+    generacion2 = unicos_elites[0:elites]
 
-    suma_aptitudes = 0
-    inverso_aptitudes = []
+    sumaAptitudes = 0
+    inversoAptitudes = []
     for aptitud in aptitudes:
-        inverso_aptitudes.append(10000 - aptitud)
-    for aptitud in inverso_aptitudes:
-        suma_aptitudes += aptitud
+        inversoAptitudes.append(10000 - aptitud)
+    for aptitud in inversoAptitudes:
+        sumaAptitudes += aptitud
 
-    pool_apareamiento.append(inverso_aptitudes[0] / suma_aptitudes)
-    for i in range(1, len(inverso_aptitudes)):
-        probabilidad = inverso_aptitudes[i] / suma_aptitudes
-        pool_apareamiento.append(probabilidad + pool_apareamiento[i - 1])
+    apareamiento.append(inversoAptitudes[0] / sumaAptitudes)
+    for i in range(1, len(inversoAptitudes)):
+        probabilidad = inversoAptitudes[i] / sumaAptitudes
+        apareamiento.append(probabilidad + apareamiento[i - 1])
 
-    while individuos_restantes > 0:
+    while individuosRestantes > 0:
         eleccion1 = random.random()
         eleccion2 = random.random()
         indice1 = 0
         indice2 = 0
-        for i in range(len(pool_apareamiento)):
-            if eleccion1 <= pool_apareamiento[i]:
+        for i in range(len(apareamiento)):
+            if eleccion1 <= apareamiento[i]:
                 indice1 = i
                 break
-        for i in range(len(pool_apareamiento)):
-            if eleccion2 <= pool_apareamiento[i]:
+        for i in range(len(apareamiento)):
+            if eleccion2 <= apareamiento[i]:
                 indice2 = i
                 break
 
-        candidato1 = copy.copy(poblacion_copia[indice1])
-        candidato2 = copy.copy(poblacion_copia[indice2])
+        candidato1 = copy.copy(poblacion2[indice1])
+        candidato2 = copy.copy(poblacion2[indice2])
 
-        hijo1, hijo2 = cruce(candidato1, candidato2)
+        hijo1, hijo2 = crossover(candidato1, candidato2)
 
-        if (hijo1 not in siguiente_generacion) and (hijo1 not in lista_tabu):
-            siguiente_generacion.append(hijo1)
-            individuos_restantes -= 1
-            if len(lista_tabu) >= tenencia_tabu:
-                lista_tabu.pop(0)
-            lista_tabu.append(hijo1)
+        if (hijo1 not in generacion2) and (hijo1 not in tabu):
+            generacion2.append(hijo1)
+            individuosRestantes -= 1
+            if len(tabu) >= tenencia_tabu:
+                tabu.pop(0)
+            tabu.append(hijo1)
 
-        if ((hijo2 not in siguiente_generacion) and (hijo2 not in lista_tabu) and individuos_restantes > 0):
-            siguiente_generacion.append(hijo2)
-            individuos_restantes -= 1
-            if len(lista_tabu) >= tenencia_tabu:
-                lista_tabu.pop(0)
-            lista_tabu.append(hijo2)
+        if ((hijo2 not in generacion2) and (hijo2 not in tabu) and individuosRestantes > 0):
+            generacion2.append(hijo2)
+            individuosRestantes -= 1
+            if len(tabu) >= tenencia_tabu:
+                tabu.pop(0)
+            tabu.append(hijo2)
 
     print()
-    return siguiente_generacion
+    return generacion2
 
-def cruce(padre1, padre2):
+def crossover(padre1, padre2):
     index1 = random.randint(0, nn - 1)
     index2 = random.randint(0, nn - 1)
     if index1 > index2:
@@ -185,24 +185,24 @@ def cruce(padre1, padre2):
     hijo1[index1:index2 + 1] = padre2[index1:index2 + 1]
     hijo2[index1:index2 + 1] = padre1[index1:index2 + 1]
 
-    def completar_hijo(hijo, padre):
-        pos_actual = (index2 + 1) % nn
+    def completarHijo(hijo, padre):
+        posicion = (index2 + 1) % nn
         for gen in padre:
             if gen not in hijo:
-                hijo[pos_actual] = gen
-                pos_actual = (pos_actual + 1) % nn
+                hijo[posicion] = gen
+                posicion = (posicion + 1) % nn
 
-    completar_hijo(hijo1, padre1)
-    completar_hijo(hijo2, padre2)
+    completarHijo(hijo1, padre1)
+    completarHijo(hijo2, padre2)
 
     return hijo1, hijo2
 
-poblacion = generar_individuos()
+poblacion = generarIndividuos()
 historial = {'mejor': [], 'peor': [], 'promedio': [], 'desviacion': []}
 
 for i in range(epocas):
     print(f"Generación actual: {i}")
-    aptitud = calcular_aptitud_poblacional(poblacion)
+    aptitud = aptitudPoblacional(poblacion)
 
     historial['mejor'].append(min(aptitud))
     historial['peor'].append(max(aptitud))
@@ -246,62 +246,62 @@ random.seed(23)
 n = 4
 nn = n * n
 n2 = nn // 2
-magic_number = n * (n ** 2 + 1) / 2
-population_size = 200
-num_elites = 150
-num_mutations = 0.9
-mutation_chance = 1
+magicNumber = n * (n ** 2 + 1) / 2
+tamanioPoblacion = 200
+elites = 150
+num_mututacion = 0.9
+mutationChance = 1
 epoch = 1000000
-crossover_attempts = 20
-tabu_tenure = 10
+intentoCruza = 20
+tabu2 = 10
 
 poblacion = []
 aptitud = []
-tabu_list = []
+listaTabu = []
 
-def generar_individuos():
+def generarIndividuos():
     pop = []
-    for i in range(population_size):
+    for _ in range(tamanioPoblacion):
         c = list(range(1, nn + 1))
         random.shuffle(c)
         pop.append(c)
     return pop
 
-def obtener_aptitud_poblacional(pop):
+def obtenerAptitudPoblacional(pop):
     fit = []
     for c in pop:
-        fit.append(encontrar_aptitud2(c))
+        fit.append(encontrarAptitud2(c))
     return fit
 
-def encontrar_aptitud2(criatura):
+def encontrarAptitud2(hijo):
     fit = 0
     suma = 0
     for i in range(nn):
         if (i % n == 0 and i != 0):
-            fit += abs(magic_number - suma)
+            fit += abs(magicNumber - suma)
             suma = 0
-        suma += criatura[i]
-    fit += abs(magic_number - suma)
+        suma += hijo[i]
+    fit += abs(magicNumber - suma)
 
     for j in range(n):
         suma = 0
         for i in range(j, nn, n):
-            suma += criatura[i]
-        fit += abs(magic_number - suma)
+            suma += hijo[i]
+        fit += abs(magicNumber - suma)
 
     suma = 0
     for i in range(0, nn, n + 1):
-        suma += criatura[i]
-    fit += abs(magic_number - suma)
+        suma += hijo[i]
+    fit += abs(magicNumber - suma)
 
     suma = 0
     for i in range(n - 1, nn - 1, n - 1):
-        suma += criatura[i]
-    fit += abs(magic_number - suma)
+        suma += hijo[i]
+    fit += abs(magicNumber - suma)
 
     return fit
 
-def ganamos(apt):
+def wins(apt):
     if 0.0 in apt:
         return apt.index(0.0), 'exito'
 
@@ -313,7 +313,7 @@ def ganamos(apt):
     return -1, 'no_encontrado'
 
 
-def es_cuadrado_valido(criatura):
+def esCuadradoValido(criatura):
     numeros = set(range(1, nn + 1))
     cuadrado_posible = set(criatura)
 
@@ -322,45 +322,45 @@ def es_cuadrado_valido(criatura):
     return False
 
 
-def obtener_elites(pop, fit):
+def obtenerElites(pop, fit):
     combinados = list(zip(pop, fit))
     combinados = sorted(combinados, key=lambda x: x[1])
     elites, trash = zip(*combinados)
-    mejor_aptitud = trash[0]
-    peor_aptitud = trash[-1]
-    favorito = sum(trash) / len(trash)
+    betterApt = trash[0]
+    worstApt = trash[-1]
+    elBueno = sum(trash) / len(trash)
     desviacion = statistics.stdev(aptitud)
-    print(f"Mejor Aptitud: {mejor_aptitud}")
-    print(f'Peor Aptitud: {peor_aptitud}')
-    print(f'Aptitud Promedio: {favorito}')
+    print(f"Mejor Aptitud: {betterApt}")
+    print(f'Peor Aptitud: {worstApt}')
+    print(f'Aptitud Promedio: {elBueno}')
     print(f'Desviacion Estandar: {desviacion}')
     print(f'Élite Top: {elites[0]}')
     return list(elites)
 
-def mutar(criatura):
-    nn = len(criatura)
+def mutar(hijo):
+    nn = len(hijo)
     num_mut = random.randint(1, nn)
 
     for _ in range(num_mut):
         i = random.randint(0, nn - 1)
         j = random.randint(0, nn - 1)
-        criatura[i], criatura[j] = criatura[j], criatura[i]
+        hijo[i], hijo[j] = hijo[j], hijo[i]
 
-    return criatura
+    return hijo
 
 def reproducir(pop, fit):
     popc = copy.deepcopy(pop)
-    pool_apareamiento = []
-    siguiente_gen = []
+    apareamiento = []
+    siguienteGen = []
 
-    numero_restante = population_size - num_elites
-    elites = obtener_elites(pop, fit)
-    unicos_elites = []
+    numeroRestante = tamanioPoblacion - elites
+    elites = fronteras(pop, fit)
+    elites = []
     for e in elites:
-        if not e in unicos_elites:
-            unicos_elites.append(e)
+        if not e in elites:
+            elites.append(e)
 
-    siguiente_gen = unicos_elites[0:num_elites]
+    siguienteGen = elites[0:elites]
 
     fitsum = 0
     bigfit = []
@@ -370,82 +370,82 @@ def reproducir(pop, fit):
     for i in bigfit:
         fitsum += i
 
-    pool_apareamiento.append(bigfit[0] / fitsum)
+    apareamiento.append(bigfit[0] / fitsum)
     for i in range(1, len(bigfit)):
         prob = bigfit[i] / fitsum
-        pool_apareamiento.append(prob + pool_apareamiento[i - 1])
+        apareamiento.append(prob + apareamiento[i - 1])
 
-    while numero_restante > 0:
+    while numeroRestante > 0:
         eleccion1 = random.random()
         eleccion2 = random.random()
         indice1 = 0
         indice2 = 0
-        for i in range(len(pool_apareamiento)):
-            if eleccion1 <= pool_apareamiento[i]:
+        for i in range(len(apareamiento)):
+            if eleccion1 <= apareamiento[i]:
                 indice1 = i
                 break
-        for i in range(len(pool_apareamiento)):
-            if eleccion2 <= pool_apareamiento[i]:
+        for i in range(len(apareamiento)):
+            if eleccion2 <= apareamiento[i]:
                 indice2 = i
                 break
 
         candidato1 = copy.copy(popc[indice1])
         candidato2 = copy.copy(popc[indice2])
 
-        bebe1, bebe2 = cruce(candidato1, candidato2)
+        hijo1, hijo2 = crossover(candidato1, candidato2)
 
-        if (not bebe1 in siguiente_gen) and (not bebe1 in tabu_list):
-            siguiente_gen.append(bebe1)
-            numero_restante -= 1
-            if len(tabu_list) >= tabu_tenure:
-                tabu_list.pop(0)
-            tabu_list.append(bebe1)
+        if (not hijo1 in siguienteGen) and (not hijo1 in listaTabu):
+            siguienteGen.append(hijo1)
+            numeroRestante -= 1
+            if len(listaTabu) >= tabu2:
+                listaTabu.pop(0)
+            listaTabu.append(hijo1)
 
-        if ((not bebe2 in siguiente_gen) and (not bebe2 in tabu_list) and numero_restante > 0):
-            siguiente_gen.append(bebe2)
-            numero_restante -= 1
-            if len(tabu_list) >= tabu_tenure:
-                tabu_list.pop(0)
-            tabu_list.append(bebe2)
+        if ((not hijo2 in siguienteGen) and (not hijo2 in listaTabu) and numeroRestante > 0):
+            siguienteGen.append(hijo2)
+            numeroRestante -= 1
+            if len(listaTabu) >= tabu2:
+                listaTabu.pop(0)
+            listaTabu.append(hijo2)
 
     print()
-    return siguiente_gen
+    return siguienteGen
 
-def cruce(p1, p2):
-    nn = len(p1)
-    index1 = random.randint(0, nn - 1)
-    index2 = random.randint(0, nn - 1)
+def crossover(padre1, padre2):
+    nSquared = len(padre1)
+    index1 = random.randint(0, nSquared - 1)
+    index2 = random.randint(0, nSquared - 1)
     if index1 > index2:
         index1, index2 = index2, index1
 
-    c1 = [None] * nn
-    c2 = [None] * nn
+    child1 = [None] * nSquared
+    child2 = [None] * nSquared
 
-    c1[index1:index2 + 1] = p2[index1:index2 + 1]
-    c2[index1:index2 + 1] = p1[index1:index2 + 1]
+    child1[index1:index2 + 1] = padre2[index1:index2 + 1]
+    child2[index1:index2 + 1] = padre1[index1:index2 + 1]
 
-    def complete_child(child, parent):
-        current_pos = (index2 + 1) % nn
+    def completeChild(child, parent):
+        current_pos = (index2 + 1) % nSquared
         for gene in parent:
             if gene not in child:
                 child[current_pos] = gene
-                current_pos = (current_pos + 1) % nn
+                current_pos = (current_pos + 1) % nSquared
 
-    complete_child(c1, p1)
-    complete_child(c2, p2)
+    completeChild(child1, padre1)
+    completeChild(child2, padre2)
 
-    return c1, c2
+    return child1, child2
 
-poblacion = generar_individuos()
-historial_aptitud = {'mejor': [], 'peor': [], 'promedio': [], 'desviacion': []}
+poblacion = generarIndividuos()
+historialAptitud = {'mejor': [], 'peor': [], 'promedio': [], 'desviacion': []}
 
 for i in range(epoch):
     print(f"Generación actual: {i}")
-    aptitud = obtener_aptitud_poblacional(poblacion)
+    aptitud = obtenerAptitudPoblacional(poblacion)
 
-    historial_aptitud['mejor'].append(min(aptitud))
-    historial_aptitud['peor'].append(max(aptitud))
-    historial_aptitud['promedio'].append(sum(aptitud) / len(aptitud))
+    historialAptitud['mejor'].append(min(aptitud))
+    historialAptitud['peor'].append(max(aptitud))
+    historialAptitud['promedio'].append(sum(aptitud) / len(aptitud))
 
 
     if i % 500 == 0 and i != 0:
@@ -453,7 +453,7 @@ for i in range(epoch):
             print(f'Cuadrado: {poblacion[i]}  Aptitud: {aptitud[i]}')
         time.sleep(3)
 
-    indice, estado = ganamos(aptitud)
+    indice, estado = wins(aptitud)
     if estado == 'exito':
         print(f"Cuadrado Mágico Encontrado: {poblacion[indice]}")
         break
@@ -463,16 +463,16 @@ for i in range(epoch):
 
     poblacion = reproducir(poblacion, aptitud)
 
-generaciones = list(range(len(historial_aptitud['mejor'])))
+generaciones = list(range(len(historialAptitud['mejor'])))
 
-plt.scatter(generaciones, historial_aptitud['mejor'], color='green', label='Mejor Aptitud')
-plt.plot(generaciones, historial_aptitud['mejor'], color='green')
+plt.scatter(generaciones, historialAptitud['mejor'], color='green', label='Mejor Aptitud')
+plt.plot(generaciones, historialAptitud['mejor'], color='green')
 
-plt.scatter(generaciones, historial_aptitud['peor'], color='red', label='Peor Aptitud')
-plt.plot(generaciones, historial_aptitud['peor'], color='red')
+plt.scatter(generaciones, historialAptitud['peor'], color='red', label='Peor Aptitud')
+plt.plot(generaciones, historialAptitud['peor'], color='red')
 
-plt.scatter(generaciones, historial_aptitud['promedio'], color='blue', label='Aptitud Promedio')
-plt.plot(generaciones, historial_aptitud['promedio'], color='blue')
+plt.scatter(generaciones, historialAptitud['promedio'], color='blue', label='Aptitud Promedio')
+plt.plot(generaciones, historialAptitud['promedio'], color='blue')
 
 plt.legend()
 plt.xlabel('Generaciones')
