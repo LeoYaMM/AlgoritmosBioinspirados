@@ -1,4 +1,4 @@
-# La estrategia evolutiva de este programa es (μ, λ) donde solo los descendientes son considerados para la siguiente generacion.
+# La estrategia evolutiva de este programa es (μ + λ) donde solo los descendientes son considerados para la siguiente generacion.
 from matplotlib import pyplot as plt
 import numpy as np
 from functools import reduce
@@ -75,9 +75,9 @@ def estrategiaEvolutiva(Gmax, dimension, interval, fun, mu, lamb, c, sigma):
                 parents.append([individual, fitness])
             print(f"Padres: {parents}")
         else:
-            # Selecciona los nuevos padres a partir de los hijos generados en la generación anterior
-            # Ordena los hijos por su fitness y selecciona los mejores μ para ser padres
-            parents = sorted(offspring, key=lambda child: child[1])[:mu]
+            # Selecciona los nuevos padres a partir de los mejores individuos en la generación anterior
+            # Ordena los individuos por su fitness y selecciona los mejores μ para ser padres
+            parents = sorted(population, key=lambda child: child[1])[:mu]
 
         # Crear λ hijos a partir de los μ padres
         offspring = []
@@ -91,9 +91,11 @@ def estrategiaEvolutiva(Gmax, dimension, interval, fun, mu, lamb, c, sigma):
             child = mutation(sigma, child, interval)
             offspring.append([child, np.round(fun(child), 4)])
 
+        population = parents + offspring
+        for _ in range(len(population)):
             # Actualizar la mejor solución
-            if offspring[-1][1] < fun(x):
-                x = offspring[-1][0]
+            if population[-1][1] < fun(x):
+                x = population[-1][0]
                 successes += 1
 
         print(f"Generacion {gen} Descendientes:\n{offspring}")
@@ -109,13 +111,13 @@ def estrategiaEvolutiva(Gmax, dimension, interval, fun, mu, lamb, c, sigma):
                 sigma = sigma / c # no hay tantos éxitos por lo tanto explora regiones con tamaños de paso más grande 
             elif ps < 1/5:
                 sigma = sigma * c  # encuentra región prometedora por lo tanto refina la solución actual(explotacion)
-            elif ps == 1/5: #caso contrario sigma queda con el mismo valor
+            elif ps == 1/5: # caso contrario sigma queda con el mismo valor
                 sigma = sigma
         
     return bestSolution, sigmas
 
 Gmax = 1000
-np.random.seed(123)
+np.random.seed(38)
 dimension = 10
 fun = rosenbrock
 
@@ -125,7 +127,7 @@ interval = (-2.048, 2.048) if fun == rosenbrock else \
             (-5.12, 5.12) if fun == rastrigin else None
 
 mu = 20
-lamb = 30 # Debe ser mayor que mu
+lamb = 30 
 sigma = 0.5 if fun == rosenbrock else \
             2.0 if fun == ackley else \
             20 if fun == griewank else \
