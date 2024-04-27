@@ -5,7 +5,7 @@ import estrategiaEvolutiva1 as ee1
 # Definir el algoritmo de Evolución Diferencial
 def differential_evolution(strategy, objective_function, dimensions, population_size, F, Cr, Gmax, interval):
     # Inicializar población y evaluarla
-    population = ee1.randSolution(interval, dimensions)
+    population = randSolution(interval, dimensions)
     for generation in range(Gmax):
         new_population = []
         for i, target in enumerate(population):
@@ -27,13 +27,15 @@ def differential_evolution(strategy, objective_function, dimensions, population_
         population = new_population
     return min(population, key=objective_function)
 
-
+#crea poblacion dentro de los intervalos de la funcion objetivo
+def randSolution(interval, dimensions):
+    return np.random.uniform(interval[0], interval[1], dimensions)
 
 # Ejecutar el experimento
-def run_experiment(strategy, objective_function, dimensions, population_size, F, Cr, Gmax, runs):
+def run_experiment(strategy, objective_function, dimensions, population_size, F, Cr, Gmax, runs, interval):
     best_solutions = []
     for _ in range(runs):
-        best_solution = differential_evolution(strategy, objective_function, dimensions, population_size, F, Cr, Gmax)
+        best_solution = differential_evolution(strategy, objective_function, dimensions, population_size, F, Cr, Gmax, interval)
         best_solutions.append(objective_function(best_solution))
     return np.mean(best_solutions), np.std(best_solutions)
 
