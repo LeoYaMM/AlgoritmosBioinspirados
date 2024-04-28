@@ -86,13 +86,14 @@ Ambos métodos, aunque similares en su inspiración evolutiva, difieren en sus m
 
 \section{Desarrollo}
 Para el desarrollo de esta práctica se programaron los siguientes codigos.
-\subsection{Estrategias Evolutivas}
+\subsection{Estrategia Evolutiva ($\mu , \lambda$)}
 Usa una estrategia evolutiva en la que solo los descendientes (no los padres) son considerados para la generación siguiente, lo que puede ayudar a evitar la convergencia prematura hacia mínimos locales subóptimos.
 \lstinputlisting[language=Python, style=mystyle]{estrategiaEvolutiva1.py}
 Este código es una implementación directa de una estrategia evolutiva que facilita la optimización en espacios de búsqueda complejos mediante la adaptación continua de los parámetros y el uso de operadores genéticos como la mutación y el crossover.
+\subsection{Estrategia Evolutiva ($\mu + \lambda$)}
 \lstinputlisting[language=Python, style=mystyle]{estrategiaEvolutiva2.py}
-\subsection{Estrategias Evolutivas}
 
+\subsection{Evolución Diferencial}
 \lstinputlisting[language=Python, style=mystyle]{evolucionDiferencial.py}
 
 ¿Cuáles fueron las versiones de algoritmos que no convergieron a la solución optima?\\

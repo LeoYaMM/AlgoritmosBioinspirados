@@ -1,7 +1,8 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {section}{\numberline {1}Introducción}{2}{}%
 \contentsline {section}{\numberline {2}Desarrollo}{2}{}%
-\contentsline {subsection}{\numberline {2.1}Estrategias Evolutivas}{2}{}%
-\contentsline {subsection}{\numberline {2.2}Estrategias Evolutivas}{6}{}%
-\contentsline {section}{\numberline {3}Resultados}{8}{}%
-\contentsline {section}{\numberline {4}Conclusiones}{8}{}%
+\contentsline {subsection}{\numberline {2.1}Estrategia Evolutiva ($\mu , \lambda $)}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Estrategia Evolutiva ($\mu + \lambda $)}{4}{}%
+\contentsline {subsection}{\numberline {2.3}Evolución Diferencial}{7}{}%
+\contentsline {section}{\numberline {3}Resultados}{11}{}%
+\contentsline {section}{\numberline {4}Conclusiones}{11}{}%
