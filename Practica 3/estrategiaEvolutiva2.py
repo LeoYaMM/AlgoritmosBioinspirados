@@ -117,7 +117,7 @@ def estrategiaEvolutiva(Gmax, dimension, interval, fun, mu, lamb, c, sigma):
     return bestSolution, sigmas
 
 Gmax = 1000
-np.random.seed(38)
+np.random.seed(21)
 dimension = 10
 fun = rosenbrock
 

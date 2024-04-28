@@ -9,6 +9,7 @@
 \usepackage{xcolor}
 \usepackage{array}
 \usepackage{booktabs}
+\usepackage{tabularx}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -72,7 +73,7 @@
     \tableofcontents
     \newpage
     \section{Introducción}
-    Los **Algoritmos Evolutivos** son una familia de métodos de optimización inspirados en el proceso de selección natural y evolución biológica. Dos enfoques destacados dentro de esta familia son las **Estrategias Evolutivas** y la **Evolución Diferencial**, cada uno con sus particularidades y aplicaciones.
+    Los Algoritmos Evolutivos son una familia de métodos de optimización inspirados en el proceso de selección natural y evolución biológica. Dos enfoques destacados dentro de esta familia son las **Estrategias Evolutivas** y la **Evolución Diferencial**, cada uno con sus particularidades y aplicaciones.
 
 ### Estrategias Evolutivas (ES)
 
@@ -109,21 +110,42 @@ Considerando todas las pruebas, cuál es el algoritmo que converge mas rápido (
 El algoritmo de Evolución Diferencial (DE) utilizando la estrategia (rand/1/bin) se destaca por su rapidez en la convergencia, especialmente cuando se aplica a la función Rastrigin. En múltiples ejecuciones, este algoritmo ha demostrado su capacidad para converger eficientemente hacia soluciones con un fitness cercano a cero, el cual es el valor óptimo para esta función. Esta eficacia en alcanzar rápidamente soluciones de alta calidad lo convierte en una opción atractiva para problemas de optimización complejos con múltiples óptimos locales.\\
 
 \begin{table}[ht]
+    \centering
+    \caption{Comparación de Métodos Evolutivos}
+    \label{tab:comparacion_metodos}
+    \begin{tabularx}{\textwidth}{X|X|X}
+    \toprule
+    \textbf{Algoritmo Genético} & \textbf{Evolución Diferencial} & \textbf{Estrategias Evolutivas} \\
+    \midrule
+    Utiliza operadores de cruzamiento y mutación. & Se basa en la combinación de soluciones ponderadas. & Utiliza mutaciones con adaptación de parámetros. \\
+    \addlinespace
+    Operan sobre una representación binaria o simbólica. & Opera sobre una representación real. & Opera generalmente sobre representaciones reales. \\
+    \addlinespace
+    Selección basada en el rendimiento relativo. & Selección directa por torneos entre individuos y sus mutantes. & Uso de técnicas de selección como la $(\mu, \lambda)$ y $(\mu+\lambda)$. \\
+    \addlinespace
+    Aplicación amplia en problemas de optimización combinatoria. & Eficiente en problemas de optimización sobre espacios continuos. & Enfocado en la auto-adaptación de las estrategias de búsqueda. \\
+    \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{table}[ht]
 \centering
 \caption{Comparación de estrategias en diferentes funciones}
 \begin{tabular}{>{\raggedright}p{3cm}ccccccc}
 \toprule
 \textbf{Problema} & \textbf{(m, $\lambda$)} & \textbf{(m + $\lambda$)} & \textbf{(r/1/b)} & \textbf{(r/1/e)} & \textbf{(b/1/b)} & \textbf{(b/1/e)} \\
 \midrule
-Ackley & -- & -- & -- & -- & -- & -- \\
-Griewank & -- & -- & -- & -- & -- & -- \\
-Rastrigin & -- & -- & -- & -- & -- & -- \\
-Rosenbrock & -- & -- & -- & -- & -- & -- \\
+Ackley & 3.985e-15 & 3.9856e-15 & 1.0302 & 0.5505 & 0.7049 & 0.388 \\
+Griewank & -- & 5.1222e-08 & 0 & 8.3599e-12 & -- & 7.233e-08 \\
+Rastrigin & 1.790e-12 & 40.709 & 4.07 & 31.20 & 11.286 & 29.971 \\
+Rosenbrock & 2.059e-14 & 4.6960e-15 & 12.8 & 12.292 & -- & 25.863 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \section{Resultados}
+
+
 
 \section{Conclusiones}
 
