@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{2}{}%
+\contentsline {section}{\numberline {2}Desarrollo}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Estrategias Evolutivas}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Estrategias Evolutivas}{6}{}%
+\contentsline {section}{\numberline {3}Resultados}{8}{}%
+\contentsline {section}{\numberline {4}Conclusiones}{8}{}%
