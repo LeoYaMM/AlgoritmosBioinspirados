@@ -74,13 +74,11 @@
     \newpage
     \section{Introducción}
     Los Algoritmos Evolutivos son una familia de métodos de optimización inspirados en el proceso de selección natural y evolución biológica. Dos enfoques destacados dentro de esta familia son las **Estrategias Evolutivas** y la **Evolución Diferencial**, cada uno con sus particularidades y aplicaciones.
-
-### Estrategias Evolutivas (ES)
+Estrategias Evolutivas (ES)
 
 Las Estrategias Evolutivas son técnicas que se centran principalmente en la optimización numérica continua. En estas estrategias, la población de soluciones evoluciona a través de la mutación y la selección. La mutación se realiza generalmente mediante la adición de ruido normalmente distribuido a los vectores de parámetros, lo que permite una exploración efectiva del espacio de búsqueda. Una característica distintiva de las ES es el uso de mecanismos de autoadaptación para ajustar los parámetros de la mutación, como la tasa de mutación, basándose en el éxito de las generaciones anteriores.
 
-### Evolución Diferencial (DE)
-
+Evolución Diferencial (DE)
 La Evolución Diferencial es otro método robusto para optimizar problemas de optimización numérica. Se caracteriza por su sencillez y eficacia, especialmente en problemas multimodales (con múltiples óptimos locales). En DE, la nueva generación se crea añadiendo la diferencia ponderada entre dos o más soluciones de la población actual a una tercera solución. Este método se basa en operadores simples como la mutación diferencial, la recombinación y la selección. La mutación diferencial es particularmente útil para mantener la diversidad genética dentro de la población, lo que ayuda a explorar de manera efectiva el espacio de búsqueda.
 
 Ambos métodos, aunque similares en su inspiración evolutiva, difieren en sus mecanismos de mutación y adaptación, lo que los hace adecuados para diferentes tipos de problemas de optimización. La elección entre Estrategias Evolutivas y Evolución Diferencial a menudo depende del problema específico, la naturaleza del espacio de búsqueda y las preferencias del investigador o ingeniero.
@@ -144,8 +142,55 @@ Rosenbrock & 2.059e-14 & 4.6960e-15 & 12.8 & 12.292 & -- & 25.863 \\
 \end{table}
 
 \section{Resultados}
+\subsection{Resultados de estrategias evolutivas}
+%inserta imagen 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{evolutiva1.png}
+    \caption{Resultados de estrategiaEvolutiva1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{graficaev1.png}
+    \caption{Gráfica de resultados de estrategiaEvolutiva1}
+\end{figure}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{evolutiva1.2.png}
+    \caption{Resultados de estrategiaEvolutiva1}
+\end{figure}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{graficaev1.2.png}
+    \caption{Gráfica de resultados de estrategiaEvolutiva1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{evolutiva2.png}
+    \caption{Resultados de estrategiaEvolutiva2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{graficaev2.png}
+    \caption{Gráfica de resultados de estrategiaEvolutiva2}
+\end{figure}
+
+\subsection{Resultados de evolución diferencial}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{evDif.png}
+    \caption{Resultados de evolucionDiferencial.py}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{generacionDif.png}
+    \caption{Resultados generacionales de evolucionDiferencial.py}
+\end{figure}
 
 \section{Conclusiones}
 

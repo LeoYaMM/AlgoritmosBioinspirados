@@ -1,4 +1,4 @@
-# La estrategia evolutiva de este programa es (μ + λ) donde solo los descendientes son considerados para la siguiente generacion.
+# La estrategia evolutiva de este programa es (miu + lambda) donde solo los descendientes son considerados para la siguiente generacion.
 from matplotlib import pyplot as plt
 import numpy as np
 from functools import reduce
@@ -67,7 +67,7 @@ def estrategiaEvolutiva(Gmax, dimension, interval, fun, mu, lamb, c, sigma):
 
     for gen in range(Gmax): # Numero maximo de generaciones
         if gen == 0:
-            # Crea μ padres 
+            # Crea miu padres 
             parents = []
             for _ in range(mu):
                 individual = mutation(sigma, x, interval)
@@ -76,10 +76,10 @@ def estrategiaEvolutiva(Gmax, dimension, interval, fun, mu, lamb, c, sigma):
             print(f"Padres: {parents}")
         else:
             # Selecciona los nuevos padres a partir de los mejores individuos en la generación anterior
-            # Ordena los individuos por su fitness y selecciona los mejores μ para ser padres
+            # Ordena los individuos por su fitness y selecciona los mejores miu para ser padres
             parents = sorted(population, key=lambda child: child[1])[:mu]
 
-        # Crear λ hijos a partir de los μ padres
+        # Crear lambda hijos a partir de los miu padres
         offspring = []
         for _ in range(lamb):
             # Seleccionar aleatoriamente a dos padres para el cruce

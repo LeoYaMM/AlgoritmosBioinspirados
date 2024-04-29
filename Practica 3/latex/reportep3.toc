@@ -3,6 +3,8 @@
 \contentsline {section}{\numberline {2}Desarrollo}{2}{}%
 \contentsline {subsection}{\numberline {2.1}Estrategia Evolutiva ($\mu , \lambda $)}{2}{}%
 \contentsline {subsection}{\numberline {2.2}Estrategia Evolutiva ($\mu + \lambda $)}{4}{}%
-\contentsline {subsection}{\numberline {2.3}Evolución Diferencial}{7}{}%
-\contentsline {section}{\numberline {3}Resultados}{11}{}%
-\contentsline {section}{\numberline {4}Conclusiones}{11}{}%
+\contentsline {subsection}{\numberline {2.3}Evolución Diferencial}{6}{}%
+\contentsline {section}{\numberline {3}Resultados}{12}{}%
+\contentsline {subsection}{\numberline {3.1}Resultados de estrategias evolutivas}{12}{}%
+\contentsline {subsection}{\numberline {3.2}Resultados de evolución diferencial}{18}{}%
+\contentsline {section}{\numberline {4}Conclusiones}{19}{}%
