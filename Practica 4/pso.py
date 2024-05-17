@@ -93,13 +93,13 @@ def pso(num_particles, dimension, objective_function, w, c1, c2, generations, L,
 num_particles = 100
 dimension = 10
 #ω={0.25,0.5}
-w = 0.5
+w = 0.25
 # c1={0.0,1.0,2.0}
 c1 = 2.0
 # c2={0.0,1.0,2.0}
-c2 = 2.0
+c2 = 1.0
 generations = 5000
-fun = ackley
+fun = rosenbrock
 
 L, U = (-2.048, 2.048) if fun == rosenbrock else \
         (-32.768, 32.768) if fun == ackley else \
