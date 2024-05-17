@@ -1,0 +1,171 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolor}{rgb}{0.95,0.95,0.95}
+
+
+\lstset{
+    basicstyle=\ttfamily,
+    inputencoding=utf8,
+    extendedchars=true,
+    literate=%
+    {á}{{\'a}}1
+    {é}{{\'e}}1
+    {í}{{\'i}}1
+    {ó}{{\'o}}1
+    {ú}{{\'u}}1
+    {ñ}{{\~n}}1
+    {Á}{{\'A}}1
+    {É}{{\'E}}1
+    {Í}{{\'I}}1
+    {Ó}{{\'O}}1
+    {Ú}{{\'U}}1
+    {Ñ}{{\~N}}1
+}
+
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolor},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{red},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2  
+}
+
+\titleformat{\section}
+{\huge\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}
+{\large\bfseries}{\thesubsection}{1em}{}
+
+\renewcommand\thesection{\arabic{section}}
+
+\title{\Huge{\textbf{Practica 4. Optimización por Enjambre de Particulas.}}\\
+\Large{\textbf{Algoritmos Bioinspirados}}}
+\author{Diego Castillo Reyes\\Marthon Leobardo Yañez Martinez\\Aldo Escamilla Resendiz}
+
+\graphicspath{{imagenes/}}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+    \section{Introducción}
+
+
+    \section{Estadisticas Descriptivas}
+    \begin{table}[ht]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+        \hline
+        \multirow{2}{*}{Conf} & \multirow{2}{*}{Estadíst.} & \multicolumn{2}{c|}{Funciones de prueba} \\ \cline{3-4} 
+                              &                             & Ackley & Rosenbrock \\ \hline
+        1                     & min                         & 18.515644131362567 & \\ \cline{2-4} 
+                              & max                         &     21.95       &        \\ \cline{2-4} 
+                              & promedio                    &      21.090003122849488      &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        2                     & min                         &     9.517998536467005   & ...    \\ \cline{2-4}
+                              & max                         &  22.02   &        \\ \cline{2-4}
+                              & promedio                    &    9.517998536467003    & ...    \\ \cline{2-4}
+                              & des. est.                   &            &        \\ \hline
+        3                     & min                         &      4.976418408338478      &        \\ \cline{2-4} 
+                              & max                         &     22.09       &        \\ \cline{2-4} 
+                              & promedio                    &      4.9764184083384775      &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        4                     & min                         &      18.515644131362567      &        \\ \cline{2-4} 
+                              & max                         &     21.94       &        \\ \cline{2-4} 
+                              & promedio                    &     21.090003122849488       &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        5                     & min                         &    9.517998536467005        &        \\ \cline{2-4} 
+                              & max                         &        21.85    &        \\ \cline{2-4} 
+                              & promedio                    &      9.517998536467003      &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        6                     & min                         &    4.976418408338478        &        \\ \cline{2-4} 
+                              & max                         &        21.87    &        \\ \cline{2-4} 
+                              & promedio                    &     4.9764184083384775       &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        7                     & min                         &    18.515644131362567        &        \\ \cline{2-4} 
+                              & max                         &            &        \\ \cline{2-4} 
+                              & promedio                    &      21.090003122849488      &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        8                     & min                         &      9.517998536467005      &        \\ \cline{2-4} 
+                              & max                         &     21.96       &        \\ \cline{2-4} 
+                              & promedio                    &     9.517998536467003       &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        9                     & min                         &      4.976418408338478      &        \\ \cline{2-4} 
+                              & max                         &      21.83      &        \\ \cline{2-4} 
+                              & promedio                    &     4.9764184083384775       &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        10                    & min                         &      0.1668246681319836      &        \\ \cline{2-4} 
+                              & max                         &      22.09      &        \\ \cline{2-4} 
+                              & promedio                    &      0.1668246681319836      &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        11                    & min                         &      2.031481808228964      &        \\ \cline{2-4} 
+                              & max                         &     22.05       &        \\ \cline{2-4} 
+                              & promedio                    &       2.031481808228964     &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        12                    & min                         &     0.1668246681319836       &        \\ \cline{2-4} 
+                              & max                         &       21.93     &        \\ \cline{2-4} 
+                              & promedio                    &      0.1668246681319836      &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        13                    & min                         &       18.515644131362567     &        \\ \cline{2-4} 
+                              & max                         &     21.93       &        \\ \cline{2-4} 
+                              & promedio                    &    21.090003122849488        &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        14                    & min                         &      2.031481808228964      &        \\ \cline{2-4} 
+                              & max                         &     22.0       &        \\ \cline{2-4} 
+                              & promedio                    &     2.031481808228964       &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        15                    & min                         &     0.1668246681319836       &        \\ \cline{2-4} 
+                              & max                         &      21.96      &        \\ \cline{2-4} 
+                              & promedio                    &      0.1668246681319836      &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        16                    & min                         &      18.515644131362567      &        \\ \cline{2-4} 
+                              & max                         &       21.95     &        \\ \cline{2-4} 
+                              & promedio                    &     21.090003122849488       &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        17                    & min                         &      2.031481808228964      &        \\ \cline{2-4} 
+                              & max                         &       21.83     &        \\ \cline{2-4} 
+                              & promedio                    &        2.031481808228964    &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+        18                    & min                         &     0.1668246681319836       &        \\ \cline{2-4} 
+                              & max                         &      21.96      &        \\ \cline{2-4} 
+                              & promedio                    &      0.1668246681319836      &        \\ \cline{2-4} 
+                              & des. est.                   &            &        \\ \hline
+
+        \end{tabular}
+        \caption{Resultados de las funciones de prueba}
+        \label{tab:resultados}
+    \end{table}
+        
+
+        
+
+
+
+
+\end{document}

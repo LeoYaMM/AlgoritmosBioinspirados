@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.10)  28 APR 2024 19:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.10)  17 MAY 2024 15:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/aldoescamillaresendiz/Documents/Python/AlgoritmosBioinspirados/Practica 3/reportep3.tex"
-(/Users/aldoescamillaresendiz/Documents/Python/AlgoritmosBioinspirados/Practica 3/reportep3.tex
+**"/Users/aldoescamillaresendiz/Documents/Python/AlgoritmosBioinspirados/Practica 4/reporteP4.tex"
+(/Users/aldoescamillaresendiz/Documents/Python/AlgoritmosBioinspirados/Practica 4/reporteP4.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/report.cls
@@ -24,6 +24,10 @@ File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2024/02/07 v24.2 The Babel package
 \babel@savecnt=\count197
@@ -34,7 +38,7 @@ Package: babel 2024/02/07 v24.2 The Babel package
 \bbl@dirlevel=\count198
  (/usr/local/texlive/2024/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
-\es@quottoks=\toks17
+\es@quottoks=\toks19
 \es@quotdepth=\count199
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
@@ -47,7 +51,7 @@ Package babel Info: Importing font and identification data for spanish
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks18
+\KV@toks@=\toks20
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
  (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
@@ -64,7 +68,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutheight=\dimen147
 \Gm@layouthoffset=\dimen148
 \Gm@layoutvoffset=\dimen149
-\Gm@dimlist=\toks19
+\Gm@dimlist=\toks21
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
@@ -83,9 +87,9 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count269
-\float@exts=\toks20
+\float@exts=\toks22
 \float@box=\box51
-\@float@everytoks=\toks21
+\@float@everytoks=\toks23
 \@floatcapt=\box52
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
@@ -94,7 +98,7 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \aftertitleunit=\skip51
 \ttl@plus=\dimen152
 \ttl@minus=\dimen153
-\ttl@toksa=\toks22
+\ttl@toksa=\toks24
 \titlewidth=\dimen154
 \titlewidthlast=\dimen155
 \titlewidthfirst=\dimen156
@@ -118,7 +122,7 @@ Package caption Info: float package is loaded.
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count272
 \lst@gtempboxa=\box54
-\lst@token=\toks23
+\lst@token=\toks25
 \lst@length=\count273
 \lst@currlwidth=\dimen165
 \lst@column=\count274
@@ -160,7 +164,7 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen169
 \ar@mcellbox=\box56
 \extrarowheight=\dimen170
-\NC@list=\toks24
+\NC@list=\toks26
 \extratabsurround=\skip52
 \backup@length=\skip53
 \ar@cellbox=\box57
@@ -191,33 +195,39 @@ Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
 \TX@target=\dimen187
 \TX@delta=\dimen188
 \TX@cols=\count284
-\TX@ftn=\toks25
+\TX@ftn=\toks27
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip54
+\multirow@cntb=\count285
+\multirow@dima=\skip55
+\bigstrutjot=\dimen189
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count285
+\l__color_backend_stack_int=\count286
 \l__pdf_internal_box=\box58
-) (latex/reportep3.aux
+) (latex/reporteP4.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
-\openout1 = `reportep3.aux'.
+\openout1 = `reporteP4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Info: Redefining \. on input line 71.
-LaTeX Info: Redefining \% on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -255,17 +265,17 @@ LaTeX Info: Redefining \% on input line 71.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count286
-\scratchdimen=\dimen189
+\scratchcounter=\count287
+\scratchdimen=\dimen190
 \scratchbox=\box59
-\nofMPsegments=\count287
-\nofMParguments=\count288
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count289
-\MPscratchDim=\dimen190
-\MPnumerator=\count290
-\makeMPintoPDFobject=\count291
-\everyMPtoPDFconversion=\toks27
+\nofMPsegments=\count288
+\nofMParguments=\count289
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count290
+\MPscratchDim=\dimen191
+\MPnumerator=\count291
+\makeMPintoPDFobject=\count292
+\everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -275,16 +285,16 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count292
+\c@lstlisting=\count293
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 72.
+(Font)              <12> on input line 74.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 72.
+(Font)              <8> on input line 74.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 72.
+(Font)              <6> on input line 74.
  [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (latex/reportep3.toc
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (latex/reporteP4.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -293,74 +303,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
 )
 \tf@toc=\write3
-\openout3 = `reportep3.toc'.
+\openout3 = `reporteP4.toc'.
 
  [1
 
-] (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/02/21 1.10 listings language file
-) (./estrategiaEvolutiva1.py [2] [3]) (./estrategiaEvolutiva2.py [4] [5]) (./evolucionDiferencial.py [6] [7] [8] [9]) [10]
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+]
 
- []
+LaTeX Warning: Float too large for page by 236.8409pt on input line 163.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
-
- []
-
-
-Underfull \hbox (badness 3271) in paragraph at lines 126--126
-[]|\OT1/cmr/m/n/10 Opera so-bre una re-pre-sen-ta-ci^^Son
- []
-
-<imagenes/evolutiva1.png, id=44, 744.7825pt x 431.6125pt>
-File: imagenes/evolutiva1.png Graphic file (type png)
-<use imagenes/evolutiva1.png>
-Package pdftex.def Info: imagenes/evolutiva1.png  used on input line 149.
-(pdftex.def)             Requested size: 500.484pt x 290.0482pt.
-<imagenes/graficaev1.png, id=46, 641.39626pt x 549.05125pt>
-File: imagenes/graficaev1.png Graphic file (type png)
-<use imagenes/graficaev1.png>
-Package pdftex.def Info: imagenes/graficaev1.png  used on input line 154.
-(pdftex.def)             Requested size: 500.484pt x 428.43419pt.
-[11] [12 <./imagenes/evolutiva1.png>]
-<imagenes/evolutiva1.2.png, id=56, 744.7825pt x 420.57124pt>
-File: imagenes/evolutiva1.2.png Graphic file (type png)
-<use imagenes/evolutiva1.2.png>
-Package pdftex.def Info: imagenes/evolutiva1.2.png  used on input line 160.
-(pdftex.def)             Requested size: 500.484pt x 282.62837pt.
- [13 <./imagenes/graficaev1.png>]
-<imagenes/graficaev1.2.png, id=61, 640.3925pt x 537.00626pt>
-File: imagenes/graficaev1.2.png Graphic file (type png)
-<use imagenes/graficaev1.2.png>
-Package pdftex.def Info: imagenes/graficaev1.2.png  used on input line 166.
-(pdftex.def)             Requested size: 500.484pt x 419.6908pt.
- [14 <./imagenes/evolutiva1.2.png>]
-<imagenes/evolutiva2.png, id=66, 745.78625pt x 455.7025pt>
-File: imagenes/evolutiva2.png Graphic file (type png)
-<use imagenes/evolutiva2.png>
-Package pdftex.def Info: imagenes/evolutiva2.png  used on input line 172.
-(pdftex.def)             Requested size: 500.484pt x 305.81277pt.
- [15 <./imagenes/graficaev1.2.png>]
-<imagenes/graficaev2.png, id=71, 644.4075pt x 547.04375pt>
-File: imagenes/graficaev2.png Graphic file (type png)
-<use imagenes/graficaev2.png>
-Package pdftex.def Info: imagenes/graficaev2.png  used on input line 178.
-(pdftex.def)             Requested size: 500.484pt x 424.88106pt.
- [16 <./imagenes/evolutiva2.png>]
-<imagenes/evDif.png, id=76, 742.775pt x 451.6875pt>
-File: imagenes/evDif.png Graphic file (type png)
-<use imagenes/evDif.png>
-Package pdftex.def Info: imagenes/evDif.png  used on input line 185.
-(pdftex.def)             Requested size: 500.484pt x 304.3521pt.
- [17 <./imagenes/graficaev2.png>]
-<imagenes/generacionDif.png, id=81, 744.7825pt x 454.69875pt>
-File: imagenes/generacionDif.png Graphic file (type png)
-<use imagenes/generacionDif.png>
-Package pdftex.def Info: imagenes/generacionDif.png  used on input line 191.
-(pdftex.def)             Requested size: 500.484pt x 305.56241pt.
- [18 <./imagenes/evDif.png>] [19 <./imagenes/generacionDif.png>] (latex/reportep3.aux
+[2] [3] (latex/reporteP4.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -370,18 +321,18 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7732 strings out of 474116
- 123447 string characters out of 5743682
- 2645187 words of memory out of 5000000
- 30037 multiletter control sequences out of 15000+600000
- 563872 words of font info for 56 fonts, out of 8000000 for 9000
+ 7162 strings out of 474116
+ 117242 string characters out of 5743682
+ 1968187 words of memory out of 5000000
+ 29476 multiletter control sequences out of 15000+600000
+ 562921 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,65p,767b,1936s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on latex/reportep3.pdf (20 pages, 528354 bytes).
+ 57i,11n,65p,327b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on latex/reporteP4.pdf (4 pages, 50071 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 32 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
