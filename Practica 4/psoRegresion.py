@@ -25,19 +25,12 @@ def pso(num_particles, dimension, objective_function, w, c1, c2, generations, L,
     # Inicializar la posición y la velocidad de las partículas
     particles = [nA([np.random.uniform(L, U) for _ in range(dimension)]) for _ in range(num_particles)]
     velocities = [nA([0 for _ in range(dimension)]) for _ in range(num_particles)]
-    
-    # Listas para almacenar el mejor y peor fitness en cada generación
-    # best_fitness_per_gen = []
-    # worst_fitness_per_gen = []
 
     # Establecemos el primer pbest y gbest
     pbest = particles
     gbest = min(pbest, key=objective_function)
     print(f"Posicion inicial de las partículas: {particles}")
     print(f"Mejor posición global inicial: {gbest} fitness: {objective_function(gbest)}")
-
-    # best_fitness_per_gen.append(objective_function(gbest))
-    # worst_fitness_per_gen.append(max([objective_function(p) for p in particles]))
 
     for _ in range(generations):
         for i in range(num_particles):
@@ -52,17 +45,12 @@ def pso(num_particles, dimension, objective_function, w, c1, c2, generations, L,
 
         # Actualizamos el gbest
         gbest = min(pbest, key=objective_function)
-
-        # Registrar el mejor y peor fitness de la generación actual para graficar
-        # fitness_values = [objective_function(p) for p in particles]
-        # best_fitness_per_gen.append(objective_function(gbest))
-        # worst_fitness_per_gen.append(max(fitness_values))
     
     print(f"Particulas: {particles}")
     print(f"Mejor posición por partícula: {pbest}")
     print(f"Mejor posición global: {gbest}")
     print(f"Fitness de la mejor posicion: {objective_function(gbest)}") 
-    print(f"Fitness promedio de las mejores posiciones por particula: {np.mean([objective_function(p) for p in pbest])}")
+    # print(f"Fitness promedio de las mejores posiciones por particula: {np.mean([objective_function(p) for p in pbest])}")
 
     return gbest
 
