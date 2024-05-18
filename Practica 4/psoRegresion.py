@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Leer el archivo CSV
-file_path = 'Salary.csv'
+file_path = 'Practica 4\Salary.csv'
 data = pd.read_csv(file_path)
 
 # Preparar los datos
@@ -58,7 +58,7 @@ def pso(num_particles, dimension, objective_function, w, c1, c2, generations, L,
 # Parámetros
 num_particles = 100
 dimension = 2
-# ω={0.25,0.5}
+# w ={0.25,0.5}
 w = 0.5
 # c1={0.0,1.0,2.0}
 c1 = 2

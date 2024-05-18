@@ -1,9 +1,9 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {section}{\numberline {1}Introducción}{2}{section.0.1}%
-\contentsline {section}{\numberline {2}Estadisticas Descriptivas}{3}{section.0.2}%
-\contentsline {section}{\numberline {3}Graficas de convergencia}{4}{section.0.3}%
-\contentsline {section}{\numberline {4}Analisis sobre el comportamiento del algoritmo de PSO}{4}{section.0.4}%
-\contentsline {section}{\numberline {5}Regresión lineal}{5}{section.0.5}%
-\contentsline {section}{\numberline {6}Pruebas Realizadas}{6}{section.0.6}%
-\contentsline {section}{\numberline {7}Lectura}{6}{section.0.7}%
-\contentsline {section}{\numberline {8}Conclusiones}{7}{section.0.8}%
+\contentsline {section}{\numberline {2}Estadísticas Descriptivas}{3}{section.0.2}%
+\contentsline {section}{\numberline {3}Gráficas de convergencia}{5}{section.0.3}%
+\contentsline {section}{\numberline {4}Análisis sobre el comportamiento del algoritmo de PSO}{6}{section.0.4}%
+\contentsline {section}{\numberline {5}Regresión lineal}{7}{section.0.5}%
+\contentsline {section}{\numberline {6}Pruebas Realizadas}{9}{section.0.6}%
+\contentsline {section}{\numberline {7}Lectura}{9}{section.0.7}%
+\contentsline {section}{\numberline {8}Conclusiones}{10}{section.0.8}%

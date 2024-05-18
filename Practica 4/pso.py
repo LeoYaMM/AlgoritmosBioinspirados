@@ -99,7 +99,7 @@ c1 = 2.0
 # c2={0.0,1.0,2.0}
 c2 = 2.0
 generations = 5000
-fun = rosenbrock
+fun = rastrigin
 
 L, U = (-2.048, 2.048) if fun == rosenbrock else \
         (-32.768, 32.768) if fun == ackley else \
