@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1715984263.52332 "/Users/aldoescamillaresendiz/Documents/Python/AlgoritmosBioinspirados/Practica 4/reporteP4.tex" "latex/reporteP4.pdf" "reporteP4" 1715984264.03697 0
-  "/Users/aldoescamillaresendiz/Documents/Python/AlgoritmosBioinspirados/Practica 4/reporteP4.tex" 1715984263.34832 10203 4df4db0526746796c7ebde681d18cdd8 ""
+["pdflatex"] 1715994937.03877 "/Users/aldoescamillaresendiz/Documents/Python/AlgoritmosBioinspirados/Practica 4/reporteP4.tex" "latex/reporteP4.pdf" "reporteP4" 1715994937.4924 0
+  "/Users/aldoescamillaresendiz/Documents/Python/AlgoritmosBioinspirados/Practica 4/reporteP4.tex" 1715994936.80253 10593 7fbee9dbab152a207f739a01a958f97f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -56,9 +56,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1712769880.7575 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1712769853 8221419 e9707183ec6435af0f1bb4b83cdf10ff ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "latex/reporteP4.aux" 1715984264.00281 676 50845e8252e954e7e610c9205a68af24 "pdflatex"
-  "latex/reporteP4.toc" 1715984264.004 162 d63719c9d30cecb57fd059c481ef43b0 "pdflatex"
-  "reporteP4.tex" 1715984263.34832 10203 4df4db0526746796c7ebde681d18cdd8 ""
+  "latex/reporteP4.aux" 1715994937.45912 676 50845e8252e954e7e610c9205a68af24 "pdflatex"
+  "latex/reporteP4.toc" 1715994937.46023 162 d63719c9d30cecb57fd059c481ef43b0 "pdflatex"
+  "reporteP4.tex" 1715994936.80253 10593 7fbee9dbab152a207f739a01a958f97f ""
   (generated)
   "latex/reporteP4.aux"
   "latex/reporteP4.log"
