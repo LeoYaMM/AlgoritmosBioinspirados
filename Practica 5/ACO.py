@@ -9,7 +9,19 @@ def selecciona_siguiente_ciudad(actual, no_visitadas, feromona, distancia, alpha
     feromona_actual = feromona[actual][no_visitadas] ** alpha
     visibilidad = (1.0 / (distancia[actual][no_visitadas] + epsilon)) ** beta
     probabilidades = feromona_actual * visibilidad
-    probabilidades /= sum(probabilidades)
+    
+    # Chequear y manejar valores infinitos o NaN en probabilidades
+    if np.any(np.isinf(probabilidades)) or np.any(np.isnan(probabilidades)):
+        probabilidades = np.nan_to_num(probabilidades, nan=epsilon, posinf=epsilon, neginf=epsilon)
+    
+    suma_probabilidades = sum(probabilidades)
+    
+    # Chequear si la suma de probabilidades es cero o infinito para evitar NaNs
+    if suma_probabilidades == 0 or np.isinf(suma_probabilidades) or np.isnan(suma_probabilidades):
+        probabilidades = np.ones_like(probabilidades) / len(probabilidades)
+    else:
+        probabilidades /= suma_probabilidades
+    
     return np.random.choice(no_visitadas, 1, p=probabilidades)[0]
 
 def construye_camino(inicio, n_ciudades, feromona, distancia, alpha, beta):
@@ -58,7 +70,6 @@ def aco(distancia, flujo, n_hormigas, n_iteraciones, evaporacion, alpha=1, beta=
 
     return mejor_camino, mejor_costo
 
-# Leer el archivo
 def leer_matrices(file_path):
     with open(file_path, 'r') as file:
         lines = file.readlines()
@@ -73,7 +84,7 @@ def leer_matrices(file_path):
             if current_matrix:
                 matrices.append(np.array(current_matrix))
                 current_matrix = []
-    if (current_matrix):  # Para la última matriz en caso de que no termine con una línea en blanco
+    if current_matrix:
         matrices.append(np.array(current_matrix))
     
     return matrices
@@ -90,7 +101,8 @@ def ANOVA(distancia, flujo, n_iteraciones, evaporacion, alphas, betas, n_hormiga
 
 # Usar las matrices leídas
 # ! Cambiar el path al archivo
-file_path = 'Algoritmos Bioinspirados/Practica 5/matricesProblemaQAP/matricesProblemaQAP/ajuste.dat'
+# file_path = 'Algoritmos Bioinspirados/Practica 5/matricesProblemaQAP/matricesProblemaQAP/tai15.dat'
+file_path = 'matricesProblemaQAP/matricesProblemaQAP/tai30.dat'
 matrices = leer_matrices(file_path)
 distancia = matrices[1]
 flujo = matrices[2]
