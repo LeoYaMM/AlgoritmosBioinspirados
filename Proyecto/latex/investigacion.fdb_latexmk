@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1718995972.19075 "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-2/AlgoritmosBioinspirados/Proyecto/investigacion.tex" "latex/investigacion.pdf" "investigacion" 1718995974.19889 0
+["pdflatex"] 1718996673.57394 "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-2/AlgoritmosBioinspirados/Proyecto/investigacion.tex" "latex/investigacion.pdf" "investigacion" 1718996675.17425 0
   "C:/Users/yleob/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1716001584 81107 70b8516c68c2e617189c5e44bfd16b96 ""
   "C:/Users/yleob/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1709093337 24225046 66cabb890c07ebfb1d69ddcec99ba23c ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -88,14 +88,15 @@
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1699094857 48766 0b93839be28e9744a24c45075c75b2e2 ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1700599895 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
+  "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1700599895 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1700599895 7147 d45559f8a31b8c53ada0640516660003 ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-2/AlgoritmosBioinspirados/Proyecto/investigacion.tex" 1718995970 2602 9f21da388887b34a168d556c29109d32 ""
-  "investigacion.tex" 1718995970 2602 9f21da388887b34a168d556c29109d32 ""
-  "latex/investigacion.aux" 1718995973 351 80da736531415dcfa78b0b28f167c9f8 "pdflatex"
-  "latex/investigacion.out" 1718995973 103 9814c2d956916adb9290eca4e25c967a "pdflatex"
-  "latex/investigacion.toc" 1718995973 98 145772d7d78bfa981e7420bf2143c014 "pdflatex"
+  "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-2/AlgoritmosBioinspirados/Proyecto/investigacion.tex" 1718996670 2997 546c6a2e24962f9e9a36afdeed73209c ""
+  "investigacion.tex" 1718996670 2997 546c6a2e24962f9e9a36afdeed73209c ""
+  "latex/investigacion.aux" 1718996674 583 7ba854bb123cfa97499ba664cb96fe79 "pdflatex"
+  "latex/investigacion.out" 1718996674 346 6a5c5990846774ccde59f35f340bd836 "pdflatex"
+  "latex/investigacion.toc" 1718996674 248 3f32dbc87eeba24cd889e85a857bded1 "pdflatex"
   (generated)
   "latex/investigacion.aux"
   "latex/investigacion.log"
