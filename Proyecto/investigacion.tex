@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolor}{rgb}{0.95,0.95,0.95}
+
+
+\lstset{
+    basicstyle=\ttfamily,
+    inputencoding=utf8,
+    extendedchars=true,
+    literate=%
+    {á}{{\'a}}1
+    {é}{{\'e}}1
+    {í}{{\'i}}1
+    {ó}{{\'o}}1
+    {ú}{{\'u}}1
+    {ñ}{{\~n}}1
+    {Á}{{\'A}}1
+    {É}{{\'E}}1
+    {Í}{{\'I}}1
+    {Ó}{{\'O}}1
+    {Ú}{{\'U}}1
+    {Ñ}{{\~N}}1
+}
+
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolor},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{red},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2  
+}
+
+\titleformat{\section}
+{\huge\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}
+{\large\bfseries}{\thesubsection}{1em}{}
+
+\renewcommand\thesection{\arabic{section}}
+
+\title{\Huge{\textbf{}}\\
+\Large{\textbf{Bioinspirated Algorithms\\ Cellular Automaton for Minimum Coloring Graph Problem}}}
+\author{Diego Castillo Reyes\\Marthon Leobardo Yañez Martinez\\Aldo Escamilla Resendiz\\Muñoz González Eduardo}
+
+\graphicspath{{imagenes/}}
+\begin{document}
+    \maketitle
+    \newpage
+    \tableofcontents
+    \newpage
+    \section{Introduction}
+        In this investigation we will explore the viability of the cellular automaton for the minimum coloring graph problem.
+        As the first step we will define what is a cellular automaton and in what consists the problem.\\ 
+        Then we will explore the background of each concept, why it was created, and what this technique proposes. After that, 
+        we will present the algorithm, which parameters does the algorithm requires. 
+        \\Finally we will present examples of the usage of this
+        algorithm, and conclude the viability of using cellular automaton for an implementation as the next step in this investigation.
+    \newpage
+
+    
+
+\end{document}
