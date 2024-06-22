@@ -717,6 +717,9 @@ INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\public\stix2-type1\t1-stix2text-bold.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\public\stix2-type1\t1-stix2text-italic.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\public\stix2-type1\t1-stix2text-italic.tfm
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
@@ -775,10 +778,12 @@ INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.st
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8t.tfm
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
-INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\stix2-type1\stix2-mathit.enc
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\stix2-type1\stix2-mathrm.enc
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\stix2-type1\stix2-mathsf.enc
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\stix2-type1\stix2-mathscr.enc
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\stix2-type1\stix2-mathrm-bold.enc
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex\latex\fontawesome5\ufontawesomefree0.fd
@@ -812,6 +817,8 @@ INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\fontawesom
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\fontawesome5\FontAwesome5Free-Solid.pfb
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\stix2-type1\STIX2Math.pfb
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\stix2-type1\STIX2Math.pfb
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\stix2-type1\STIX2Text-Bold.pfb
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\stix2-type1\STIX2Text-Bold.pfb
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\stix2-type1\STIX2Text-Italic.pfb
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\stix2-type1\STIX2Text-Italic.pfb
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\stix2-type1\STIX2Text-Regular.pfb

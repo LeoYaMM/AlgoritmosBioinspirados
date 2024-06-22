@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  22 JUN 2024 00:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  22 JUN 2024 00:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1734,12 +1734,12 @@ File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
 Package microtype Info: Character `textflorin ' is missing
 (microtype)             in font `TS1/stix2/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
-<figures/gameOfLife.jpg, id=43, 767.2665pt x 418.56375pt>
+<figures/gameOfLife.jpg, id=39, 767.2665pt x 418.56375pt>
 File: figures/gameOfLife.jpg Graphic file (type jpg)
 <use figures/gameOfLife.jpg>
 Package pdftex.def Info: figures/gameOfLife.jpg  used on input line 110.
 (pdftex.def)             Requested size: 191.76599pt x 104.61513pt.
-<figures/theoryOfComputation.png, id=45, 1193.6595pt x 701.62125pt>
+<figures/theoryOfComputation.png, id=41, 1193.6595pt x 701.62125pt>
 File: figures/theoryOfComputation.png Graphic file (type png)
 <use figures/theoryOfComputation.png>
 Package pdftex.def Info: figures/theoryOfComputation.png  used on input line 128.
@@ -1752,7 +1752,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 
 
 {C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-ts1.enc} <./figures/gameOfLife.jpg> <./figures/theoryOfComputation.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 140.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 171.
  (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1760,13 +1760,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package mdframed Info: mdframed works in twoside mode on input line 144.
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 175.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 180.
  (example.m)
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 179.
+(Font)              scaled to size 4.74998pt on input line 184.
 
-Underfull \hbox (badness 2229) in paragraph at lines 184--187
+Underfull \hbox (badness 2229) in paragraph at lines 189--192
 \T1/stix2/m/n/9 (+20) can mod-ify the style of your ref-er-ences, for that, go to tau-
  []
 
@@ -1791,31 +1790,31 @@ File: lstlang3.sty 2023/02/27 1.9 listings language file
 ) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
-Package mdframed Info: mdframed works in twoside mode on input line 207.
+Package mdframed Info: mdframed works in twoside mode on input line 212.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 232.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 243.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.64998pt on input line 232.
- [2{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-mathrm-bold.enc}]
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 251.
+(Font)              scaled to size 6.64998pt on input line 243.
+ [2{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-mathsf.enc}{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-mathscr.enc}{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-mathrm-bold.enc}{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 256.
  (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree0.fd)
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on input line 252.
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on input line 257.
  (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomebrands1.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <9> not available
-(Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead on input line 252.
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 253.
+(Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead on input line 257.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 258.
  (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree1.fd)
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 254.
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 259.
  (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <9> not available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 254.
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 259.
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--255
+Underfull \hbox (badness 10000) in paragraph at lines 256--260
 
  []
 
 
-LaTeX Warning: Empty bibliography on input line 261.
+LaTeX Warning: Empty bibliography on input line 266.
 
 [3{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free0.enc}{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5brands1.enc}{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free1.enc}{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5brands0.enc}
 
@@ -1835,17 +1834,17 @@ Package logreq Info: Writing requests to 'investigacion.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 71176 strings out of 474486
- 1545972 string characters out of 5743755
- 2914248 words of memory out of 5000000
- 92278 multiletter control sequences out of 15000+600000
- 746613 words of font info for 278 fonts, out of 8000000 for 9000
+ 71210 strings out of 474486
+ 1546620 string characters out of 5743755
+ 2931181 words of memory out of 5000000
+ 92290 multiletter control sequences out of 15000+600000
+ 769596 words of font info for 283 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 137i,12n,143p,1212b,2363s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX2Math.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Proyecto\latex\investigacion.pdf" (3 pages, 950991 bytes).
+ 137i,16n,143p,1212b,2369s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX2Math.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on "c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Proyecto\latex\investigacion.pdf" (3 pages, 1120480 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 79015 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 304 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
+ 85143 words of extra memory for PDF output out of 89155 (max. 10000000)
 

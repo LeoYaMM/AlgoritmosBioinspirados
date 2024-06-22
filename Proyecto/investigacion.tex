@@ -104,11 +104,11 @@
         their potential as models of natural processes and as computational systems.
     \end{itemize}
 
-    Fig. \ref{fig:figure} shows an example of Conway's Game of Life.
+    Fig. \ref{fig:figure} An example of Conway's Game of Life.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.75\columnwidth]{figures/gameOfLife.jpg}
-		\caption{Example Conway's Game of Life.}
+		\caption{Conway's Game of Life.}
 		\label{fig:figure}
 	\end{figure}
 
@@ -122,7 +122,7 @@
             \item Biology: Simulating biological processes, such as population dynamics and pattern formation.
         \end{itemize}
 		
-        Fig. \ref{fig:figure} shows an example of application of cellular automata on Computer Science.
+        Fig. \ref{fig:figure} Application of cellular automata on Computer Science.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.75\columnwidth]{figures/theoryOfComputation.png}
@@ -133,28 +133,33 @@
 
 \section{Cellular Automata Algorithm}
 
-    \subsection{Tauenvs}
-	
-        This template has its own environment package \textit{tauenvs.sty} designed to enhance the presentation of the document. Among these custom environments are \textit{tauenv}, \textit{info} and \textit{note}.
-		
-        There are two environments which have a predefined title. These can be included by the command \verb|\begin{note}| and \verb|\begin{info}|. All the environments have the same style.
-			
-        An example using the tau environment is shown below.
-		
-	\begin{tauenv}[frametitle=Environment with custom title]
-            This is an example of the custom title environment. To add a title type \verb|[frametitle=Your title]| next to the beginning of the environment (as shown in this example).
-	\end{tauenv}
-		
-        Tauenv is the only environment that you can customize its title. On the other hand, info and note adapt their title to spanish automatically when this language package is defined.
-		
-    \subsection{Taubabel}
+    \begin{algorithm}
+        \caption{Algoritmo básico de PSO}
+        \KwIn{$n$: número de partículas, $\omega$: coeficiente de inercia, $c_1$: factor cognitivo, $c_2$: factor social}
+        \KwOut{La mejor solución encontrada}
+        
+        Inicializar aleatoriamente las posiciones $\vec{x_i}$ y $\vec{v_i}$ para las $n$ partículas\;
+        Evaluar la función objetivo con las posiciones $\vec{x}$\;
+        Encontrar $\vec{p_{Best}}$\;
+        Encontrar $\vec{g_{Best}}$\;
+        
+        \While{$t < \text{número máximo de iteraciones}$}{
+        \For{$i \leftarrow 1$ \KwTo $n$}{
+            Actualizar la velocidad utilizando\;
+            $\vec{v_i}(t + 1) = \omega \cdot \vec{v_i}(t) + c_1 \cdot r_1 \cdot (\vec{p_{Best}} - \vec{x_i}(t)) + c_2 \cdot r_2 \cdot (\vec{g_{Best}} - \vec{x_i}(t))$\;
+            Calcular las nuevas posiciones\;
+            $\vec{x_i}(t + 1) = \vec{x_i}(t) + \vec{v_i}(t)$\;
+            Evaluar las nuevas soluciones utilizando la función objetivo\;
+        }
+        Encontrar $\vec{p_{Best}}$\;
+        Encontrar $\vec{g_{Best}}$\;
+        $t := t + 1$\;
+        }
+        
+        Reportar la mejor solución encontrada\;
+        
+        \end{algorithm}
 
-        In this new version, we have included a package called \textit{taubabel}, which have all the commands that automatically translate from english to spanish when this language package is defined.
-		
-        By default, tau displays its content in english, however, within this package you can change the language to spanish. To do so, set \textit{true} to \verb|\setboolean{es-babel}{true/false}| located in taubabel.sty.
-		
-        You can modify this package if you need another language. This will make it easier to translate the document without having to modify the class document.
-		
 \section{Equation}
 
     Equation~\ref{ec:equation}, shows the Schrödinger equation as an example. 
