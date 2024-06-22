@@ -4,18 +4,17 @@
 \contentsline {subsection}{\numberline {2.1}Motivation}{1}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Developments}{1}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Applications}{1}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Tables}{1}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Tau packages}{2}{section.3}%
+\contentsline {section}{\numberline {3}Cellular Automata Algorithm}{2}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Tauenvs}{2}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Taubabel}{2}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Equation}{2}{section.4}%
 \contentsline {section}{\numberline {5}Adding codes}{2}{section.5}%
-\contentsline {section}{\numberline {6}References}{3}{section.6}%
-\contentsline {section}{\numberline {7}Appendix}{3}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Alternative title}{3}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Info environment}{3}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Equation skip value}{3}{subsection.7.3}%
+\contentsline {section}{\numberline {6}References}{2}{section.6}%
+\contentsline {section}{\numberline {7}Appendix}{2}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Alternative title}{2}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Info environment}{2}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Equation skip value}{2}{subsection.7.3}%
+\contentsfinish 
 \contentsline {subsection}{\numberline {7.4}References}{3}{subsection.7.4}%
 \contentsline {section}{\numberline {8}Contact me}{3}{section.8}%
 \contentsline {section}{References}{3}{section.8}%
-\contentsfinish 

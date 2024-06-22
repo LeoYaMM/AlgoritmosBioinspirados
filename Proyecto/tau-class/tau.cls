@@ -58,6 +58,7 @@
 \RequirePackage{setspace}
 \RequirePackage{iflang}
 \RequirePackage{listings}
+\RequirePackage[linesnumbered,ruled,vlined]{algorithm2e} % Para meter algoritmos y psudocodigos
 \RequirePackage{lipsum}
 \RequirePackage{fontawesome5}    % For icons
 \RequirePackage{chemfig}         % Chemical structures
