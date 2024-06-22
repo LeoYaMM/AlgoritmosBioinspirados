@@ -134,137 +134,34 @@
 \section{Cellular Automata Algorithm}
 
     \begin{algorithm}
-        \caption{Algoritmo básico de PSO}
-        \KwIn{$n$: número de partículas, $\omega$: coeficiente de inercia, $c_1$: factor cognitivo, $c_2$: factor social}
-        \KwOut{La mejor solución encontrada}
+        \caption{Basic Cellular Automaton}
+        \KwIn{\texttt{gridWidth}: Width of the grid, \texttt{gridHeight}: Height of the grid, \texttt{states}: Set of possibles states for the cells, \texttt{neighborhood}: Set of relative positions defining the neighborhood of each cell, \texttt{rules}: Set of state transition rules, \texttt{maxTimeSteps}: Maximum number of time steps}
+        \KwOut{The final state of the grid}
         
-        Inicializar aleatoriamente las posiciones $\vec{x_i}$ y $\vec{v_i}$ para las $n$ partículas\;
-        Evaluar la función objetivo con las posiciones $\vec{x}$\;
-        Encontrar $\vec{p_{Best}}$\;
-        Encontrar $\vec{g_{Best}}$\;
+        Initialize \texttt{gridHeight} $\times$ \texttt{gridWidth}, set the initial states on the grid and create \texttt{newGrid} as a copy of the grid.\;
         
-        \While{$t < \text{número máximo de iteraciones}$}{
-        \For{$i \leftarrow 1$ \KwTo $n$}{
-            Actualizar la velocidad utilizando\;
-            $\vec{v_i}(t + 1) = \omega \cdot \vec{v_i}(t) + c_1 \cdot r_1 \cdot (\vec{p_{Best}} - \vec{x_i}(t)) + c_2 \cdot r_2 \cdot (\vec{g_{Best}} - \vec{x_i}(t))$\;
-            Calcular las nuevas posiciones\;
-            $\vec{x_i}(t + 1) = \vec{x_i}(t) + \vec{v_i}(t)$\;
-            Evaluar las nuevas soluciones utilizando la función objetivo\;
+        \While{$i$ < \texttt{maxTimeSteps}}{
+            \For{$x$ in \texttt{gridWidth}}{
+                \For{$y$ in \texttt{gridHeight}}{
+                    \texttt{neighbors} = getNeighbors(\texttt{grid}, \texttt{neighborhood}, $x$, $y$)\;
+                    \texttt{newGrid}[$x$][$y$] = applyRules(\texttt{grid}[$x$][$y$], \texttt{neighbors}, \texttt{rules})\;
+                }
+            }
+            Display the state of \texttt{newGrid}
+            \texttt{grid} = \texttt{newGrid}\;
+            $i$++\;
         }
-        Encontrar $\vec{p_{Best}}$\;
-        Encontrar $\vec{g_{Best}}$\;
-        $t := t + 1$\;
-        }
-        
-        Reportar la mejor solución encontrada\;
-        
         \end{algorithm}
 
-\section{Equation}
+\section{Parameters Required on a Cellular Automata}
 
-    Equation~\ref{ec:equation}, shows the Schrödinger equation as an example. 
-	\begin{equation} \label{ec:equation}
-		\frac{\hbar^2}{2m}\nabla^2\Psi + V(\mathbf{r})\Psi = -i\hbar \frac{\partial\Psi}{\partial t}
-	\end{equation} 
-    The \textit{amssymb} package was not necessary to include, because stix2 font incorporates mathematical symbols for writing quality equations. In case you choose another font, uncomment this package in tau-class/tau.cls/math packages.
-	
-    If you want to change the values that adjust the spacing above and below the equations, play with \verb|\setlength{\eqskip}{8pt}| value until the preferred spacing is set.
-	
-\section{Adding codes}
-	
-    This class\footnote{Hello there! I am a footnote :)} includes the \textit{listings} package, which offers customized features for adding codes in \LaTeX\ documents specifically for C, C++, \LaTeX\ and Matlab. 
-	
-    You can customize the format in tau-class/tau.cls/listings style.
-	
-	\nolinenumbers
-	\lstinputlisting[caption=Example of Matlab code., language=Matlab]{example.m}
-	\linenumbers
-	
-    If line numbering is enabled, we recommend placing the command \verb|\nolinenumbers| at the beginning and \verb|\linenumbers| at the end of the code. 
-	
-    This will temporarily remove line numbering and the code will look better as shown in this example.
-	
-\section{References}
+\section{Versions of Cellular Automata}
 
-    The default formatting for references follows the IEEE style. 
-    You can modify the style of your references, for that, go to tau-class/tau.cls/biblatex. 
-    See appendix for more information.
-	
-\section{Appendix}
-
-    \subsection{Alternative title}
-
-        You can make the following modification in tau-class/tau.cls/title preferences section to change the position of the title.
-
-\nolinenumbers
-\begin{lstlisting}[language=TeX, caption=Alternative title.]
-\newcommand{\titlepos}{\centering}
-\end{lstlisting}
-\linenumbers
-
-	This will move the title to the center. 
-
-    \subsection{Info environment}
-
-        An example of the info environment declared in the ‘tauenvs.sty’ package is shown below. Remember that \textit{info} and \textit{note} are the only packages that translate their title (english or spanish).
-		
-	\begin{info}
-		Small example of info environment.
-	\end{info}
-
-    \subsection{Equation skip value}
-
-        With the \verb|\eqskip| command you can change the spacing for equations. The default \textit{eqskip} value is 8pt.
-
-\nolinenumbers
-\begin{lstlisting}[language=TeX, caption=Equation skip code.]
-	\newlength{\eqskip}\setlength{\eqskip}{8pt}
-	\expandafter\def\expandafter\normalsize\expandafter{%
-		\normalsize%
-		\setlength\abovedisplayskip{\eqskip}%
-		\setlength\belowdisplayskip{\eqskip}%
-		\setlength\abovedisplayshortskip{\eqskip-\baselineskip}%
-		\setlength\belowdisplayshortskip{\eqskip}%
-	}
-\end{lstlisting}
-\linenumbers
-		
-    \subsection{References}
-		
-        In case you require another reference style, you can go to tau-class/tau.cls/biblatex and modify the following.
-		
-\nolinenumbers
-\begin{lstlisting}[language=TeX, caption=References style.]
-\RequirePackage[
-	backend=biber,
-	style=ieee,
-	sorting=ynt
-]{biblatex}
-\end{lstlisting}
-\linenumbers
-
-        By default, \textit{tau class} has its own .bib for this example, if you want to name your own bib file, change the bibresource.
-		
-\nolinenumbers
-\begin{lstlisting}[language=TeX]
-\addbibresource{tau.bib}
-\end{lstlisting}
-\linenumbers
-
-\section{Contact me}
-
-    Enjoy writing with tau \LaTeX\ class\hspace{5pt}\faChessKnight \\ 
-    \noindent\faWix\hspace{5pt}\href{https://memonotess1.wixsite.com/memonotess}{https://memonotess1.wixsite.com/memonotess} \\
-    \faEnvelope[regular]\hspace{7pt}memo.notess1@gmail.com \\
-    \faInstagram\hspace{8pt}memo.notess\\
-
-    \noindent Did you like this class document? Check out our new project the \href{https://es.overleaf.com/latex/templates/rho-class-academic-article-template/bpgjxjjqhtfy}{rho class}, made for complex articles and reports.
+\section{Analogy with the Nature}
     
-%----------------------------------------------------------
+\section{Implementation Repositories}
 
-\addcontentsline{toc}{section}{References}
-\printbibliography
+\section{Usage Examples}
 
-%----------------------------------------------------------
 
 \end{document}
