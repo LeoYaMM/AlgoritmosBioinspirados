@@ -67,7 +67,6 @@
     \maketitle 
     \thispagestyle{firststyle} \tauabstract
     \tableofcontents
-    \linenumbers
 %----------------------------------------------------------
 
 \section{Introduction}
@@ -78,54 +77,58 @@
         CA are used in various fields, such as physics, biology, and computer science, to model complex systems and study their behavior. 
         This work presents a review of cellular automata, their history, classification, and applications. 
         Additionally, an example of one-dimensional and two-dimensional cellular automata is shown.
-   
-\section{Title}
 
-    The \verb*|\maketitle| command generates the title and author information section, including the professor name and affiliations. The title can be modified in tau-class/tau.cls/title style section. 
-	
-    By default, \textit{tau class} shows the title on the left. However, you can change \verb*|\raggedright| to \verb*|\centering| in \verb*|\titlepos| to move the title to the center or, modify it to your own preferences.
-	
-    In addition to the \verb|\title| command, a new command named \verb|\journalname| has been added to include more information. 
-	
-    If you do not need this command, you can undefined it and the content will be adjusted automatically.
-	
-\section{Abstract}
+\section{Background}
 
-    The abstract and keywords are defined using the \verb*|\keywords| and \verb*|\begin{abstract} \end{abstract}| commands respectively. For the abstract to appear, make sure the \verb|\tauabstract| command is always included after the beginning of the document.
-    
-    If the keywords are not declared in the preamble, the content will be adjusted automatically.
-    
-\section{Document style options}
+    The concept of cellular automata was invented by Stansilaw Ulam and John Von Neumann in
+    the 1940s while they were working at the Los Alamos National Laboratory.
+    The work on cellular automata began in the 1940s, with significant developments occuring throughout
+    that decade. Von Neumann’s comprehensive work on self-replicating automata was published 
+    posthumously in 1966 in the book "Theory of Self-Reproducing Automata," edited by 
+    Arthur W. Burks.
 
-    \subsection{Tau start}
-	
-        We included the \verb|\taustart{}| command, which provides a personalized lettrine for the beginning of a paragraph.
+    \subsection{Motivation}
+    The primary motivation behind cellular automata was to understand and model complex
+    systems using simple, local rules. This idea was rooted in the study of biological 
+    processes and the desire to create self-replicating machines.
 
-    \subsection{Line numbering}
-	
-        By implementing the \textit{lineno} package, the line numbering of the document can be placed with the command \verb|\linenumbers|.
-		
-        I recommend placing the command after the abstract and table of contents for a better appearance.
-		
-    \subsection{Table of contents}
-	
-        The \textit{tau class} provides a customised design for the table of contents. Each level of the ToC provides a preview of the content and its location in the document. 
-		
-\section{Figures and tables}
+    \subsection{Developments}
+    \begin{itemize}
+        \item Conway's Game of Life (1970): British mathematician John Conway popularized cellular
+        automata with his "Game of Life", a bidimensional binary cellular automaton. 
+        This game demonstrated how simple rules could lead to complex emergent behavior, 
+        sparking widespread interest and research in cellular automata.
 
-    \subsection{Figures}
-		
-	Fig. \ref{fig:figure} shows an example figure.
-		
+        \item Stephen Wolfram's work (1980s): Wolfram conducted extensive research on cellular
+        automata, classifying them into four types based on their behavior and demonstrating 
+        their potential as models of natural processes and as computational systems.
+    \end{itemize}
+
+    Fig. \ref{fig:figure} shows an example of Conway's Game of Life.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.75\columnwidth]{figures/Example.pdf}
-		\caption{Example figure obtained from PGFPlots \cite{PFGPlots}.}
+		\includegraphics[width=0.75\columnwidth]{figures/gameOfLife.jpg}
+		\caption{Example Conway's Game of Life.}
 		\label{fig:figure}
 	\end{figure}
+
+    \subsection{Applications}
+	
+        Cellular automata have been used in various fields, including:
+        
+        \begin{itemize}
+            \item Computer Science: Parallel computation, cryptography, and image processing.
+            \item Physics: Modeling physical systems, such as fluid dynamics and crystal growth.
+            \item Biology: Simulating biological processes, such as population dynamics and pattern formation.
+        \end{itemize}
 		
-        Fig. \ref{fig:examplefloat} shows an example of two figures that covers the width of the page. It can be placed at the top or bottom of the page. The space between the figures can also be changed using the \verb|\hspace{Xpt}| command.
-		
+        Fig. \ref{fig:figure} shows an example of application of cellular automata on Computer Science.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\columnwidth]{figures/theoryOfComputation.png}
+		\caption{Example of cellular automata.}
+		\label{fig:figure}
+	\end{figure}
         \begin{figure*}[tp] % t for position at the top of the current page; b for position at the bottom; p for new page
 		\centering
 		  \begin{subfigure}[b]{0.38\linewidth} % Fig (a)
