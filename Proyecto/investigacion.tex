@@ -1,98 +1,298 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-\usepackage[margin=2cm]{geometry}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage{titlesec}
-\usepackage{caption}
-\usepackage{listings}
-\usepackage{xcolor}
-\usepackage{array}
-\usepackage{booktabs}
-\usepackage{tabularx}
-\usepackage{multicol}
-\usepackage{multirow}
-\usepackage{amsmath}
-\usepackage{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --------------------------------------------------------
+% Tau
+% LaTeX Template
+% Version 2.4.1 (22/05/2024)
+%
+% Author: 
+% Guillermo Jimenez (memo.notess1@gmail.com)
+% 
+% License:
+% Creative Commons CC BY 4.0
+% --------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolor}{rgb}{0.95,0.95,0.95}
+\documentclass[9pt,a4paper,twoside]{tau-class/tau}
 
+%----------------------------------------------------------
+% TITLE
+%----------------------------------------------------------
 
-\lstset{
-    basicstyle=\ttfamily,
-    inputencoding=utf8,
-    extendedchars=true,
-    literate=%
-    {á}{{\'a}}1
-    {é}{{\'e}}1
-    {í}{{\'i}}1
-    {ó}{{\'o}}1
-    {ú}{{\'u}}1
-    {ñ}{{\~n}}1
-    {Á}{{\'A}}1
-    {É}{{\'E}}1
-    {Í}{{\'I}}1
-    {Ó}{{\'O}}1
-    {Ú}{{\'U}}1
-    {Ñ}{{\~N}}1
-}
+\journalname{ESCOM}
+\title{Cellular Automata}
+
+%----------------------------------------------------------
+% AUTHORS, AFFILIATIONS AND PROFESSOR
+%----------------------------------------------------------
+
+\author[a]{Diego Castillo Reyes}
+\author[a]{Marthon Leobardo Yañez Martinez}
+\author[a]{Aldo Escamilla Resendiz}
+\author[a]{Muñoz González Eduardo}
+
+%----------------------------------------------------------
+
+\affil[a]{Researcher}
 
 
-\lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolor},
-    commentstyle=\color{codegreen},
-    keywordstyle=\color{red},
-    numberstyle=\tiny\color{codegray},
-    stringstyle=\color{codepurple},
-    basicstyle=\ttfamily\footnotesize,
-    breakatwhitespace=false,
-    breaklines=true,
-    captionpos=b,
-    keepspaces=true,
-    numbers=left,
-    showspaces=false,
-    showstringspaces=false,
-    showtabs=false,
-    tabsize=2  
-}
+\professor{Dra. Miriam Pescador Rojas}
 
-\titleformat{\section}
-{\huge\bfseries}{\thesection.}{1em}{}
-\titleformat{\subsection}
-{\large\bfseries}{\thesubsection}{1em}{}
+%----------------------------------------------------------
+% FOOTER INFORMATION
+%----------------------------------------------------------
 
-\renewcommand\thesection{\arabic{section}}
+\institution{Escuela Superior de Cómputo, IPN}
+\footinfo{Cellular Automata}
+\theday{Jun 21, 2024}
+\course{Genetic Algorithms}
 
-\title{\Huge{\textbf{}}\\
-\Large{\textbf{Bioinspirated Algorithms\\ Cellular Automaton for Minimum Coloring Graph Problem}}}
-\author{Diego Castillo Reyes\\Marthon Leobardo Yañez Martinez\\Aldo Escamilla Resendiz\\Muñoz González Eduardo}
+%----------------------------------------------------------
+% ABSTRACT AND KEYWORDS
+%----------------------------------------------------------
 
-\graphicspath{{imagenes/}}
+\begin{abstract}    
+    Cellular automata are a mathematical and computational model used to simulate dynamic systems. 
+        This work presents a review of cellular automata, their history, classification, and applications. 
+        Additionally, an example of one-dimensional and two-dimensional cellular automata is shown.
+\end{abstract}
+
+%----------------------------------------------------------
+
+\keywords{Automata, Cellular, Genetic, Algorithms, Simulation}
+
+%----------------------------------------------------------
+
 \begin{document}
-    \maketitle
-    \newpage
+		
+    \maketitle 
+    \thispagestyle{firststyle} \tauabstract
     \tableofcontents
-    \newpage
-    \section{Introduction}
-        In this investigation we will explore the viability of the cellular automaton for the minimum coloring graph problem.
-        As the first step we will define what is a cellular automaton and in what consists the problem.\\ 
-        Then we will explore the background of each concept, why it was created, and what this technique proposes. After that, 
-        we will present the algorithm, which parameters does the algorithm requires. 
-        \\Finally we will present examples of the usage of this
-        algorithm, and conclude the viability of using cellular automaton for an implementation as the next step in this investigation.
-    \newpage
+    \linenumbers
+%----------------------------------------------------------
 
-    \begin{multicols}{2}
-        \section{Cellular Automaton}
-        A cellular automaton is a discrete model studied in computational theory, mathematics,
-        physics, complexity science, and theoretical biology. It consists of a grid of cells,
-        each of which can be in one of a finite number of states.
-        \subsection{Background}
+\section{Introduction}
 
+    Cellular automata (CA) are a mathematical and computational model used to simulate dynamic systems. 
+        They are composed of a grid of cells, each of which can be in a finite number of states. 
+        The state of each cell is updated based on a set of rules that define the behavior of the system. 
+        CA are used in various fields, such as physics, biology, and computer science, to model complex systems and study their behavior. 
+        This work presents a review of cellular automata, their history, classification, and applications. 
+        Additionally, an example of one-dimensional and two-dimensional cellular automata is shown.
+   
+\section{Title}
 
-    \end{multicols}
+    The \verb*|\maketitle| command generates the title and author information section, including the professor name and affiliations. The title can be modified in tau-class/tau.cls/title style section. 
+	
+    By default, \textit{tau class} shows the title on the left. However, you can change \verb*|\raggedright| to \verb*|\centering| in \verb*|\titlepos| to move the title to the center or, modify it to your own preferences.
+	
+    In addition to the \verb|\title| command, a new command named \verb|\journalname| has been added to include more information. 
+	
+    If you do not need this command, you can undefined it and the content will be adjusted automatically.
+	
+\section{Abstract}
+
+    The abstract and keywords are defined using the \verb*|\keywords| and \verb*|\begin{abstract} \end{abstract}| commands respectively. For the abstract to appear, make sure the \verb|\tauabstract| command is always included after the beginning of the document.
+    
+    If the keywords are not declared in the preamble, the content will be adjusted automatically.
+    
+\section{Document style options}
+
+    \subsection{Tau start}
+	
+        We included the \verb|\taustart{}| command, which provides a personalized lettrine for the beginning of a paragraph.
+
+    \subsection{Line numbering}
+	
+        By implementing the \textit{lineno} package, the line numbering of the document can be placed with the command \verb|\linenumbers|.
+		
+        I recommend placing the command after the abstract and table of contents for a better appearance.
+		
+    \subsection{Table of contents}
+	
+        The \textit{tau class} provides a customised design for the table of contents. Each level of the ToC provides a preview of the content and its location in the document. 
+		
+\section{Figures and tables}
+
+    \subsection{Figures}
+		
+	Fig. \ref{fig:figure} shows an example figure.
+		
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\columnwidth]{figures/Example.pdf}
+		\caption{Example figure obtained from PGFPlots \cite{PFGPlots}.}
+		\label{fig:figure}
+	\end{figure}
+		
+        Fig. \ref{fig:examplefloat} shows an example of two figures that covers the width of the page. It can be placed at the top or bottom of the page. The space between the figures can also be changed using the \verb|\hspace{Xpt}| command.
+		
+        \begin{figure*}[tp] % t for position at the top of the current page; b for position at the bottom; p for new page
+		\centering
+		  \begin{subfigure}[b]{0.38\linewidth} % Fig (a)
+			\includegraphics[width=\linewidth]{figures/Example2.pdf}
+			\caption{Example left figure.}
+			\label{fig:figa}
+		\end{subfigure}
+			\hspace{20pt}   % Space between the figures
+		\begin{subfigure}[b]{0.375\linewidth} % Fig (b)
+			\includegraphics[width=\linewidth]{figures/Example3.pdf}
+			\caption{Example right figure.}
+			\label{fig:figb}
+		\end{subfigure}
+		\caption{Example figure that covers the width of the page obtained from PGFPlots \cite{PFGPlots}.}
+		\label{fig:examplefloat}
+	\end{figure*}
+	
+    \subsection{Tables}
+	
+        Table \ref{tab:table} shows an example table. The \verb|\tabletext{}| is used to add notes to tables easily. 
+		
+	\begin{table}[H]
+		\centering
+		\caption{Small example table.}
+		\label{tab:table}
+		\begin{tabular}{cc}
+			\toprule
+			\textbf{Column 1} & \textbf{Column 2} \\
+			\midrule
+			Data 1 & Data 2 \\
+			Data 3 & Data 4 \\
+			\bottomrule
+		\end{tabular}
+			
+            \tabletext{Note: I'm a table text for additional information.}
+			
+	\end{table}
+		
+\section{Tau packages}
+
+    \subsection{Tauenvs}
+	
+        This template has its own environment package \textit{tauenvs.sty} designed to enhance the presentation of the document. Among these custom environments are \textit{tauenv}, \textit{info} and \textit{note}.
+		
+        There are two environments which have a predefined title. These can be included by the command \verb|\begin{note}| and \verb|\begin{info}|. All the environments have the same style.
+			
+        An example using the tau environment is shown below.
+		
+	\begin{tauenv}[frametitle=Environment with custom title]
+            This is an example of the custom title environment. To add a title type \verb|[frametitle=Your title]| next to the beginning of the environment (as shown in this example).
+	\end{tauenv}
+		
+        Tauenv is the only environment that you can customize its title. On the other hand, info and note adapt their title to spanish automatically when this language package is defined.
+		
+    \subsection{Taubabel}
+
+        In this new version, we have included a package called \textit{taubabel}, which have all the commands that automatically translate from english to spanish when this language package is defined.
+		
+        By default, tau displays its content in english, however, within this package you can change the language to spanish. To do so, set \textit{true} to \verb|\setboolean{es-babel}{true/false}| located in taubabel.sty.
+		
+        You can modify this package if you need another language. This will make it easier to translate the document without having to modify the class document.
+		
+\section{Equation}
+
+    Equation~\ref{ec:equation}, shows the Schrödinger equation as an example. 
+	\begin{equation} \label{ec:equation}
+		\frac{\hbar^2}{2m}\nabla^2\Psi + V(\mathbf{r})\Psi = -i\hbar \frac{\partial\Psi}{\partial t}
+	\end{equation} 
+    The \textit{amssymb} package was not necessary to include, because stix2 font incorporates mathematical symbols for writing quality equations. In case you choose another font, uncomment this package in tau-class/tau.cls/math packages.
+	
+    If you want to change the values that adjust the spacing above and below the equations, play with \verb|\setlength{\eqskip}{8pt}| value until the preferred spacing is set.
+	
+\section{Adding codes}
+	
+    This class\footnote{Hello there! I am a footnote :)} includes the \textit{listings} package, which offers customized features for adding codes in \LaTeX\ documents specifically for C, C++, \LaTeX\ and Matlab. 
+	
+    You can customize the format in tau-class/tau.cls/listings style.
+	
+	\nolinenumbers
+	\lstinputlisting[caption=Example of Matlab code., language=Matlab]{example.m}
+	\linenumbers
+	
+    If line numbering is enabled, we recommend placing the command \verb|\nolinenumbers| at the beginning and \verb|\linenumbers| at the end of the code. 
+	
+    This will temporarily remove line numbering and the code will look better as shown in this example.
+	
+\section{References}
+
+    The default formatting for references follows the IEEE style. 
+    You can modify the style of your references, for that, go to tau-class/tau.cls/biblatex. 
+    See appendix for more information.
+	
+\section{Appendix}
+
+    \subsection{Alternative title}
+
+        You can make the following modification in tau-class/tau.cls/title preferences section to change the position of the title.
+
+\nolinenumbers
+\begin{lstlisting}[language=TeX, caption=Alternative title.]
+\newcommand{\titlepos}{\centering}
+\end{lstlisting}
+\linenumbers
+
+	This will move the title to the center. 
+
+    \subsection{Info environment}
+
+        An example of the info environment declared in the ‘tauenvs.sty’ package is shown below. Remember that \textit{info} and \textit{note} are the only packages that translate their title (english or spanish).
+		
+	\begin{info}
+		Small example of info environment.
+	\end{info}
+
+    \subsection{Equation skip value}
+
+        With the \verb|\eqskip| command you can change the spacing for equations. The default \textit{eqskip} value is 8pt.
+
+\nolinenumbers
+\begin{lstlisting}[language=TeX, caption=Equation skip code.]
+	\newlength{\eqskip}\setlength{\eqskip}{8pt}
+	\expandafter\def\expandafter\normalsize\expandafter{%
+		\normalsize%
+		\setlength\abovedisplayskip{\eqskip}%
+		\setlength\belowdisplayskip{\eqskip}%
+		\setlength\abovedisplayshortskip{\eqskip-\baselineskip}%
+		\setlength\belowdisplayshortskip{\eqskip}%
+	}
+\end{lstlisting}
+\linenumbers
+		
+    \subsection{References}
+		
+        In case you require another reference style, you can go to tau-class/tau.cls/biblatex and modify the following.
+		
+\nolinenumbers
+\begin{lstlisting}[language=TeX, caption=References style.]
+\RequirePackage[
+	backend=biber,
+	style=ieee,
+	sorting=ynt
+]{biblatex}
+\end{lstlisting}
+\linenumbers
+
+        By default, \textit{tau class} has its own .bib for this example, if you want to name your own bib file, change the bibresource.
+		
+\nolinenumbers
+\begin{lstlisting}[language=TeX]
+\addbibresource{tau.bib}
+\end{lstlisting}
+\linenumbers
+
+\section{Contact me}
+
+    Enjoy writing with tau \LaTeX\ class\hspace{5pt}\faChessKnight \\ 
+    \noindent\faWix\hspace{5pt}\href{https://memonotess1.wixsite.com/memonotess}{https://memonotess1.wixsite.com/memonotess} \\
+    \faEnvelope[regular]\hspace{7pt}memo.notess1@gmail.com \\
+    \faInstagram\hspace{8pt}memo.notess\\
+
+    \noindent Did you like this class document? Check out our new project the \href{https://es.overleaf.com/latex/templates/rho-class-academic-article-template/bpgjxjjqhtfy}{rho class}, made for complex articles and reports.
+    
+%----------------------------------------------------------
+
+\addcontentsline{toc}{section}{References}
+\printbibliography
+
+%----------------------------------------------------------
+
 \end{document}

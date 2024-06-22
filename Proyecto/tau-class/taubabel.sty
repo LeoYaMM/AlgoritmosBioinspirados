@@ -1,0 +1,95 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --------------------------------------------------------
+% Taubabel
+% LaTeX Package
+% Version 1.0.0 (22/05/2024)
+%
+% Author: 
+% Guillermo Jimenez (memo.notess1@gmail.com)
+% --------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --------------------------------------------------------
+%                        WARNING!
+% --------------------------------------------------------
+% Do not remove this package from the 'main.tex' to 
+% avoid compilation problems. This package defines the
+% custom words for english and spanish.
+% --------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------
+% PACKAGE CONFIGURATION
+%----------------------------------------------------------
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{tau-class/taubabel}[2024/05/22]
+
+%----------------------------------------------------------
+% DOCUMENT LANGUAGE
+%----------------------------------------------------------
+
+\newboolean{es-babel}
+\setboolean{es-babel}{false}
+\ifthenelse{\boolean{es-babel}}
+{
+    \usepackage[spanish,es-nodecimaldot,es-noindentfirst]{babel}
+}
+{
+    \usepackage[english]{babel}
+}
+
+%----------------------------------------------------------
+% KEYWORDS WORD
+%----------------------------------------------------------
+
+\newcommand{\keywordname}{{Keywords---}}
+
+%----------------------------------------------------------
+
+%!TEX Change manually the second {} if using another language babel
+
+%----------------------------------------------------------
+% AUTHOR "AND" LANGUAGES
+%----------------------------------------------------------
+
+\newcommand{\andlanguage}{
+    \iflanguage{spanish}{
+        { y }%
+    }{%
+        { and }%
+    }%
+}
+
+%----------------------------------------------------------
+% CAPTION CODE LANGUAGE
+%----------------------------------------------------------
+
+\newcommand{\captioncodelanguage}{
+    \iflanguage{spanish}{
+        {C\'odigo}%
+    }{%
+        {Code}%
+    }%
+}
+
+%----------------------------------------------------------
+% ENVIRONMENTS LANGUAGES
+%----------------------------------------------------------
+
+% Information/Informaci\'on language 
+\newcommand{\infolanguage}{
+    \iflanguage{spanish}{
+        {\bfseries\noindent Informaci\'on}%
+    }{%
+        {\bfseries\noindent Information}%
+    }%
+}
+
+% Note/Nota language 
+\newcommand{\notelanguage}{
+    \iflanguage{spanish}{
+        {\bfseries\noindent Nota}%
+    }{%
+        {\bfseries\noindent Note}%
+    }%
+}

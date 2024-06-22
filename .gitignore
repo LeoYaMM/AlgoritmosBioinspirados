@@ -1,0 +1,3 @@
+*.DS_Store
+investigacion*
+!investigacion.tex
