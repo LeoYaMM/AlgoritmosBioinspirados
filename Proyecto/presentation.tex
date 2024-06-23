@@ -1,22 +1,40 @@
 \documentclass{beamer}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{helvet}
 
-\title{Título de la Presentación}
-\author{Tu Nombre}
+\graphicspath{{imagenes/}}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\title{Celullar Automata}
+\author{Castillo Reyes, Diego\\
+        Escamilla Reséndiz, Aldo\\
+        Muñoz Gonzalez, Eduardo\\
+        Yañez Martinez, Marthon Leobardo\\}
 \date{\today}
 
 \begin{document}
 
-\frame{\titlepage}
+\begin{frame}[plain]
+    \titlepage
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[at={(current page.south west)}, anchor=south west, xshift=-0.5cm, yshift=0.1cm, opacity=0.2] {\includegraphics[width=0.5\paperwidth]{IPNLogo.png}};
+    \end{tikzpicture}
+\end{frame}
 
 \section{Introducción}
 \begin{frame}
-    \frametitle{Introducción}
-    Aquí va el contenido de la introducción.
+    \frametitle{Introduction}
+    Cellular automata (CA) are \textit{discrete, abstract computational systems} that have proved useful both as general models of complexity and as more specific representations of non-linear dynamics in a variety of scientific fields.
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[at={(current page.south east)}, anchor=south east, xshift=-0.3cm, yshift=2.5cm, opacity=0.2] {\includegraphics[width=0.6\paperwidth]{escomLogo.png}};
+    \end{tikzpicture}
 \end{frame}
 
-\section{Metodología}
+\section{Background}
 \begin{frame}
-    \frametitle{Metodología}
+    \frametitle{Background}
     Aquí va el contenido de la metodología.
 \end{frame}
 
