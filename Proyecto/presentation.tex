@@ -2,6 +2,7 @@
 \usepackage{tikz}
 \usepackage{graphicx}
 \usepackage{helvet}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
 
 \graphicspath{{imagenes/}}
 
@@ -35,12 +36,37 @@
 \section{Background}
 \begin{frame}
     \frametitle{Background}
-    Aquí va el contenido de la metodología.
+    Cellular automata (CA) were conceptualized by Stanislaw Ulam and John Von Neumann in the 1940s at the Los Alamos National Laboratory. Von Neumann's extensive work on self-replicating automata was published posthumously in 1966. A CA consists of a one-dimensional array of cells that evolve over discrete time steps.
 \end{frame}
 
+\section{Cellular Automata Algorithm}
 \begin{frame}
-    \frametitle{Título de la Diapositiva}
-    Contenido de la diapositiva.
+    \frametitle{Cellular Automata Algorithm}
+    \begin{center}
+        \scalebox{0.8}{
+            \begin{minipage}{1.2\textwidth}
+                \begin{algorithm}[H]
+                    \caption{Basic Cellular Automaton}
+                    \KwIn{\texttt{gridWidth}: Width of the grid, \texttt{gridHeight}: Height of the grid, \texttt{states}: Set of possible states for the cells, \texttt{neighborhood}: Set of relative positions defining the neighborhood of each cell, \texttt{rules}: Set of state transition rules, \texttt{maxTimeSteps}: Maximum number of time steps}
+                    \KwOut{The final state of the grid}
+                    
+                    Initialize \texttt{gridHeight} $\times$ \texttt{gridWidth}, set the initial states on the grid and create \texttt{newGrid} as a copy of the grid.\;
+                    
+                    \While{$i$ < \texttt{maxTimeSteps}}{
+                        \For{$x$ in \texttt{gridWidth}}{
+                            \For{$y$ in \texttt{gridHeight}}{
+                                \texttt{neighbors} = getNeighbors(\texttt{grid}, \texttt{neighborhood}, $x$, $y$)\;
+                                \texttt{newGrid}[$x$][$y$] = applyRules(\texttt{grid}[$x$][$y$], \texttt{neighbors}, \texttt{rules})\;
+                            }
+                        }
+                        Display the state of \texttt{newGrid}\;
+                        \texttt{grid} = \texttt{newGrid}\;
+                        $i$++\;
+                    }
+                \end{algorithm}
+            \end{minipage}
+        }
+    \end{center}
 \end{frame}
 
 \end{document}
