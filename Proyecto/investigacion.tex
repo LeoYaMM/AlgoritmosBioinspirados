@@ -231,10 +231,6 @@
     This game demonstrated how simple rules could lead to complex emergent behavior, 
     sparking widespread interest and research in cellular automata.
 
-    Stephen Wolfram's work (1980s): Wolfram conducted extensive research on cellular
-    automata, classifying them into four types based on their behavior and demonstrating 
-    their potential as models of natural processes and as computational systems.
-  
 
     Fig. \ref{fig:figure} An example of Conway's Game of Life.
 	\begin{figure}[H]
@@ -243,6 +239,79 @@
 		\caption{Conway's Game of Life.}
 		\label{fig:figure}
 	\end{figure}
+
+    Stephen Wolfram's work (1980s): Wolfram conducted extensive research on cellular
+    automata, classifying them into four types based on their behavior and demonstrating 
+    their potential as models of natural processes and as computational systems.
+  
+    \subsubsection{John Conway's Game of Life}
+
+
+    John Conway's Game of Life is a well-known example of a two-dimensional cellular automaton. Devised by the British mathematician John Horton Conway in 1970, it gained significant interest due to its simplicity and the complex behaviors it can exhibit.
+
+    \subsubsection{Rules of the Game}
+
+    The Game of Life is played on a rectangular grid of cells, where each cell can be in one of two states: alive (1) or dead (0). The state of each cell evolves through discrete time steps according to a set of simple rules based on the states of its eight neighbors (the Moore neighborhood). A dead cell with exactly three live neighbors becomes a live cell, akin to reproduction. A live cell with two or three live neighbors remains alive, reflecting a stable environment. Conversely, a live cell with fewer than two live neighbors dies, simulating underpopulation, and a live cell with more than three live neighbors dies, simulating overpopulation.
+
+    \subsubsection{Initial Configuration and Evolution}
+
+    The evolution of the grid begins from an initial configuration of live and dead cells. The subsequent generations are determined by simultaneously applying the aforementioned rules to every cell in the grid. This process is repeated for as many time steps as desired, creating a dynamic and evolving pattern.
+
+    \subsubsection{Emergent Patterns}
+
+    One of the most fascinating aspects of the Game of Life is the emergence of complex patterns from simple initial conditions. Still lifes, such as the Block and Beehive, are patterns that do not change from one generation to the next. Oscillators, like the Blinker and Toad, return to their initial state after a fixed number of generations. Spaceships, including the Glider and Lightweight Spaceship (LWSS), translate themselves across the grid, demonstrating movement.
+
+    \subsubsection{Significance and Applications}
+
+    The Game of Life has been extensively studied not only as a mathematical curiosity but also for its implications in various fields. In computational theory, the Game of Life is Turing complete, meaning it can simulate any computation given enough resources, demonstrating that simple rules can lead to universal computation\cite{rendell2002turing}. In the study of complex systems, it serves as a model for emergent behavior, illustrating how simple interactions can lead to intricate and unpredictable patterns \cite{gardner1970}. Researchers in artificial life use the Game of Life to study processes such as self-replication, evolution, and the emergence of life-like properties from non-living systems \cite{langton1986}.
+
+    \subsubsection{Simulation and Visualization}
+
+    The Game of Life is often simulated using computers to explore its vast array of patterns and behaviors. Many software tools and libraries have been developed for this purpose. Golly is a popular open-source application that allows users to create, simulate, and analyze patterns in the Game of Life and other cellular automata\cite{golly}. Various online platforms also enable users to interactively explore the Game of Life directly in their web browsers, making it accessible for educational and research purposes.
+
+    \subsubsection{Conclusion}
+
+    John Conway's Game of Life exemplifies the power and elegance of cellular automata. Its simple rules lead to complex and fascinating behaviors, making it a rich subject for study in mathematics, computer science, and beyond. The Game of Life continues to inspire and challenge researchers, illustrating the profound connection between simplicity and complexity in dynamic systems.
+
+    \subsection{Stephen Wolfram's Research on Cellular Automata}
+
+    Stephen Wolfram is a prominent figure in the study of cellular automata, and his research has significantly advanced the understanding of these systems. Wolfram's work explores the complexity that arises from simple rules and how such systems can model natural phenomena.\cite{wolfram1983}
+
+    \subsubsection{Elementary Cellular Automata}
+
+    Wolfram's research primarily focuses on one-dimensional cellular automata, known as elementary cellular automata. These consist of a line of cells, each of which can be in one of two states: 0 (dead) or 1 (alive). The state of each cell in the next time step depends on its current state and the state of its two immediate neighbors. Despite the simplicity of these rules, elementary cellular automata can exhibit a wide range of behaviors, from predictable and repetitive to highly complex and chaotic.
+
+    \subsubsection{Rule Classification}
+
+    Wolfram classified the behavior of cellular automata into four classes based on their long-term behavior:\cite{wolfram1984}
+
+    \textbf{Class 1:} These automata evolve into a homogeneous state. Any random initial configuration eventually leads to a uniform state. This behavior is similar to systems that settle into a stable equilibrium.
+
+    \textbf{Class 2:} These automata evolve into a set of stable or oscillating structures. Patterns emerge that are stable or repeat periodically. This behavior is akin to the formation of stable structures or cycles in nature.
+
+    \textbf{Class 3:} These automata produce random or chaotic patterns. Small changes in the initial configuration can lead to significant differences in the evolution of the automaton, reflecting chaotic systems in nature.
+
+    \textbf{Class 4:} These automata generate complex structures that can interact with each other in complicated ways. This class is particularly interesting because it can support universal computation, meaning these automata can perform any computation given the right initial conditions and rules.
+
+    \subsubsection{Rule 30 and Rule 110}
+
+    Among the elementary cellular automata, Rule 30 and Rule 110 are particularly notable. Rule 30 generates a pattern that appears random and is used in random number generation.\cite{wolfram2002}\cite{cook2004} It exhibits chaotic behavior from simple initial conditions. Rule 110, on the other hand, has been proven to be Turing complete, meaning it can simulate any computation. This demonstrates that even simple rules can lead to computational universality.
+
+    \subsubsection{Applications and Implications}
+
+    Wolfram's research has broad implications across various fields. In physics, cellular automata provide models for understanding complex systems and phenomena such as fluid dynamics and pattern formation. In computer science, they offer insights into computation theory and the nature of complexity. Wolfram's work also intersects with biology, where cellular automata can model the growth patterns of organisms and the dynamics of ecosystems.
+
+    \subsubsection{A New Kind of Science}
+
+    Wolfram's seminal book, \textit{A New Kind of Science}, encapsulates his research and presents a comprehensive view of how simple computational rules can lead to complex behaviors. The book argues that the universe itself might operate according to principles similar to those of cellular automata, suggesting a computational foundation for all natural processes.
+
+    \subsubsection{Conclusion}
+
+    Stephen Wolfram's research on cellular automata reveals the profound complexity that can arise from simple rules. His classification of automata behaviors, the study of specific rules like Rule 30 and Rule 110, and the broader implications for understanding natural phenomena highlight the importance of cellular automata in both theoretical and applied sciences. Wolfram's work continues to inspire researchers and offers a unique perspective on the computational nature of the universe.
+
+
+
+
 
     \subsection{Applications}
 	
@@ -448,8 +517,6 @@ These diverse versions of Cellular Automata reflect the richness and variety fou
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Implementation Repositories}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -520,7 +587,31 @@ Integrating CA with Fuzzy Logic offers several advantages:
 The proposed approach was validated on the mini-MIAS dataset, comprising 322 mammograms, 118 of which contain suspicious masses. The results showed that the Fuzzy Cellular Automaton outperformed the traditional CA approach, with a mean Intersection over Union (IoU) score of 83.79\%, compared to 65.11\% for the CA approach.
 
 
-\addcontentsline{toc}{section}{References}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Implementation Repositories}
+
+In this section, we present some repositories where you can find implementations of cellular automata.
+
+\subsection*{Sandspiel}
+Made by Max Bittker, Sandspiel is a falling sand game that provides a creative and interactive environment for exploring cellular automata. Users can experiment with different elements, such as sand, water, fire, and plants, and observe how they interact and evolve over time. Sandspiel is available online and offers a user-friendly interface for designing and simulating complex cellular automata systems.
+
+You can access the repository at: \url{https://github.com/MaxBittker/sandspiel}
+\subsection*{terra}
+JS library for cellular automata and simple biological simulations. textit{Terra} provides a flexible and extensible framework for creating and simulating cellular automata models. It includes various built-in rules and configurations for different types of automata, making it easy to experiment with different systems and behaviors. terra is designed to be user-friendly and accessible for both beginners and advanced users.
+
+You can access the repository at: \url{https://rileyjshaw.com/terra/}
+\section{Conclusion}
+In this paper, we have explored the concept of Cellular Automata (CA) and its various types, including deterministic and probabilistic CAs. We have also discussed the importance of boundary conditions in CA models and highlighted some special types of CAs that draw analogies from natural phenomena.
+
+Furthermore, we have presented two usage examples of CA in different domains. The first example demonstrates the integration of CA with deep learning techniques for modeling tumor growth, showcasing the scalability and adaptability of the approach. The second example showcases the integration of CA with fuzzy logic for breast cancer image segmentation, highlighting the improved accuracy and visual clarity achieved through this integration.
+
+Overall, Cellular Automata provide a powerful framework for modeling and simulating complex phenomena in various fields. The versatility and adaptability of CA make it a valuable tool for understanding and analyzing natural systems. With further research and development, CA-based models can contribute to advancements in fields such as biology, medicine, and environmental science.
+
+In conclusion, Cellular Automata offer a promising avenue for studying and simulating both simple and complex phenomena, providing insights into the dynamics of natural systems and enabling the development of innovative solutions in various domains.
+
 \printbibliography
 
 \end{document}
