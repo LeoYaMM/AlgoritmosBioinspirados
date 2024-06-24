@@ -1,15 +1,57 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
-\contentsline {section}{\numberline {2}Cellular Automata}{1}{section.2}%
-\contentsline {section}{\numberline {3}Background}{1}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Motivation}{2}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Developments}{2}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Applications}{2}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Cellular Automata Algorithm}{2}{section.4}%
-\contentsline {section}{\numberline {5}Parameters Required on a Cellular Automata}{2}{section.5}%
-\contentsline {section}{\numberline {6}Versions of Cellular Automata}{2}{section.6}%
+\contentsline {section}{\numberline {2}Background}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}One-Dimensional Cellular Automata}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Motivation}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Developments}{3}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}John Conway's Game of Life}{3}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Rules of the Game}{3}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Initial Configuration and Evolution}{4}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Emergent Patterns}{4}{subsubsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}Significance and Applications}{4}{subsubsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.6}Simulation and Visualization}{4}{subsubsection.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.7}Conclusion}{4}{subsubsection.2.3.7}%
+\contentsline {subsection}{\numberline {2.4}Stephen Wolfram's Research on Cellular Automata}{4}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Elementary Cellular Automata}{4}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Rule Classification}{4}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Rule 30 and Rule 110}{4}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}Applications and Implications}{4}{subsubsection.2.4.4}%
+\contentsline {subsubsection}{\numberline {2.4.5}A New Kind of Science}{4}{subsubsection.2.4.5}%
+\contentsline {subsubsection}{\numberline {2.4.6}Conclusion}{4}{subsubsection.2.4.6}%
+\contentsline {subsection}{\numberline {2.5}Applications}{4}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Cellular Automata Algorithm}{5}{section.3}%
+\contentsline {section}{\numberline {4}Parameters Required on a Cellular Automata}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Grid Structure}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Cell States}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Neighborhood}{5}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Transition Function}{5}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Boundary Conditions}{5}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Time Steps}{5}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Output and Visualization}{5}{subsection.4.7}%
+\contentsline {section}{\numberline {5}Versions of Cellular Automata}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}By Dimensionality}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}By Cell States}{5}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}By Neighborhood Type}{6}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}By Rule Type}{6}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}By Boundary Conditions}{6}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Special Types of Cellular Automata}{6}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Analogy with the Nature}{6}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Dimensionality}{6}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Cell States}{6}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Neighborhoods}{6}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Rule Types}{6}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Boundary Conditions}{6}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Special Types of Cellular Automata}{6}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Usage Examples}{7}{section.7}%
+\contentsline {subsection}{\numberline {7.1} A computational tumor growth model experience based on molecular dynamics point of view using deep cellular automata }{7}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Overview of Cellular Automata and CNN Integration}{7}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Implementation Details}{7}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}Results and Validation}{7}{subsubsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.2}Implementing Fuzzy Cellular Automata in Breast Cancer Image Segmentation}{7}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Overview of Cellular Automata and Fuzzy Logic Integration}{7}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Implementation Details}{7}{subsubsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.3}Advantages of the Approach}{7}{subsubsection.7.2.3}%
+\contentsline {subsubsection}{\numberline {7.2.4}Experimental Results}{7}{subsubsection.7.2.4}%
+\contentsline {section}{\numberline {8}Implementation Repositories}{7}{section.8}%
+\contentsline {section}{\numberline {9}Conclusion}{8}{section.9}%
 \contentsfinish 
-\contentsline {section}{\numberline {7}Analogy with the Nature}{3}{section.7}%
-\contentsline {section}{\numberline {8}Implementation Repositories}{3}{section.8}%
-\contentsline {section}{\numberline {9}Usage Examples}{3}{section.9}%
-\contentsline {section}{References}{3}{section.9}%
