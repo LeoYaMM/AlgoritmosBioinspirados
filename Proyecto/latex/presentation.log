@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  23 JUN 2024 20:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.27)  24 JUN 2024 20:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -639,24 +639,8 @@ Package: relsize 2013/03/29 ver 4.1
 \algocf@algoframe=\box87
 \algocf@algobox=\box88
 )
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 15.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 15.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 15.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 15.
-
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 18.
-(C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 15.
+ (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 ) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
@@ -665,24 +649,24 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Proyecto\latex\presentation.aux)
 \openout1 = `presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -737,53 +721,53 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 15.
  (c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Proyecto\latex\presentation.out) (c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Proyecto\latex\presentation.out)
 \@outlinefile=\write5
 \openout5 = `presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 18.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 15.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 18.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 15.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 18.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/phv/b/n on input line 18.
+(Font)                  OT1/cmr/bx/n --> OT1/phv/b/n on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/phv/b/n on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 18.
+(Font)                  OT1/cmr/bx/n --> OT1/phv/b/n on input line 15.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/phv/m/n on input line 18.
+(Font)                  OT1/cmss/m/n --> OT1/phv/m/n on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/phv/m/n on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 18.
+(Font)                  OT1/cmss/bx/n --> OT1/phv/m/n on input line 15.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/phv/m/it on input line 18.
+(Font)                  OT1/cmr/m/it --> OT1/phv/m/it on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/phv/m/it on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 18.
+(Font)                  OT1/cmr/bx/it --> OT1/phv/m/it on input line 15.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 15.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/phv/m/n --> OT1/phv/b/n on input line 18.
+(Font)                  OT1/phv/m/n --> OT1/phv/b/n on input line 15.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/phv/m/it --> OT1/phv/b/it on input line 18.
+(Font)                  OT1/phv/m/it --> OT1/phv/b/it on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 18.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/phv/b/n --> OT1/phv/b/n on input line 18.
+(Font)                  OT1/phv/b/n --> OT1/phv/b/n on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/phv/m/n --> OT1/phv/b/n on input line 18.
+(Font)                  OT1/phv/m/n --> OT1/phv/b/n on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/phv/m/it --> OT1/phv/b/it on input line 18.
+(Font)                  OT1/phv/m/it --> OT1/phv/b/it on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 15.
  (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-bibliography-dictionary-English.dict
@@ -797,45 +781,62 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Proyecto\latex\presentation.nav)
-<imagenes/IPNLogo.png, id=36, 1299.85625pt x 1882.03125pt>
+<imagenes/IPNLogo.png, id=40, 1299.85625pt x 1882.03125pt>
 File: imagenes/IPNLogo.png Graphic file (type png)
 <use imagenes/IPNLogo.png>
-Package pdftex.def Info: imagenes/IPNLogo.png  used on input line 25.
+Package pdftex.def Info: imagenes/IPNLogo.png  used on input line 22.
 (pdftex.def)             Requested size: 182.09767pt x 263.65488pt.
  [1
 
 {C:/Users/yleob/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./imagenes/IPNLogo.png>]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 34.
-<imagenes/escomLogo.png, id=67, 1228.59pt x 860.21375pt>
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 31.
+<imagenes/escomLogo.png, id=71, 1228.59pt x 860.21375pt>
 File: imagenes/escomLogo.png Graphic file (type png)
 <use imagenes/escomLogo.png>
-Package pdftex.def Info: imagenes/escomLogo.png  used on input line 34.
+Package pdftex.def Info: imagenes/escomLogo.png  used on input line 31.
 (pdftex.def)             Requested size: 218.51942pt x 152.99417pt.
  [2
 
  <./imagenes/escomLogo.png>] [3
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 67.
  (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
  (C:\Users\yleob\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 70.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 67.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 70.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 67.
  [4
 
-] [5
+]
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 91.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 91.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <5> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 91.
+ [5
 
 ] [6
 
 ] [7
+
+] [8
+
+] [9
+
+] [10
+
+] [11
+
+] [12
 
 ]
 \tf@nav=\write6
@@ -853,20 +854,20 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 38A87C5E13D844B452F9C2492086409D;817.
+(rerunfilecheck)             Checksum: 085F04E1D8032E98716179D15A98C73B;1047.
  ) 
 Here is how much of TeX's memory you used:
- 25585 strings out of 474486
- 510029 string characters out of 5743755
- 1937542 words of memory out of 5000000
- 47342 multiletter control sequences out of 15000+600000
- 575186 words of font info for 72 fonts, out of 8000000 for 9000
+ 25660 strings out of 474486
+ 511370 string characters out of 5743755
+ 1938542 words of memory out of 5000000
+ 47402 multiletter control sequences out of 15000+600000
+ 583986 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,22n,123p,581b,675s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Proyecto\latex\presentation.pdf" (7 pages, 217320 bytes).
+<C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on "c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Proyecto\latex\presentation.pdf" (12 pages, 262077 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 399 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

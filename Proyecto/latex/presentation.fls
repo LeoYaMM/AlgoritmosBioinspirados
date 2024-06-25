@@ -425,6 +425,27 @@ INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvb7
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvb7t.vf
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr7t.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss10.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr7t.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr7t.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro7t.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro7t.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro7t.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro7t.vf
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr7t.vf
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 OUTPUT c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Proyecto\latex\presentation.nav
 OUTPUT c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Proyecto\latex\presentation.toc
 OUTPUT c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Proyecto\latex\presentation.snm
@@ -433,6 +454,8 @@ INPUT c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\
 INPUT c:\Users\yleob\OneDrive - Instituto Politecnico Nacional\Documents\1. Leo\ESCOM\Semestre 5\Algoritmos Bioinspirados\AlgoritmosBioinspirados-2\AlgoritmosBioinspirados\Proyecto\latex\presentation.out
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmitt10.pfb
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmitt10.pfb
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmss10.pfb
+INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmss10.pfb
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\yleob\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
