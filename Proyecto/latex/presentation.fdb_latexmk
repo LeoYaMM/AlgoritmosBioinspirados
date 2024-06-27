@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1719284036.00351 "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-2/AlgoritmosBioinspirados/Proyecto/presentation.tex" "latex/presentation.pdf" "presentation" 1719284041.35192 0
+["pdflatex"] 1719521272.62166 "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-2/AlgoritmosBioinspirados/Proyecto/presentation.tex" "latex/presentation.pdf" "presentation" 1719521277.86959 0
   "C:/Users/yleob/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1719195644 87887 fddbb66dde145c1b4d55b50471fd44c5 ""
   "C:/Users/yleob/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1709093337 24225046 66cabb890c07ebfb1d69ddcec99ba23c ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -217,13 +217,13 @@
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/translator/translator.sty" 1622471510 8765 56d370785f0143111ff9898b5adfe08e ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/yleob/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-2/AlgoritmosBioinspirados/Proyecto/presentation.tex" 1719284029 11459 6dcb6a9a9d9c035044fdb83212b3fccd ""
+  "c:/Users/yleob/OneDrive - Instituto Politecnico Nacional/Documents/1. Leo/ESCOM/Semestre 5/Algoritmos Bioinspirados/AlgoritmosBioinspirados-2/AlgoritmosBioinspirados/Proyecto/presentation.tex" 1719521268 11459 6dcb6a9a9d9c035044fdb83212b3fccd ""
   "imagenes/IPNLogo.png" 1719194986 25979 da4d41afef45c4a0a565cb8a43dad09a ""
   "imagenes/escomLogo.png" 1719194986 38291 6abfb1ada64b7606dcac41afb222e8d0 ""
-  "latex/presentation.aux" 1719284040 4345 3b43c70044e6d82ba3c758a8386cfed0 "pdflatex"
-  "latex/presentation.nav" 1719284040 2510 4b9d8a73eb5a2e6d81989874b5e499ce "pdflatex"
-  "latex/presentation.out" 1719284040 1047 085f04e1d8032e98716179d15a98c73b "pdflatex"
-  "presentation.tex" 1719284029 11459 6dcb6a9a9d9c035044fdb83212b3fccd ""
+  "latex/presentation.aux" 1719521277 4345 3b43c70044e6d82ba3c758a8386cfed0 "pdflatex"
+  "latex/presentation.nav" 1719521277 2510 4b9d8a73eb5a2e6d81989874b5e499ce "pdflatex"
+  "latex/presentation.out" 1719521277 1047 085f04e1d8032e98716179d15a98c73b "pdflatex"
+  "presentation.tex" 1719521268 11459 6dcb6a9a9d9c035044fdb83212b3fccd ""
   (generated)
   "latex/presentation.aux"
   "latex/presentation.log"
