@@ -1,3 +1,5 @@
 *.DS_Store
 investigacion*
 !investigacion.tex
+presentation*
+!presentation.tex
