@@ -1,5 +1,20 @@
+# Ignorar archivos .DS_Store
 *.DS_Store
+
+# Ignorar archivos que comienzan con "investigacion", excepto investigacion.tex
 investigacion*
 !investigacion.tex
 presentation*
 !presentation.tex
+
+# Ignorar archivos generados por LaTeX en la carpeta latex
+latex/*.aux
+latex/*.bbl
+latex/*.blg
+latex/*.fdb_latexmk
+latex/*.fls
+latex/*.log
+latex/*.out
+latex/*.pdf
+latex/*.synctex.gz
+latex/*.toc
