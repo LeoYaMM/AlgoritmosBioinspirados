@@ -70,7 +70,6 @@
     \maketitle 
     \thispagestyle{firststyle} 
     \tauabstract
-    \tableofcontents
 %----------------------------------------------------------
 
 \section{Introducción}
@@ -106,8 +105,10 @@
     El algoritmo PSO se basa en el comportamiento social de las particulas, las cuales se mueven en un espacio de búsqueda en busca de la mejor solución.
     Las particulas tienen mejoras cognitivas y mejoras sociales, las cuales les permiten moverse en el espacio de búsqueda.
     En el caso del problema de la coloración mínima, las particulas representan una coloración de un grafo, y el objetivo es encontrar la coloración mínima.
-    Para ello, se propone una representación de las particulas como un arreglo de colores, donde cada color representa un vértice del grafo.
-    
+    La representación de las particulas es un vector de enteros que representa los colores de los vértices del grafo.
+    El algoritmo PSO se encarga de mover las particulas en el espacio de búsqueda, de tal manera que se encuentre la coloración mínima del grafo.
+    Para evaluar la calidad de una coloración, se utiliza la función objetivo, la cual es el número de colores utilizados en la coloración.
+
 
 \section{Resultados}
 
