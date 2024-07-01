@@ -1,8 +1,7 @@
-# Minimum Coloring Graph Problem
-# Solución para el problema: PSO
 import numpy as np
 import networkx as nx
 import random
+import matplotlib.pyplot as plt
 
 # Función de fitness
 def fitness(solution, graph):
@@ -11,13 +10,27 @@ def fitness(solution, graph):
         if solution[edge[0]] == solution[edge[1]]:
             conflicts += 1
     num_colors = len(set(solution))
-    return num_colors + conflicts * 1000  # Penalización por conflictos
+    return num_colors + conflicts * 1000
 
 # PSO parameters
 num_particles = 30
-num_vertices = 10  # Cambia esto según el tamaño de tu grafo
+num_vertices = 10 # Numero de nodos
 max_iter = 100
-graph = nx.erdos_renyi_graph(num_vertices, 0.5)  # Ejemplo de un grafo aleatorio
+
+# Probabilidad de conexión
+p = 0.3
+
+# Crear el grafo
+graph = nx.erdos_renyi_graph(num_vertices, p)
+
+# Asegurarse de que el grafo no sea totalmente conexo
+while nx.is_connected(graph):
+    graph = nx.erdos_renyi_graph(num_vertices, p)
+
+# Dibujar el grafo
+plt.figure(figsize=(8, 6))
+nx.draw(graph, with_labels=True, node_color='skyblue', node_size=500, edge_color='gray')
+plt.show()
 
 # Inicialización de partículas
 particles = [np.random.randint(0, num_vertices, num_vertices) for _ in range(num_particles)]
@@ -60,3 +73,10 @@ for iteration in range(max_iter):
 # Resultado final
 print("Mejor solución encontrada:", gbest_position)
 print("Número de colores utilizados:", len(set(gbest_position)))
+
+# Dibujar el grafo final coloreado
+color_map = [f"C{color}" for color in gbest_position]  # Asigna un color a cada nodo según la solución óptima
+plt.figure(figsize=(8, 6))
+nx.draw(graph, with_labels=True, node_color=color_map, node_size=500, edge_color='gray')
+plt.show()
+
