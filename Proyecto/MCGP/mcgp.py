@@ -1,5 +1,3 @@
-# Minimum Coloring Graph Problem
-# Solución para el problema: PSO
 import numpy as np
 import networkx as nx
 import random
@@ -75,3 +73,10 @@ for iteration in range(max_iter):
 # Resultado final
 print("Mejor solución encontrada:", gbest_position)
 print("Número de colores utilizados:", len(set(gbest_position)))
+
+# Dibujar el grafo final coloreado
+color_map = [f"C{color}" for color in gbest_position]  # Asigna un color a cada nodo según la solución óptima
+plt.figure(figsize=(8, 6))
+nx.draw(graph, with_labels=True, node_color=color_map, node_size=500, edge_color='gray')
+plt.show()
+
