@@ -1,9 +1,9 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'latex/InvestProy.blg'
-[134] biber-MSWIN64:340> INFO - === 
-[177] Biber.pm:419> INFO - Reading 'latex/InvestProy.bcf'
-[277] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[294] bbl.pm:660> INFO - Writing 'latex/InvestProy.bbl' with encoding 'UTF-8'
-[294] bbl.pm:763> INFO - Output to latex/InvestProy.bbl
-[295] Biber.pm:131> WARN - The file 'latex/InvestProy.bcf' does not contain any citations!
-[295] Biber.pm:133> INFO - WARNINGS: 1
+[131] biber-MSWIN64:340> INFO - === 
+[178] Biber.pm:419> INFO - Reading 'latex/InvestProy.bcf'
+[307] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[324] bbl.pm:660> INFO - Writing 'latex/InvestProy.bbl' with encoding 'UTF-8'
+[325] bbl.pm:763> INFO - Output to latex/InvestProy.bbl
+[325] Biber.pm:131> WARN - The file 'latex/InvestProy.bcf' does not contain any citations!
+[325] Biber.pm:133> INFO - WARNINGS: 1
