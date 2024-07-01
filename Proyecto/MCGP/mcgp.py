@@ -10,7 +10,7 @@ def fitness(solution, graph):
         if solution[edge[0]] == solution[edge[1]]:
             conflicts += 1
     num_colors = len(set(solution))
-    return num_colors + conflicts * 1000  # Penalización por conflictos
+    return num_colors + conflicts * 1000
 
 # PSO parameters
 num_particles = 30
