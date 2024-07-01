@@ -18,7 +18,7 @@ num_vertices = 10 # Numero de nodos
 max_iter = 100
 
 # Probabilidad de conexión
-p = 0.3  # Ajusta esta probabilidad para obtener la densidad deseada
+p = 0.3
 
 # Crear el grafo
 graph = nx.erdos_renyi_graph(num_vertices, p)
