@@ -1,7 +1,0 @@
-\beamer@sectionintoc {1}{Introducción}{2}{0}{1}
-\beamer@sectionintoc {2}{Background}{3}{0}{2}
-\beamer@sectionintoc {3}{Cellular Automata Algorithm}{4}{0}{3}
-\beamer@sectionintoc {4}{Parameters of Cellular Automata}{5}{0}{4}
-\beamer@sectionintoc {5}{Versions of Cellular Automata}{7}{0}{5}
-\beamer@sectionintoc {6}{Analogy with Nature}{10}{0}{6}
-\beamer@sectionintoc {7}{Usage Examples}{12}{0}{7}

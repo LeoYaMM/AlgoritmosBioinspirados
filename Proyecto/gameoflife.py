@@ -27,6 +27,7 @@ def draw(window):
             for k in range(-1, 2):
                 for l in range(-1, 2):
                     neighbor_sum += board[i + k][j + l]
+                    
             neighbor_sum -= board[i][j]
 
             if board[i][j] == 1 and neighbor_sum < 2:

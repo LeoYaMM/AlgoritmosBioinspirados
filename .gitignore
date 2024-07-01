@@ -4,6 +4,11 @@
 # Ignorar archivos que comienzan con "investigacion", excepto investigacion.tex
 investigacion*
 !investigacion.tex
+presentation*
+!presentation.tex
+InvestProy*
+!InvestProy.tex
+!InvestProy.pdf
 
 # Ignorar archivos generados por LaTeX en la carpeta latex
 latex/*.aux
