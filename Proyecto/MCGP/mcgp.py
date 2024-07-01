@@ -3,6 +3,7 @@
 import numpy as np
 import networkx as nx
 import random
+import matplotlib.pyplot as plt
 
 # Función de fitness
 def fitness(solution, graph):
@@ -15,9 +16,23 @@ def fitness(solution, graph):
 
 # PSO parameters
 num_particles = 30
-num_vertices = 10  # Cambia esto según el tamaño de tu grafo
+num_vertices = 10 # Numero de nodos
 max_iter = 100
-graph = nx.erdos_renyi_graph(num_vertices, 0.5)  # Ejemplo de un grafo aleatorio
+
+# Probabilidad de conexión
+p = 0.3  # Ajusta esta probabilidad para obtener la densidad deseada
+
+# Crear el grafo
+graph = nx.erdos_renyi_graph(num_vertices, p)
+
+# Asegurarse de que el grafo no sea totalmente conexo
+while nx.is_connected(graph):
+    graph = nx.erdos_renyi_graph(num_vertices, p)
+
+# Dibujar el grafo
+plt.figure(figsize=(8, 6))
+nx.draw(graph, with_labels=True, node_color='skyblue', node_size=500, edge_color='gray')
+plt.show()
 
 # Inicialización de partículas
 particles = [np.random.randint(0, num_vertices, num_vertices) for _ in range(num_particles)]
