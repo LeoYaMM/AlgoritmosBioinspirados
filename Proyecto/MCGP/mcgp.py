@@ -77,6 +77,6 @@ print("Numero de colores utilizados:", len(set(gbest_position)))
 # Dibujar el grafo final coloreado
 color_map = [f"C{color}" for color in gbest_position]  # Asigna un color a cada nodo segun la solucipn optima
 plt.figure(figsize=(8, 6))
-nx.draw(graph, with_labels=True, node_color=color_map, node_size=500, edge_color='gray')
+nx.draw(graph, with_labels=True, node_color=color_map, node_size=500, edge_color='black')
 plt.show()
 
