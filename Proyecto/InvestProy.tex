@@ -77,7 +77,7 @@
     El problema de la coloración mínima es un problema NP-completo, el cual consiste en asignar un color a cada vértice de un grafo de tal manera que dos vértices adyacentes no tengan el mismo color.
     El objetivo es encontrar la coloración mínima, es decir, la menor cantidad de colores posibles para colorear el grafo.
     Este problema es de gran importancia en la teoría de grafos, ya que tiene aplicaciones en la asignación de horarios, asignación de frecuencias, asignación de canales, entre otros.
-    En este trabajo se propone una solución basada en PSO, un algortmo de optimización basado en la inteligencia de enjambre, para encontrar la coloración mínima de un grafo.
+    En este trabajo se propone una solución basada en PSO, un algoritmo de optimización basado en la inteligencia de enjambre, para encontrar la coloración mínima de un grafo.
 
 \section{Antecedentes}
 
@@ -101,13 +101,18 @@
 \section{Metodología}
 
     Para poder resolver el problema de la coloración mínima, se propone una solución basada en algoritmos genéticos.
-    El algoritmo genetico elegido fue el de PSO (Particle Swarm Optimization), el cual es un algoritmo de optimización basado en la inteligencia de enjambre.
-    El algoritmo PSO se basa en el comportamiento social de las particulas, las cuales se mueven en un espacio de búsqueda en busca de la mejor solución.
-    Las particulas tienen mejoras cognitivas y mejoras sociales, las cuales les permiten moverse en el espacio de búsqueda.
-    En el caso del problema de la coloración mínima, las particulas representan una coloración de un grafo, y el objetivo es encontrar la coloración mínima.
-    La representación de las particulas es un vector de enteros que representa los colores de los vértices del grafo.
-    El algoritmo PSO se encarga de mover las particulas en el espacio de búsqueda, de tal manera que se encuentre la coloración mínima del grafo.
+    El algoritmo genético elegido fue el de PSO (Particle Swarm Optimization), el cual es un algoritmo de optimización basado en la inteligencia de enjambre.
+    El algoritmo PSO se basa en el comportamiento social de las partículas, las cuales se mueven en un espacio de búsqueda en busca de la mejor solución.
+    Las partículas tienen mejoras cognitivas y mejoras sociales, las cuales les permiten moverse en el espacio de búsqueda.
+    En el caso del problema de la coloración mínima, las partículas representan una coloración de un grafo, y el objetivo es encontrar la coloración mínima.
+    La representación de las partículas es un vector de enteros que representa los colores de los vértices del grafo.
+    El algoritmo PSO se encarga de mover las partículas en el espacio de búsqueda, de tal manera que se encuentre la coloración mínima del grafo.
     Para evaluar la calidad de una coloración, se utiliza la función objetivo, la cual es el número de colores utilizados en la coloración.
+
+\section{Propuesta de solución}
+% Usando listings agrega el código Proyecto\MCGP\mcgp.py
+    \lstinputlisting[language=Python, caption=Algoritmo PSO para el problema de la coloración mínima, label=lst:pso]{MCGP/mcgp.py}
+
 
 
 \section{Resultados}

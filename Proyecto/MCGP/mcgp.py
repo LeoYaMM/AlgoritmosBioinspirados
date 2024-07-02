@@ -3,7 +3,7 @@ import networkx as nx
 import random
 import matplotlib.pyplot as plt
 
-# Función de fitness
+# Funcion de fitness
 def fitness(solution, graph):
     conflicts = 0
     for edge in graph.edges:
@@ -17,7 +17,7 @@ num_particles = 30
 num_vertices = 10 # Numero de nodos
 max_iter = 100
 
-# Probabilidad de conexión
+# Probabilidad de conexion
 p = 0.3
 
 # Crear el grafo
@@ -32,7 +32,7 @@ plt.figure(figsize=(8, 6))
 nx.draw(graph, with_labels=True, node_color='skyblue', node_size=500, edge_color='gray')
 plt.show()
 
-# Inicialización de partículas
+# Inicializacion de particulas
 particles = [np.random.randint(0, num_vertices, num_vertices) for _ in range(num_particles)]
 velocities = [np.random.randint(-1, 2, num_vertices) for _ in range(num_particles)]
 pbest_positions = particles.copy()
@@ -40,7 +40,7 @@ pbest_scores = [fitness(p, graph) for p in particles]
 gbest_position = pbest_positions[np.argmin(pbest_scores)]
 gbest_score = min(pbest_scores)
 
-# Parámetros de PSO
+# Parametros de PSO
 w = 0.5  # Inercia
 c1 = 1.0  # Constante cognitiva
 c2 = 1.0  # Constante social
@@ -52,10 +52,10 @@ for iteration in range(max_iter):
                          + c1 * random.random() * (pbest_positions[i] - particles[i])
                          + c2 * random.random() * (gbest_position - particles[i]))
         
-        # Actualiza la posición de las partículas
+        # Actualiza la posicion de las particulas
         particles[i] = np.clip(particles[i] + velocities[i], 0, num_vertices - 1).astype(int)
         
-        # Evaluar nueva posición
+        # Evaluar nueva posicion
         current_fitness = fitness(particles[i], graph)
         
         # Actualizar pbest
@@ -68,14 +68,14 @@ for iteration in range(max_iter):
             gbest_position = particles[i]
             gbest_score = current_fitness
     
-    print(f"Iteración {iteration + 1}/{max_iter}, Mejor Fitness: {gbest_score}")
+    print(f"Iteracion {iteration + 1}/{max_iter}, Mejor Fitness: {gbest_score}")
 
 # Resultado final
-print("Mejor solución encontrada:", gbest_position)
-print("Número de colores utilizados:", len(set(gbest_position)))
+print("Mejor solucion encontrada:", gbest_position)
+print("Numero de colores utilizados:", len(set(gbest_position)))
 
 # Dibujar el grafo final coloreado
-color_map = [f"C{color}" for color in gbest_position]  # Asigna un color a cada nodo según la solución óptima
+color_map = [f"C{color}" for color in gbest_position]  # Asigna un color a cada nodo segun la solucipn optima
 plt.figure(figsize=(8, 6))
 nx.draw(graph, with_labels=True, node_color=color_map, node_size=500, edge_color='gray')
 plt.show()
