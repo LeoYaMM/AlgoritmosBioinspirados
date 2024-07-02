@@ -29,7 +29,7 @@ while nx.is_connected(graph):
 
 # Dibujar el grafo
 plt.figure(figsize=(8, 6))
-nx.draw(graph, with_labels=True, node_color='white', node_size=500, edge_color='black')
+nx.draw(graph, with_labels=True, node_color='gray', node_size=500, edge_color='black')
 plt.show()
 
 # Inicializacion de particulas
