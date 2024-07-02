@@ -14,18 +14,18 @@ def fitness(solution, graph):
 
 # PSO parameters
 num_particles = 30
-num_vertices = 10 # Numero de nodos
+num_nodos = 10 # Numero de nodos
 max_iter = 100
 
 # Probabilidad de conexion
 p = 0.3
 
 # Crear el grafo
-graph = nx.erdos_renyi_graph(num_vertices, p)
+graph = nx.erdos_renyi_graph(num_nodos, p)
 
 # Asegurarse de que el grafo no sea totalmente conexo
 while nx.is_connected(graph):
-    graph = nx.erdos_renyi_graph(num_vertices, p)
+    graph = nx.erdos_renyi_graph(num_nodos, p)
 
 # Dibujar el grafo
 plt.figure(figsize=(8, 6))
@@ -33,8 +33,8 @@ nx.draw(graph, with_labels=True, node_color='skyblue', node_size=500, edge_color
 plt.show()
 
 # Inicializacion de particulas
-particles = [np.random.randint(0, num_vertices, num_vertices) for _ in range(num_particles)]
-velocities = [np.random.randint(-1, 2, num_vertices) for _ in range(num_particles)]
+particles = [np.random.randint(0, num_nodos, num_nodos) for _ in range(num_particles)]
+velocities = [np.random.randint(-1, 2, num_nodos) for _ in range(num_particles)]
 pbest_positions = particles.copy()
 pbest_scores = [fitness(p, graph) for p in particles]
 gbest_position = pbest_positions[np.argmin(pbest_scores)]
@@ -53,7 +53,7 @@ for iteration in range(max_iter):
                          + c2 * random.random() * (gbest_position - particles[i]))
         
         # Actualiza la posicion de las particulas
-        particles[i] = np.clip(particles[i] + velocities[i], 0, num_vertices - 1).astype(int)
+        particles[i] = np.clip(particles[i] + velocities[i], 0, num_nodos - 1).astype(int)
         
         # Evaluar nueva posicion
         current_fitness = fitness(particles[i], graph)
