@@ -40,7 +40,7 @@ while nx.is_connected(graph):
 
 # Dibujar el grafo
 plt.figure(figsize=(8, 6))
-nx.draw(graph, with_labels=True, node_color='skyblue', node_size=500, edge_color='gray')
+nx.draw(graph, with_labels=True, node_color='gray', node_size=500, edge_color='black')
 plt.show()
 
 # Generar las combinaciones de parametros
@@ -86,6 +86,7 @@ for i, (num_particles, w, c1, c2) in enumerate(parametros):
     print("Mejor solucion encontrada:", gbest_position)
     print("Numero de colores utilizados:", len(set(gbest_position)))
     print("\n\n")
+
 
     # Dibujar el grafo final coloreado para cada experimento
     color_map = [f"C{color}" for color in gbest_position]  # Asigna un color a cada nodo segun la solucipn optima
