@@ -8,7 +8,6 @@ presentation*
 !presentation.tex
 InvestProy*
 !InvestProy.tex
-!InvestProy.pdf
 
 # Ignorar archivos generados por LaTeX en la carpeta latex
 latex/*.aux
